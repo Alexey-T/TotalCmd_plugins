@@ -1,0 +1,186 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Readme</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<center>
+<h1>
+<font color="#000099">"OpenOffice.org/DOCX/FB2 Viewer"<br> plugin for Total Commander</font>
+</h1>
+</center>
+
+<h1>Contents</h1>
+<ul>
+<li> <a href="#Intro">Introduction</a>
+<li> <a href="#Install">Installation</a>
+<li> <a href="#DOCX">DOCX Support</a>
+<li> <a href="#IniFile">Configuration</a>
+<li> <a href="#Copy">Copyrights & Links</a>
+</ul>
+
+<!------------------------------------------------------------------>
+<a name="Intro">
+<h1>Introduction</h1>
+
+This plugin allows to view OpenOffice.org, MS Word 2007 and some other 
+XML-based documents in <b>Total Commander</b>.
+Documents are converted to XHTML form, you can see them with most of formatting.
+Not all document styles may be supported because of underlying XSL
+stylesheets work.
+
+<p>
+Supported formats:
+<ul>
+<li> OpenOffice.org 1.x Writer/Calc/Draw (SXW STW SXC STC SXD STD)
+<li> OpenOffice.org 2.x Writer (ODT OTT)
+<li> MS Office Word 2007 (DOCX DOTX)
+<li> FictionBook (FB2 FB2Z)
+</ul>
+
+<p>
+In Thumbnails view mode of Total Commander plugin allows to show documents thumbnails
+(currently only for OOo 2.x and if thumbs are embedded into document).
+
+<p>
+<table width="70%" align="center" style="background-color:#A33; color:#FFF;">
+<tr>
+  <td>
+    <center><h3>Warning</h3></center>
+    Currently plugin cannot work properly in <b>TC</b> Lister mode (most of keys
+    in Lister don't work while plugin is active). But it works OK in TC Quick View mode.
+    Plugin works more correctly in <b>Universal Viewer</b>.
+  </td>
+</tr>
+</table>
+
+
+<!------------------------------------------------------------------>
+<a name="Install">
+<h1>Installation</h1>
+
+With Total Commander 6.50 or newer, just open the archive and TC will install the plugin automatically.
+If you already have plugin installed, you may first need to uninstall the previous
+version so plugin's detection string will be updated.
+
+
+<!------------------------------------------------------------------>
+<a name="DOCX">
+<h1>DOCX Support</h1>
+<p>
+To view DOCX documents you need one of the following:
+
+<ul>
+<li> <a href="http://sourceforge.net/projects/odf-converter/files/" target="_blank">Translator from Clever Age</a>
+(OpenXML/ODF Translator Command Line Tool).
+It requires the .NET Framework 2.0.
+
+<p>
+<li> <s><a href="--">Translator from Novell</a>
+(OpenOffice OpenXML Translator)</s>.
+It doesn't require .NET, and it works a little faster than the one from Clever Age.
+Get the <b>odfconverter*.oxt</b> file, it is the ordinary ZIP file.
+</ul>
+
+<p>
+Unzip the Translator package into any subfolder of the plugin folder.
+The <b>OdfConverter.exe</b> file should appear.
+If you didn't unzip the Translator where needed, you'll see the error message box
+on opening DOCX files. If you have installed the Translator right, you'll see the
+conversion progress window on opening DOCX.
+
+
+<!------------------------------------------------------------------>
+<a name="IniFile">
+<h1>Configuration</h1>
+
+You can edit the following options in the "OOoViewer.ini" file,
+located in the plugin folder:
+
+<p>
+<table border="1">
+<tr>
+ <th>Key
+ </th>
+ <th>Meaning
+ </th>
+</tr>
+<tr>
+ <th colspan="2">
+ [Options] section
+ </th>
+</tr>
+<tr>
+ <td>AllowWorkInLister
+ </td>
+ <td>Enables plugin work in TC Lister (F3 mode). 
+   (Work in QuickView mode is always enabled.)<br>
+   Default is 1 (enabled).
+ </td>
+</tr>
+<tr>
+ <td>ShowImages
+ </td>
+ <td>Enables showing images for FB2 documents. Plugin will start slower.<br>
+   Default is 1 (enabled).
+ </td>
+</tr>
+<tr>
+ <td>TempExtension
+ </td>
+ <td>Enables using extension in the temp folder's name.
+   When enabled, folder name for "example.odt" file will look like "C:\Temp\example.odt.tmp",
+   overwise it will look like "C:\Temp\example".<br>
+   Default is 1.<br>
+   Note that it must be set to 0 if you use Novell ODF Converter.
+ </td>
+</tr>
+</table>
+
+
+<!------------------------------------------------------------------>
+<a name="Copy">
+<h1>Copyrights & Links</h1>
+
+<ul>
+<li>
+  PNGImage Library:<br>
+  Copyright &copy; Gustavo Daud<br>
+  <a href="http://pngdelphi.sourceforge.net" target="_blank">Homepage</a>
+
+<p>
+<li>
+  OpenXML/ODF Translator:<br>
+  Copyright &copy; Clever Age, ...<br>
+  <a href="http://odf-converter.sourceforge.net/" target="_blank">Homepage</a> <br>
+
+<p>
+<li>
+  XSL stylesheet that converts ODT to XHTML:<br>
+  Copyright &copy; 2005-2006 J. David Eisenberg<br>
+  <a href="http://books.evc-cit.info/odf_utils/odt_to_xhtml.html" target="_blank">Homepage</a>
+
+<p>
+<li>
+  XSL stylesheets that convert FB2 to XHTML:<br>
+  From the FB2Any package by Dmitry Gribov<br>
+  <a href="http://www.fictionbook.org" target="_blank">Homepage</a>,
+  <a href="http://www.gribuser.ru/xml/fictionbook/2.0/software/FB2Any.exe" target="_blank">Latest version</a>
+
+<p>
+<li>
+  This plugin:<br>
+  Copyright &copy; Alexey Torgashin<br>
+  <a href="http://www.totalcmd.net/plugring/OOoHtmlViewer.html" target="_blank">Homepage</a> <br>
+  <a href="http://www.uvviewsoft.com/support.htm" target="_blank">Support</a> <br>
+  License: <a href="http://www.mozilla.org/MPL/" target="_blank">Mozilla Public License</a> V1.1
+</ul>
+
+</body>
+</html>
+
+
+
+

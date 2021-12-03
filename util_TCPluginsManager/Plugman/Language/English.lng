@@ -1,0 +1,277 @@
+; Version history:
+; 2.0.0: Cap 0077-0078,0114,0466
+; 2.0.1: Msg 0078
+; 2.1.0: Msg 0228-229
+; 2.2.0 Msg 0063-66, 0040-45 Cap -0078 0120-0121
+;
+; Note for translators: [Language] section should contain info about you,
+; your homepage URL and email (masked).
+
+[Language]
+
+Version=2.2.2
+Author=Alex
+Homepage=http://atorg.net.ru
+Email=
+
+[Messages]
+
+0020=idle
+0021=loaded
+0022=running
+0023=disabled
+0024=deleted
+0040=Lister
+0041=Packer
+0042=FS
+0043=Content
+0044="    All  "
+0045=QuickSearch
+
+
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Version %s %s
+0053=You must browse for valid file "%s"
+0054=
+0055=No plugins installed
+0056=Plugin "%s" is currently disabled, enable it first
+0057=Uninstall plugin "%s"?\n\nNote: File "%s" will not be deleted.
+0058=Disable plugin "%s"?
+0059=Install plugin "%s"?
+0060=Invalid command line parameter specified
+0061=
+0062=Uninstall %d plugins?
+0063=Plugin archive "%s" installed over default "tcmatch.dll"
+0064=Plugin archive "%s" installed into folder "%s"
+0065=Plugin archive doesn't contain "pluginst.inf" file
+0066=Cannot uninstall "tcmatch.dll" from TC folder
+0067=
+0068=\n\nWARNING: It's already installed!\nRegistered for: "%s".
+0069=Plugin "%s" doesn't have a configuration dialog
+0070=Plugin "%s" doesn't have ini-file
+0071=Packer plugins:  <default extension>  e.g.: cab\n\nLister/Content plugins:  <detect string>  e.g.: EXT="DOC" | EXT="RTF"\n\nFS plugins:  <root name>  e.g.: Network Browser
+0072=Total plugins: %d, disabled: %d
+0073=Plugin "%s":\nException in function %s!
+0074=File "%s" not found, try to reinstall application!
+0075=A plugin with the same name is already installed in the following directory:\n\n%s\n\nDo you want to overwrite it?\nChoose No to install to default location.
+0076=Plugin "%s" successfully uninstalled
+0077=Cannot uninstall plugin "%s", as it's not installed
+0078=The extension "%s" is already registered to: "%s". Do you want to assign it anyway?
+
+;UFormReport
+0080=TC Plugins Manager %s report, generated %s %s.
+0081=Total Commander: %s. Path: "%s". Ini-file: "%s".
+0082=OS: %s, version %s.
+0083=Plugins folder: "%s".
+0084=\n\rLister plugins (WLX):\n\r
+0085=\n\rPacker plugins (WCX):\n\r
+0086=\n\rFile-system plugins (WFX):\n\r
+0087=\n\rContent plugins (WDX):\n\r
+0088=
+0089=Cannot save report file to "%s"
+
+;UFormOptions
+0100=Do you want to add TC Plugins Manager shortcuts to Total Commander default button bar?\n\nNote: To refresh actual button bar you'll need to restart Total Commander.
+
+
+[Captions]
+
+;UFormMain
+0050=TC Plugins Manager
+0051="TC path:  "
+0052="Version:  "
+0053="State:  "
+0054="Settings:  "
+0055=Browse for Total Commander executable
+0056=Total Commander executable path
+0057=Total Commander ini-file path
+0058=Browse for Total Commander ini-file
+0059=Run Total Commander
+0060=&Run
+0061=Restart Total Commander
+0062=Re&start
+0063=Install plugin(s)
+0064=&Install
+0065=Change Plugins Manager options
+0066=O&ptions
+0067=Show info about Plugins Manager
+0068=About
+0069=Close Plugins Manager
+0070=Close
+0071=Disable/enable selected plugin(s)
+0072=
+0073=Uninstall selected plugin(s)
+0074=&Uninstall
+0075=Change plugin name/association
+0076=T&weak
+0077=File properties...
+0078=
+0079=
+0080=
+0081=&Configure
+0082=Configure plugin (using ini-file or configuration dialog)
+0083=&Order
+0084=Change plugins loading order
+0085=&Disable
+0086=En&able
+0087=Refresh list
+0088=Show all plugins or plugins of selected type only
+0089=&Browse folder
+0090=Browse plugin folder
+0091=Install from archive...
+0092=
+0093=T&weak
+0094=Tweak parameters of Packer plugin
+0095=Install from folder...
+0096=Install all plugins from selected folder and all its subfolders:
+0097=
+0098=
+0099=
+0110=Describe "%s"
+0111=Description:
+0112=&Edit
+0113=Directly edit Total Commander ini-file
+0114=Create &report
+0115=Save plugins list to a file
+0116=Filter
+0117=Loading order of %s plugins...
+0120=Use &default tcmatch.dll
+0121=Use cust&om dll:
+
+;UFormAbout
+0100=Plugins Manager for Total Commander
+0102=Feedback
+0103=
+0104=Homepage
+0105=OK
+
+;UFormAdd
+0150=Plugin association
+0151=Cancel
+0152=Plugin:
+0153=Set name/association:
+
+;UFormOptions
+0200=Register WCX/WLX/WFX/WDX extensions
+0201=(allows to install plugins by pressing Enter)
+0202=Language:
+0203=Refresh list every
+0204=sec.
+0205=Show tabs for different plugins types
+0206=Show plugins' types in list
+0207=
+0208=When installing plugins:
+0209=Use '%COMMANDER_PATH%' in paths
+0210=Restart TC after installing
+0211=Tweak Packer plugins after installing
+0212=Default folders for plugins of different types:
+0213=Tweak Packer plugins before installing, if needed
+0214=Shortcuts on TC toolbar...
+0215=TC restart
+0216=Restart last instance
+0217=Close all instances and run one
+0218=Use external restarter:
+0219=Restart time (msec):
+0220=Show versions column
+0221=Show descriptions column
+0222=Start TC in foreground
+0223=Plugins folders
+0224=TC FTP settings:
+0225=WinRAR executable:
+0226=Show plugins' order numbers in list
+0228=Use specific editor:
+0229=Paths
+
+0240=General
+0241=Advanced
+
+;UFormOrder
+0250=Plugins order
+0251=Change loading order for %s plugins:
+0252=&Up
+0253=&Down
+
+;UFormTweak
+0300=Plugin:
+0301=Extension:
+0302=Flags:
+0303=Can create new archives
+0304=Can modify existing archives
+0305=Archive can contain multiple files
+0306=Can delete files
+0307=Has options dialog
+0308=Supports packing in memory
+0309=Detects archive type by content
+0310=Allows searching for text in archives
+0311=Don't open with Enter but with Ctrl+PgDn
+0312=Supports encryption
+0313=Remove
+0314=Add new
+0315=Default
+0316=Change
+
+;UFormReport
+0350=Report
+0351=You can save current plugins list to a text file.
+0352=File name:
+0353=Columns:
+0354=Plugin
+0355=Description
+0356=Version
+0357=State
+0358=Registered for
+0359=File name
+
+;UFormInstallLog
+0400=Plugins installation log
+0401=Plugin(s) installed: %d
+0402=Error(s) occured: %d
+0403=Attention: Now you need to restart Total Commander.
+0404=Attention: After confirmation Total Commander will be restarted.
+0405=No need to restart Total Commander.
+0406=Copy log to Clipboard
+
+;Log messages
+0420=Cannot install plugin
+0421=Plugin already installed
+0422=Cannot execute unpacker
+0423=Cannot unpack archive
+0424=Installation cancelled
+0425=Cannot create temporary folder
+0426=No plugins in archive
+0427=No plugins in folder
+0428=Unknown plugin format
+0429=Cannot move folder
+0430=Cannot find folder
+0431=Cannot create folder
+0432=Cannot move file
+0433=Cannot remove folder
+0434=Installation aborted
+0435=Plugin not found (several plugins in the same archive folder?)
+0436=Invalid pluginst.inf parameter
+
+;Shortcuts help
+0450=Shortcuts help:
+0451=Install plugin(s)
+0452=Install plugin(s) from archive(s)
+0453=Install plugin(s) from folder
+0454=Disable/enable plugin(s)
+0455=Change active tab
+0456=Open plugin folder in TC
+0457=Change plugin name/association
+0458=Uninstall plugin(s)
+0459=Configure plugin
+0460=Select all plugins
+0461=Set panel filter
+0462=Change plugins order
+0463=Refresh list
+0464=Describe plugin in file Descript.ion
+0465=This help
+0466=Show plugin file properties
+0467=Press OK to close config tool
+
+;UFormInstallProgress
+0490=Operation progress
+0491=Scanning folder:
+0492=Processing plugin:

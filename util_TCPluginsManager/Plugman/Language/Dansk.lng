@@ -1,0 +1,290 @@
+; Version history:
+;
+; 1.8.0.0: Messages 0080-0089, Captions 0114-0115,0350-0359
+; 1.8.2.0: Messages 0050,0075, Captions 0252-0253
+; 1.8.5.0: Caption 0316
+; 1.8.6.0: Captions 0116,0222
+; 1.8.7.0: Captions 0212,0223-0225,0240-0241
+; 1.8.7.4: Message 0100, Caption 0214
+; 1.8.8.0: Messages 0060-0067, Captions 0205-0206,0400-0440
+; 1.8.9.0: Message -0025, Captions 0095-0096,0117,0213,0406-0410,0427-0500, [Language] section changed
+; 1.9.0.0: Captions -0077-0080,-0092,0354
+; 1.9.4.0: Captions -0207,0226
+; 1.9.5.0: Captions 0312
+; 1.9.6.2: Messages 0060,0076-0077
+; 2.0.0.0: Captions 0077-0078,0114,0466
+; 2.0.1.0: Message 0078
+; 2.1.0: Msg 0228-229
+; 2.2.0 Msg 0063-66, 0040-45 Cap -0078 0120-0121
+
+[Language]
+
+Language=Dansk
+Version=2.2.3
+Author=Peter Madsen (petermad)
+Homepage=http://madsenworld.dk
+Email=plugman@madsenworld.dk
+
+[Messages]
+
+0020=Passiv
+0021=Indlæst
+0022=Kører
+0023=-Deaktiveret
+0024=-Slettet
+
+;UFormMain
+0040=Lister
+0041=Pakke
+0042=Filsystem
+0043=Indhold
+0044="   Alle  "
+0045=Hurtigsøgning
+
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Version %s %s
+0053=Du må søge efter en gyldig %s fil
+0054= 
+0055=Ingen plugins installeret
+0056=Plugin'et "%s" er i øjeblikket deaktiveret. Aktiver det først
+0057=Afinstaller plugin "%s"?\nBemærk: Filen "%s" vil ikke blive slettet
+0058=Deaktiver plugin "%s"?
+0059=Installer plugin "%s"?
+0060=Ugyldig kommandolinjeparameter angivet
+0061=
+0062=Afinstaller %d plugins?
+0063=Plugin arkiv "%s" installeret over standard "tcmatch.dll"
+0064=Plugin arkiv "%s" installeret i mappen "%s"
+0065=Plugin arkiv indeholder ikke nogen "pluginst.inf" fil
+0066=Kan ikke afinstallere "tcmatch.dll" fra TC mappen
+0067=
+0068=\n\nAdvarsel: Det er allerede installeret!\nRegistreret for: "%s".
+0069=Plugin'et "%s" har ingen konfigureringsdialog
+0070=Plugin'et "%s" har ingen .ini-fil
+0071=Pakke-plugin:  standardfiltype f.eks.: cab\n\nLister/Indholds-plugin:  detekt_streng  f.eks.: EXT="DOC" | EXT="RTF"\n\nFilsystem-plugin:  root_navn  f.eks.: Network Browser
+0072=" Antal plugins: %d, heraf deaktiverede: %d"
+0073=Plugin "%s":\nUndtagelse i funktionen %s!
+0074=Filen "%s" ikke fundet, prøv at geninstallere TC Plugins Manager!
+0075=Et plugin med det samme navn er allerede installeret i mappen:\n\n%s\n\nØnsker du at overskrive det?\nVælg Nej for at installere til standard placering.
+0076=Afinstallering af plugin "%s" var vellykket
+0077=Kan ikke afinstallere plugin "%s", da det ikke er installeret
+0078=Filtypen "%s" er allerede registreret til: "%s". Ønsker du at tilskrive den alligevel?
+
+;UFormReport
+0080=TC Plugins Manager %s rapport, genereret %s %s.
+0081=Total Commander: %s. Sti: "%s". Ini-fil: "%s".
+0082=OS: %s, version %s.
+0083=Plugin-mappe: "%s"
+0084=\n\rLister-plugins (WLX):\n\r
+0085=\n\rPakke-plugins (WCX):\n\r
+0086=\n\rFilsystem-plugins (WFX):\n\r
+0087=\n\rIndholds-plugins (WDX):\n\r
+0088=
+0089=Kan ikke gemme rapport i filen "%s"
+
+;UFormOptions
+0100=Ønsker du at tilføje TC Plugins Manager genveje til Total Commander's standard knappanel?\n\nBemærk: For at opdatere nuværende knappanel er du nødt til at genstarte Total Commander.
+
+
+[Captions]
+
+;UFormMain
+0050=TC Plugin Manager
+0051="Sti til TC:  "
+0052="Version:  "
+0053="Status:  "
+0054="Indstillinger:  "
+0055=Søg efter Total Commander exe-fil
+0056=Sti til Total Commander exe-fil
+0057=Sti til Total Commander ini-fil
+0058=Søg efter Total Commander ini-fil
+0059=Kør Total Commander
+0060=Kø&r
+0061=Genstart Total Commander!
+0062=Gen&start
+0063=Installer plugin(s)
+0064=Inst&aller
+0065=Skift indstillinger for Plugins Manager
+0066=&Indstillinger
+0067=Vis info om Plugins Manager
+0068=Om
+0069=Luk Plugins Manager 
+0070=&Luk
+0071=Deaktiver/aktiver markerede plugin(s) midlertidigt
+0072=
+0073=Afinstaller valgte plugin(s)
+0074=Afi&nstaller
+0075=Skift navn/associering for plugin
+0076=Til&pas
+0077=Egenskaber for fil...
+0078=
+0079=
+0080=
+0081=&Konfigurer
+0082=Konfigurer plugin (v.hj. af .ini-fil eller konfigurationsdialog)
+0083=Række&følge
+0084=Skift indlæsningsrækkefølge for plugins
+0085=&Deaktiver
+0086=&Aktiver
+0087=Genindlæs listen
+0088=Vis alle plugins eller kun plugins af den valgte type
+0089=Å&bn mappe i Total Commander
+0090=Gennemse plugin-mappe
+0091=Installer fra arki&v...
+0092=
+0093=Til&pas
+0094=Tilpas parametre for pakke-plugin
+0095=Installer fra mappe...
+0096=Installer plugins fra den valgte mappe og alle undermapper:
+0097=
+0098=
+0099=
+0110=Beskriv "%s"
+0111=Beskrivelse:
+0112=R&ediger
+0113=Rediger Total Commanders ini-fil direkte
+0114=Opret rapport
+0115=Gem  plugin.liste i fil
+0116=Filter
+0117=Rækkefølge for indlæsning af %s plugins...
+0120=Anvend stan&dard tcmatch.dll
+0121=Anvend bruger&defineret dll:
+
+;UFormAbout
+0100=Plugins Manager for Total Commander
+0102=Feedback
+0103=
+0104=Hjemmeside
+0105=OK
+
+;UFormAdd
+0150=Associering for plugin
+0151=Annuller
+0152=Plugin:
+0153=Angiv navn/associering:
+
+;UFormOptions
+0200=Registrer filtyperne WCX/WLX/WFX/WDX
+0201=(tillader installation ved tryk på Enter)
+0202=Sprog:
+0203=Indlæs listen hvert
+0204=sekund
+0205=Vis faneblade for forskellige plugin-typer
+0206=Vis plugin-typer i liste
+0207=
+0208=Ved installation af plugins:
+0209=Anvend '%COMMANDER_PATH%' i søgestier
+0210=Genstart Total Commander efter installation
+0211=Tilpas pakke-plugins efter installation
+0212=Standardmapper for plugins af forskellig type:
+0213=Tilpas pakke-plugins før installation, hvis nødvendigt
+0214=Genveje på TC's knappanel...
+0215=Total Commander genstart
+0216=Genstart sidst åbnede kopi af Total Commander
+0217=Luk alle kopier af Total Commander og genstart 1 kopi
+0218=Anvend eksternt program til genstart:
+0219=Genstart tid (i msek):
+0220=Vis kolonne med versioner
+0221=Vis kolonne med beskrivelser
+0222=Start Total Commander i forgrunden
+0223=Pluginsmapper
+0224=Total Commander FTP ini-fil:
+0225=WinRAR exe-fil:
+0226=Vis sorteringsnumre på plugins i liste
+0228=Brug specifikt redigeringsprogram:
+0229=Stier
+
+0240=Generelt
+0241=Avanceret
+
+;UFormOrder
+0250=Plugin-rækkefølge
+0251=Skift rækkefølge for indlæsning af %s-plugins:
+0252=&Op
+0253=&Ned
+
+;UFormTweak
+0300=Plugin:
+0301=Filtype:
+0302=Flag:
+0303=Kan oprette nye arkiver
+0304=Kan modificere eksisterende arkiver
+0305=Arkiv kan indeholde flere filer
+0306=Kan slette filer
+0307=Har dialog for indstillinger
+0308=Understøtter pakning i hukommelsen
+0309=Genkender arkivtype efter indhold
+0310=Tillader tekstsøgning i arkiver
+0311=Åbn ikke med Enter men med Ctrl+PgDn
+0312=Understøtter kryptering
+0313=Slet
+0314=Tilføj ny
+0315=Standard
+0316=Skift
+
+;UFormReport
+0350=Rapport
+0351=Du kan gemme nuværende plugin-liste i en tekstfil.
+0352=Filnavn:
+0353=Kolonner:
+0354=Plugin
+0355=Beskrivelse
+0356=Version
+0357=Status
+0358=Navn/associering
+0359=Filnavn
+
+;UFormInstallLog
+0400=Plugin installationslog
+0401=Antal installerede plugins: %d
+0402=Antal fejl: %d
+0403=Bemærk: Det er nu nødvendigt at genstarte Total Commander.
+0404=Bemærk: Efter bekræftelsen vil Total Commander blive genstartet.
+0405=Det er ikke nødvendigt at genstarte Total Commander.
+0406=Kopier log til Udklipsholder
+
+;Log messages
+0420=Kan ikke installere plugin
+0421=Plugin er allerede installeret
+0422=Kan ikke afvikle udpakke-programmet
+0423=Kan ikke udpakke arkivet
+0424=Installation anulleret
+0425=Kan ikke oprette midlertidig mappe
+0426=Der er ingen plugins i arkivet
+0427=Der er ingen plugins i mappen
+0428=Ukendt plugin-format
+0429=Kan ikke flytte mappen
+0430=Kan ikke finde mappen
+0431=Kan ikke oprette mappen
+0432=Kan ikke flytte filen
+0433=Kan ikke fjerne mappen
+0434=Installation afbrudt
+0435=Plugin ikke fundet (adskillige plugins i den samme mappe?)
+0436=Ugyldig parameter i filen pluginst.inf 
+
+;Shortcuts help
+0450=Hjælp til genvejstaster:
+0451=Installer plugin(s)
+0452=Installer plugin(s) fra arkive(r)
+0453=Installer plugin(s) fra mappe(r)
+0454=Deaktiver/aktiver plugin(s)
+0455=Skift aktive faneblad
+0456=Åbn plugin-mappe i TC
+0457=Skift navn/associering for plugin
+0458=Afinstaller plugin(s)
+0459=Konfigurer plugin
+0460=Vælg alle plugins
+0461=Sæt panel-filter
+0462=Skift rækkefølge af plugins
+0463=Genindlæs listen
+0464=Beskriv plugin i Descript.ion filen
+0465=Denne hjælp
+0466=Vis egenskaber for pluginfil
+0467=Klik på OK for at lukke konfigureringsværktøjet
+
+;UFormInstallProgress
+0490=Forløb af operationen
+0491=Scanner mappe:
+0492=Behandler plugin:
+

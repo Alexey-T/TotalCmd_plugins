@@ -1,0 +1,235 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Плагин "File Descriptions" для Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Введение</font></h2>
+
+<b>File Descriptions</b> - это content-плагин для <b>Total Commander</b>,
+который позволяет отображать файловые описания:
+
+<ul>
+<li> текстовые описания из Descript.ion/Files.bbs
+<li> для текстовых файлов: содержимое файла
+<li> для исполняемых/dll: информация о версии
+<li> для HTML файлов: содержимое тегов Title/Meta
+</ul>
+
+Кроме того, возможно подключение дополнительных плагинов, что позволяет
+показывать описания для многих других типов файлов:
+
+<ul>
+<li> AVI/QuickTime Movies (*.AVI,*.MOV)
+<li> MPEG Movies (*.MPG,*.MPEG,*.MPE,*.M1V,*.M2V,*.VOB)
+<li> Images (*.BMP,*.JPG,*.GIF,*.TGA,*.PNG,*.PSD,*.TIFF,*.PCX)
+<li> Streamed Music (*.MP3,*.MP2,*.MP1,*.OGG,*.WMA,*.WAV,*.VQF,*.AAC,*.APE,*.MPC,*.FLAC,*.CDA)
+<li> Tracked Music (*.MOD,*.XM,*.IT,*.S3M,*.MT2,*.STM,*.MTM,*.UMX)
+<li> MS Office Documents (*.DOC,*.DOT,*.XL?,*.PPT,*.PPS,*.POT,*.OBD,*.WPD,*.SDA,*.FPX,*.MIX)
+<li> OpenOffice.org Documents (*.OD?,*.OT?,*.SX?,*.ST?)
+<li> Linux RPM Files (*.RPM)
+<li> Drive Image Files (*.PQI)
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Важное предупреждение</font></h2>
+
+Полноценная поддержка всех перечисленных типов файлов
+возможна только при установке дополнительных плагинов второго уровня.
+Поддерживаются следующие типы плагинов:
+
+<ul>
+<li> Плагины <a href="http://www.whereisit-soft.com"><b>WhereIsIt</b></a> (*.DLL)
+<li> Плагины <a href="http://www.diskexplorerpro.com"><b>Disk Explorer Pro</b></a> (*.DFP)
+<li> Контентные плагины <a href="http://www.ghisler.com"><b>Total Commander</b></a> (*.WDX)
+</ul>
+
+<p>Ситуация с плагинами <b>WhereIsIt</b>.
+Данные плагины следует скачать с оффициального сайта
+<a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>.
+Однако учтите, что в лицензии на использование следующих плагинов:
+DescPlugin.dll, DescGraphics.dll и CDDAPlugin.dll сказано следующее:
+
+<p><u><b>"Using or distributing these 
+librarires for any purpose other than running them as a part of WhereIsIt 
+is prohibited and in violation of copyright laws"</b></u>.
+
+<p>То есть, использовать эти модули можно только как часть самой программы <b>WhereIsIt</b>.
+<br>Поэтому, для соблюдения авторских прав автора <b>WhereIsIt</b>
+в плагине запрещена загрузка трех вышеуказанных DLL-модулей.
+Естественно, при этом становится невозможной поддержка многих типов файлов,
+реализуемая данными модулями, но таково требование автора <b>WhereIsIt</b>,
+которое я, как автор плагина <b>File Descriptions</b>, вынужден соблюдать.
+
+<p>Ситуация с плагинами <b>Disk Explorer Pro</b> гораздо лучше - автор дал
+разрешение на свободное использование его плагинов, за исключением плагина
+<b>pictview.dfp</b>, использующего коммерческую библиотеку. Поэтому, набор плагинов
+<b>Disk Explorer Pro</b> был включен в данный архив.
+
+<p>Контентные плагины <b>Total Commander</b> распространяются свободно,
+Вы можете найти практически полный набор этих плагинов на сайте
+<a href="http://www.wincmd.ru">http://www.wincmd.ru</a>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Установка</font></h2>
+
+<ol>
+<li> При наличии TC 6.50+ просто откройте архив, и TC сам установит плагин.
+   <br>После появления на экране списка Content-плагинов переместите плагин
+   в списке на самый верх (присвойте ему высокий приоритет).
+
+<p><li> Перейдите в меню <b>Конфигурация -> Настройка -> Наборы колонок</b>;
+   <br>добавьте новый набор, назовите его "Описания" и добавьте в него новую
+   колонку; <br>нажмите "+" и выберите поле из списка FileDesc.
+
+<p><li> Включите настроенный набор колонок:
+   <br><b>Вид -> Пользовательский набор колонок -> Описания</b>.
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Как подключить плагины WhereIsIt</font></h2>
+
+<ol>
+<li> Во-первых, Вы должны самостоятельно скачать эти плагины с оффициальной
+   страницы. Перейдите на <a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a> и скачайте следующие
+   модули:
+<p>
+<ul>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/DescMovies11.zip">Movie Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/MusicModule12.zip">Music Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/RPMPlugin.zip">Linux RPM Description Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/DriveImage.zip">Drive Image Description Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GeosPlugin.zip">GEOS File Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GhostImagePlugin.zip">GHOST Image Description Module</a>
+</ul>
+
+<p><li> Распакуйте архивы с модулями в подпапку <b>Plugins</b> главной папки плагина.
+
+<p><li> Откройте файл <b>FileDesc.ini</b> и убедитесь, что следующие строки в нем не закомментированы:
+  <pre>
+  [Plugins]
+  10=DescMovies.dll
+  11=MusicModule.dll
+  12=RPMPlugIn.dll
+  13=pqidesc.dll
+  14=GeosPlugin.dll
+  15=GhostImagePlugin.dll
+  </pre>
+</ol>
+
+<p> Вот и все - плагины должны подключиться при следующем запуске <b>Total Commander</b>.
+<br>Чтобы настроить эти плагины, используйте прилагаемую программу <b>Config.exe</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Как подключить контентные плагины TC</font></h2>
+
+<ol>
+<li> Скачайте нужные Вам плагины с сайта <a href="http://www.wincmd.ru/directory/content.html">http://www.wincmd.ru</a>
+(раздел "Контентные плагины"). <br>Некоторые из наиболее полезных плагинов:
+
+<p>
+<ul>
+<li> <a href="http://wincmd.ru/plugring/AudioInfo.html">AudioInfo</a> (включен в данный архив)
+<li> <a href="http://wincmd.ru/plugring/wdx_anytag.html">AnyTag</a>
+<li> <a href="http://wincmd.ru/plugring/xPDFSearch.html">xPDFSearch</a>
+<li> <a href="http://wincmd.ru/plugring/wdx_image_info.html">Image Info</a> (включен в данный архив)
+<li> <a href="http://wincmd.ru/plugring/wdx_ImgSize.html">ImgSize</a>
+<li> <a href="http://wincmd.ru/plugring/exif2.html">Exif</a>
+<li> <a href="http://wincmd.ru/plugring/wdx_media.html">Media</a>
+<li> <a href="http://wincmd.ru/plugring/shelldetails.html">ShellDetails</a>
+<li> <a href="http://wincmd.ru/plugring/OOInfo.html">OpenOffice.org Info</a>
+<li> <a href="http://wincmd.ru/plugring/wdx_cdrinfo.html">CDR Info</a>
+<li> <a href="http://wincmd.ru/plugring/CDocProp.html">CDocProp</a>
+<li> <a href="http://users.telenet.be/liontech/">wlxFont</a> (работает также как WDX-плагин)
+</ul>
+
+<p><li> Распакуйте архивы с плагинами в подпапку <b>Plugins</b> главной папки плагина.
+
+<p><li> Откройте файл <b>FileDesc.ini</b> и для каждого плагина добавьте строки:
+  <pre>
+  NN=Path\Plugin.wdx
+  NN_detect=*.EXT1,*.EXT2,*.EXT3
+  NN_format=["Префикс1"Поле1"Суффикс1"] ["Префикс2"Поле2"Суффикс2"]
+  </pre>
+
+Где NN - номер плагина (число от 40 до 100),
+"Path\Plugin.wdx" задает путь до плагина (абсолютный или относительно папки <b>Plugins</b>),
+NN_detect задает список поддерживаемых расширений,
+NN_format задает строку формата. Строка формата содержит список полей плагина
+с опциональным указанием префикса и суффикса, строка префикс+поле+суффикс
+будет показана при непустом значении поля.
+</ol>
+
+<p> Шаг 3 также можно выполнить с помощью программы <b>Config.exe</b>:
+<br>1. Нажмите кнопку <b>Install new</b> и выберите файл плагина,
+<br>2. Выберите новый плагин в списке, нажмите кнопку <b>Configure</b>
+и настройте параметры плагина.
+
+<p> Для проверки правильности подключения плагинов опять же используйте программу <b>Config.exe</b>:
+все подключенные плагины программа показывает в списке и позволяет выполнять
+их настройку.
+
+<p> Для применения новой конфигурации перезапустите <b>Total Commander</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>История изменений</font></h2>
+
+<ul>
+<li> 2.6.2 (16.11.07): 
+  <ul>
+  <li> испанский перевод, обновление Readme.
+  </ul>
+<li> 2.6.1 (16.12.05):
+  <ul>
+  <li> для WDX-плагинов можно определять несколько колонок;
+  <li> в строках формата можно вставлять символы между определениями полей;
+  <li> добавлено описание для URL-файлов;
+  <li> Config.exe: можно менять размер диалога
+  </ul>
+<li> 2.6.0 (09.12.05):
+  <ul>
+  <li> добавлена возможность подключать другие контентные плагины Total Commander
+     (два таких плагина уже включены в архив);
+  <li> Config.exe: добавлена возможность добавлять/удалять плагины
+  </ul>
+<li> 2.5.0 (02.12.05):
+  <ul>
+  <li> добавлена возможность использовать плагины Disk Explorer Pro
+       (их набор включен в архив), из-за чего расширился список поддерживаемых типов файлов;
+  <li> для конфигурирования плагинов добавлена программа Config.exe
+  </ul>
+<li> 2.0.0 (19.11.05): 
+  <ul>
+  <li> внутреннее имя изменено на FileDesc - перенастройте колонки плагина;
+  <li> полный редизайн: теперь плагин использует плагины описаний второго
+  <li> уровня, формат которых совместим с программой WhereIsIt
+  </ul>
+<li> ...
+<li> 1.0.0 (25.10.04): 
+  <ul>
+  <li> первоначальная версия
+  </ul>
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Авторские права</font></h2>
+
+<p>File Descriptions (FileDesc.wdx) &copy; Alexey Torgashin
+<br><a href="http://atorg.net.ru" target=_blank>http://atorg.net.ru</a>
+<br><a href="http://www.wincmd.ru/plugring/FileDiz.html" target=_blank>http://www.wincmd.ru/plugring/FileDiz.html</a>
+
+<p>Total Commander &copy; Christian Ghisler
+<br><a href="http://www.ghisler.com" target=_blank>http://www.ghisler.com</a>
+
+<p>WhereIsIt, DescPlugin.dll, DescGraphics.dll, CDDAPlugin.dll &copy; Robert Galle
+<br><a href="http://www.whereisit-soft.com" target=_blank>http://www.whereisit-soft.com</a>
+
+<p>Disk Explorer Professional, .DFP Filters &copy; Tomas Jelinek
+<br><a href="http://www.diskexplorerpro.com" target=_blank>http://www.diskexplorerpro.com</a>
+
+<p>Image Info (Images.wdx) &copy; WhiteWind
+<br><a href="http://www.wincmd.ru/plugring/wdx_image_info.html" target=_blank>http://www.wincmd.ru/plugring/wdx_image_info.html</a>
+
+</body></html>

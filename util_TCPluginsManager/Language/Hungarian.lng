@@ -1,0 +1,265 @@
+[Language]
+
+Version=2.2.8
+Language=Hungarian (Magyar)
+Author=Bluestar & DirektX
+Email=dev.bluestar[@]hotmail.com; DirektX[@]freemail.hu
+
+[Messages]
+
+0020=tétlen
+0021=betöltve
+0022=fut
+0023=-tiltott-
+0024=-törölt-
+0040=Nézõke
+0041=Tömörítõ
+0042=Fájlrendszer
+0043=Tartalom
+0044="    Összes  "
+0045=QuickSearch
+
+
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Verzió %s %s
+0053=Érvényes "%s" fájlt kell tallóznod!
+0054=
+0055=Nincs telepített beépülõ modul
+0056=A(z) "%s" beépülõ modul jelenleg tiltott, elõbb engedélyezd
+0057=Eltávolítsam a következõt: "%s"?\n(a(z) %s fájl nem kerül törlésre)
+0058=Letiltsam a(z) "%s" beépülõt?
+0059=Telepítsem a(z) "%s" beépülõt?
+0060=Hibás parancssori paraméter került meghatározásra
+0061=
+0062=%d beépülõ(k) uninstallálása?
+0063=A(z) "%s" beépülõ archívum felülírta az alapértelmezett "tcmatch.dll"-t
+0064=A(z) "%s" beépülõ archívum telepítésre került a következõ mapába: "%s"
+0065=A beépülõ archívum nem tartalmaz "pluginst.inf" fájlt
+0066=Nem sikerült uninstallálni a "tcmatch.dll" fájlt a TC könyvtárából
+0067=
+0068=\n\nFIGYELEM: már telepítve van!\nTársítás: %s
+0069=A beépülõ modulnak nincs beállítási lehetõsége
+0070=A beépülõ modulnak nincs .ini fájlja
+0071=Tömörítõ beépülõk:  <default_extension>  pl.: cab\n\nFájlnézõ beépülõ modulok:  <detect_string>  pl.: EXT="DOC" | EXT="RTF"\n\nFájlrendszer beépülõ modulok:  <root_name>  pl.: Hálózat
+0072="Összes beépülõ: %d, ebbõl %d letiltva"
+0073=Beépülõ "%s":\nKivétel a következõ funkcióban: %s!
+0074=Nem található fájl: %s, próbálja meg újratelepíteni az alkalmazást!
+0075=Ezen a néven már van telepített beépülõ az alábbi mappában:\n\n%s\n\nKívánja felülírni?\nVálassza a Nemet az alapértelmezett mappába telepítéshez.
+0076=A(z) "%s" beépülõ sikeresen telepítésre került
+0077=Nem uninstallálható a(z) "%s" beépülõ, mivel nincs telepítve
+0078=A(z) "%s" kiterjesztés már regisztrálva van "%s" számára. Mégis szeretnéd társítani?
+
+;UFormReport
+0080=TC Plugins Manager %s jelentés, létrehozva %s %s.
+0081=TC változat: %s, útvonal: "%s", ini fájl: "%s".
+0082=OS: %s, változat %s.
+0083=Beépülõ alap útvonala: "%s".
+0084=\n\rNézõke beépülõk (WLX):\n\r
+0085=\n\rTömörítõ beépülõk (WCX):\n\r
+0086=\n\rFájl rendszer beépülõk (WFX):\n\r
+0087=\n\rTartalom beépülõk (WDX):\n\r
+0088=
+0089=A jelentés nem menthetõ ide: "%s"
+
+;UFormOptions
+0100=Hozzá szeretnéd adni a TC Plugins Manager gyorsgombjait a Total Commander alapértelmezett eszközsávjához?\n\Megjegyzés: A jelenlegi eszközsáv frissítéséhez újra kell indítanod a Total Commandert.
+
+[Captions]
+
+;UFormMain
+0050=TC Plugins Manager
+0051="TC útvonala:  "
+0052="Verzió:  "
+0053="Állapot:  "
+0054="Beállítások:  "
+0055=Total Commander elérési út
+0056=Total Commander parancsútvonal
+0057=Total Commander ini-fájl útvonal
+0058=Total Commander ini-fájljának kiválasztása
+0059=Total Commander futtatása
+0060=&Futtatás
+0061=Total Commander újraindítása
+0062=Újra&indítás!
+0063=Új beépülõ modul(ok) telepítése
+0064=&Telepítés
+0065=Plugin Manager beállításainak módosítása
+0066=Beállításo&k
+0067=Plugins Manager névjegye
+0068=Név&jegy
+0069=Plugins Manager bezárása
+0070=Be&zárás
+0071=A kijelölt beépülõ modul(ok) tiltása/engedélyezése
+0072=
+0073=A kijelölt beépülõ modul(ok) uninstallálása
+0074=&Uninstallálás
+0075=Beépülõ modul nevének/társításának megváltoztatása
+0076=&Finomhangolás
+0077=Fájl tulajdonságai
+0078=
+0079=
+0080=
+0081=&Beállítás
+0082=A beépülõ modul beállítása (.ini fájl vagy beállító ablak mutatása)
+0083=&Sorrend
+0084=A fájlnézõ beépülõ modulok betöltési sorrendjének megadása
+0085=Ti&ltás
+0086=En&gedélyezés
+0087=Lista frissítése
+0088=Csak az adott típusú beépülõ modulok mutatása
+0089=&Tallózás
+0090=A beépülõ modul mappához tallózás
+0091=Telepítés archívumból...
+0092=
+0093=&Beállítás
+0094=Tömörítõ beépülõ modul paramétereinek beállítása
+0095=Telepítõmappa tartalma...
+0096=Beépülõ modulok telepítése az alábbi mappából:
+0097=
+0098=
+0099=
+0110=Leírás "%s"
+0111=Leírás:
+0112=S&zerkesztés
+0113=A Total Commander ini fájljának szerkesztése
+0114=&Jelentés készítése
+0115=Beépülõ lista mentése fájlba
+0116=Szûrõ
+0117=A(z) %s beépülõk betöltési sorrendje...
+0120=Az &alapértelmezett tcmatch.dll használata
+0121=&Tetszõleges dll fájl használata:
+
+;UFormAbout
+0100=Plugins Manager a Total Commander számára
+0102=Visszajelzés
+0103=
+0104=Weboldal
+0105=OK
+
+
+;UFormAdd
+0150=Beépülõ modul társítás
+0151=Mégsem
+0152=Beépülõ modul:
+0153=Név/társítás megadása:
+
+;UFormOptions
+0200=WCX/WLX/WFX/WDX kiterjesztések társítása
+0201=(lehetõvé teszi a beépülõ modulok telepítését Enter megnyomására)
+0202=Nyelv:
+0203=Lista frissítése minden
+0204=mp-ben
+0205=Fülek mutatása a különbözõ beépülõtípusok számára
+0206=Beépülõ modulok típusának mutatása a listában
+0207=
+0208=Beépülõ modulok telepítésekor:
+0209='%COMMANDER_PATH%' változó használata
+0210=Telepítés után a TC újraindítása
+0211=Tömörítõ beépülõ modulok beállítása
+0212=Alapértelmezett mappák a különbözõ típusok számára
+0213=Tömörítõ beépülõk beállítása telepítés elõtt, ha szükséges
+0214=Gyorsindítók a TC eszközsávon...
+0215=TC újraindítása
+0216=Legutóbbi példány újraindítása
+0217=Összes példány bezárása, majd egy futtatása
+0218=Külsõ újraindító használata:
+0219=Újraindítási idõ (ezredmásodperc):
+0220=Verzió oszlop mutatása
+0221=Leírás oszlop mutatása
+0222=TC elõtérben indítása
+0223=Beépülõk mappája
+0224=TC FTP beállítások:
+0225=WinRAR elérési útvonal:
+0226=A beépülõk sorszámának kijelzése a listában
+0228=Tetszõleges szerkesztõ használata:
+0229=Elérési útvonalak
+
+0240=Általános
+0241=Haladó
+;UFormOrder
+0250=Beépülõ modulok sorrendje
+0251=A(z) %s beépülõk betöltési sorrendjének megváltoztatása
+0252=&Fel
+0253=&Le
+
+;UFormTweak
+0300=Beépülõ modul:
+0301=Kiterjesztés:
+0302=Jelzõk:
+0303=Képes új archívum(ok) létrehozására
+0304=Képes meglévõ archívum(ok) módosítására
+0305=Az archívum több fájlt is tartalmazhat
+0306=Képes fájlok törlésére
+0307=Rendelkezik beállító ablakkal
+0308=Támogatja a memóriában történõ tömörítést
+0309=Megállapítja az archívum típusát a tartalma alapján
+0310=Megengedni a szövegkeresést archívumokban
+0311=Ne Enterrel, hanem Ctrl+PgDn-nal nyissa meg
+0312=Támogatja a titkosítást
+0313=Eltávolítás
+0314=Új hozzáadása
+0315=Alapértelmezett
+0316=Módosítás
+
+;UFormReport
+0350=Jelentés
+0351=A jelenlegi beépülõk listáját szövegfájlba mentheted.
+0352=Fájlnév:
+0353=Oszlopok:
+0354=Beépülõ
+0355=Leírás
+0356=Verzió
+0357=Állapot
+0358=Regisztrálta/társítás
+0359=Fájlnév
+
+;UFormInstallLog
+0400=Beépülõ telepítési napló
+0401=Beépülõ(k) telepítve: %d
+0402=Hiba történt: %d
+0403=Figyelem: Most szükség lesz a Total Commander újraindítására.
+0404=Figyelem: A megerõsítés után a Total Commander újraindításra kerül.
+0405=Nem szükséges újraindítani a Total Commandert.
+0406=Napló másolása vágólapra
+;Log messages
+0420=Nem telepíthetõ a beépülõ
+0421=A beépülõ már telepítve van
+0422=A kicsomagoló elindítása sikertelen
+0423=Az archívum kicsomagolása sikertelen
+0424=Telepítés megszakítva
+0425=Az ideiglenes mappa elkészítése sikertelen
+0426=Nincsenek beépülõk az archívumban
+0427=Nincsenek beépülõk a mappában
+0428=Ismeretlen fájlformátum
+0429=A mappa áthelyezése sikertelen
+0430=A mappa nem található
+0431=A mappa létrehozása sikertelen
+0432=A fájl áthelyezése sikertelen
+0433=A mappa törlése sikertelen
+0434=Telepítés megszakítva
+0435=Beépülõ nem található (több beépülõ ugyananabban az archívumban?)
+0436=Helytelen pluginst.inf paraméter
+;Shortcuts help
+0450=Gyorsbillentyû súgó:
+0451=Beépülõ(k) telepítése
+0452=Beépülõ(k) telepítése archívum(ok)ból
+0453=Beépülõ(k) telepítése mappából
+0454=Beépülõ(k) letiltása/engedélyezése
+0455=Aktív fül módosítása
+0456=Beépülõ mappájának megnyitása TC-ben
+0457=Beépülõ nevének/társításának módosítása
+0458=Beépülõ(k) uninstallálása
+0459=Beépülõ(k) konfigurálása
+0460=Összes beépülõ kiválasztása
+0461=Panel szûrõ beállítása
+0462=Beépülõk sorrendjének megváltoztatása
+0463=Lista frissítése
+0464=Beépülõ leírása a Descript.ion fájlban
+0465=Ez a súgó
+0466=Show plugin file properties
+0467=Nyomj OK-t a konfiguráló eszköz bezárásához
+
+;UFormInstallProgress
+0490=Mûvelet állapota
+0491=Mappa átvizsgálása:
+0492=Beépülõ feldolgozása:

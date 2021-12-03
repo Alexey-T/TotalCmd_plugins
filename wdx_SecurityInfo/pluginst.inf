@@ -1,0 +1,7 @@
+[PluginInstall]
+Description=Security Info content plugin
+DescriptionRus=Плагин "Security Info"
+DescriptionDeu=Content-Plugin "Security Info"
+Type=wdx
+File=SecInfo.wdx
+DefaultDir=SecInfo

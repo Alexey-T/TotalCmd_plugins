@@ -1,0 +1,14 @@
+[Rus]
+Group=Группа
+Owner=Владелец
+Read=Чтение
+Write=Запись
+Deny=Запрет
+
+; Kurt Lettmaier <k.lettmaier@onlinehome.de>
+[Deu]
+Group=Gruppe
+Owner=Besitzer
+Read=Lesen
+Write=Schreiben
+Deny=Verweigern

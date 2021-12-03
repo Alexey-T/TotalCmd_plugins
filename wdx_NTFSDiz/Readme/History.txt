@@ -1,0 +1,8 @@
+1.2.1
+- crap cmt showing: fix
+
+1.2.0
++ x64 ver.
++ Unicode filenames supp.
++ warning about missed ini
+* made by: Alextp (wincmd.ru)

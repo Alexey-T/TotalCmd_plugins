@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<title>TC Plugins Manager: Compilation Readme</title>
+</head>
+<body>
+
+<center>
+<h1>TC Plugins Manager - Compilation Readme</h1><br>
+(15 Apr 2007)
+</center>
+
+<!--------------------------------------------------->
+<h1>1. Notes</h1>
+
+<ol>
+<li>
+The license for TC Plugman and its sources,
+except for 3rd party components,
+is located in <a href="License.html" target="_blank">License.html</a> file.
+
+<p>
+<li>
+3rd party components are required: Menu Related Speed Buttons.
+See "Components\PJButton" folder. Homepage of these components:
+<a href="http://www.delphidabbler.com/components" target="_blank">http://www.delphidabbler.com/components</a>.
+</p>
+
+
+<p>
+<li>
+Compilation was tested in Delphi 5 and 7, was not tested in newer versions. The
+recommended compiler is D7 because D5 doesn't fully
+support XP theming for TGroupBox, TPageControl and TOpenDialog/TSaveDialog.
+Also the FileCtrl.SelectDirectory function has bug in D5.
+</p>
+
+<p>
+<li>
+FS-Plugins Config Tool, to reduce exe size, should be compiled using stripped version of
+System unit for Delphi 5. Now it's 9 Kb. Get this stripped unit here:
+<a href="http://bonanzas.rinet.ru/" target="_blank">http://bonanzas.rinet.ru</a>. TC Plugman
+itself should be compiled using standard System unit, because it needs exceptions
+support.
+</p>
+
+</ol>
+
+
+<!--------------------------------------------------->
+<h1>2. Compilation process</h1>
+
+<ol>
+<p>
+<li>
+Compile and install component: "Components\PJButton\PJMenuSpeedButtons.pas"</p>
+
+<p>
+<li>
+Compile "Plugman\FSConfig\Config.dpr"
+(see Notes section), copy "Plugman\FSConfig\Config.exe" to "Plugman\Config.exe"</p>
+
+<p>
+<li>
+Compile "Plugman\Res\Resources.rc". To do it, run:<br>
+<pre>brc32 -r Resources.rc</pre>
+</p>
+
+<p>
+<li>
+Compile "Plugman\Plugman.dpr". No errors must be during compilation,
+including missed resources. You may need to correct search paths in
+Project options, or in dcc32.cfg, so that units from Proc, PJButton folders will be found.</p>
+
+<p> I recommend to use dcc32.exe: correct search
+paths in dcc32.cfg and run:<br>
+<pre>dcc32.exe -m Plugman.dpr</pre>
+
+</ol>
+
+<!--------------------------------------------------->
+<h1>3. Making distributive</h1>
+
+<ol>
+<p>
+<li>
+Compile all needed files, see section above.
+2 executables must be done: Plugman.exe, Config.exe.</p>
+
+<p>
+<li>
+Install required programs:<br>
+<ul>
+<li> <s> UPX, <a href="http://upx.sourceforge.net/" target="_blank">http://upx.sourceforge.net</a><br>
+copy upx.exe to %PATH%. </s><br>
+Note: UPX is not used in latest TC Plugman packages.
+<li> WinRAR, <a href="http://rarlab.com/" target="_blank">http://rarlab.com</a><br>
+install WinRAR so that "start winrar.exe" command may be run from DOS window.
+</ul>
+
+
+<p>
+<li>
+Check "Plugman\Setup\c_setup.bat"
+that it works correctly. Then run it, it will make "Plugman\Setup\util_TCPlugman.zip".</p>
+
+<p>
+<li>
+Test this archive: unpack it to a temporary folder and run Plugman.exe.
+It must run, autodetect your TC ini paths
+and allow you to change languages through Options dialog.</p>
+
+<p>
+<li>
+Distribution pack must contain files:
+
+<p>
+<ul>
+<li> Plugman.exe - 700+ Kb
+<li> Config.exe - 9 Kb
+<li> <a href="http://www.info-zip.org/UnZip.html" target="_blank">UnZip.exe</a>
+<li> <a href="http://rarlab.com" target="_blank">UnRAR.exe</a>
+<li> Language\*.lng - 20+ files
+<li> Readme\*.txt - 20+ files
+</ul>
+
+<p>
+No *.ini files must be in distribution!
+</p>
+
+</ol>
+
+<!--------------------------------------------------->
+<h1>4. Contacts</h1>
+
+<p>If problems occur, contact the author:</p>
+<p>
+Alexey Torgashin<br>
+<a href="http://atorg.net.ru/" target="_blank">http://atorg.net.ru</a><br>
+<a href="mailto:atorg@yandex.ru">atorg@yandex.ru</a> (please specify "TC Plugins Manager" in subject)
+</p>
+
+<p>If you made some useful changes to these sources, contact the author to include them into
+official TC Plugman distributive.</p>
+
+<p>TC Plugman original homepage:<br>
+<a href="http://totalcmd.net/plugring/tc_plugman.html" target="_blank">http://totalcmd.net/plugring/tc_plugman.html</a>
+</p>
+
+</body>
+</html>

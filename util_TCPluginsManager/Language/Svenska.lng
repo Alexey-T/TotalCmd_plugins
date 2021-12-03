@@ -1,0 +1,190 @@
+[Language]
+Language=Svenska
+Author=Leif Larsson
+Version=1.8.5
+
+[Messages]
+0020=Inaktiv
+0021=Laddad
+0022=Igång
+0023=-inaktiverad-
+0024=-borttagen-
+0025=Omstart krävs
+
+;UFormMain
+0040="Lister:  "
+0041="Packare:  "
+0042="FS:  "
+0043="Innehåll:  "
+0050=TC Plugins Manager %s
+0051=TC PlugMan
+0052=V%s %s
+0053=Bläddra till giltig %s!
+0054= 
+0055=Inga moduler installerade
+0056=Modulen är för tillfället inaktiverad. Aktivera den först
+0057=Avinstallera "%s"?\n(Filen %s kommer inte att tas bort)
+0058=Inaktivera "%s"?
+0059=Installera "%s"?
+0060=Kan inte installera: %s
+0061=Redan installerad: %s
+0062=Avinstallera %d modul?
+0063=Installerad: "%s"\n\nNu måste du starta om TC
+0064=Kan inte packa upp arkivet: %s\n\nEller - inga insticksmoduler i arkivet.
+0065=
+0066=
+0067=
+0068=\n\nVARNING: den är redan installerad!\nRegistrerad till: %s
+0069=Modulen understöder inte konfigurering
+0070=Modulen har ingen .ini-fil
+0071=Packarmodul:  standardfiltyp t.ex.: cab\n\nLS-plugin:  detektera_sträng  t.ex.: EXT="DOC" | EXT="RTF"\n\nFS-plugin:  root_name  t.ex.: Network Browser
+0072=Moduler totalt: %d, inaktiverade: %d
+0073=%s:\nUndantag i %s!
+0074=Hittade inte %s. Installera om TC Plugman!
+0075=En plugin med samma namn finns redan installerad i mappen:\n\%s\n\nVill du skriva över den?\nVälj Nej om du vill installera i standardmappen.
+
+;UFormReport
+0080=TC Plugman %s rapport, skapad %s %s
+0081=TC version: %s, sökväg: "%s", ini-fil: "%s"
+0082=OS: %s, version %s                  
+0083=Bassökväg för moduler: "%s"             
+0084=\n\rLister-moduler (WLX):\n\r       
+0085=\n\rPacker-moduler (WCX):\n\r       
+0086=\n\rFilsystemsmoduler (WFX):\n\r  
+0087=\n\rInnehållsmoduler (WDX):\n\r      
+0088=
+0089=Kan inte spara rapporten till "%s"
+
+[Captions]
+;UFormMain
+0050=TC Plugins manager
+0051=Sökväg till TC:
+0052=Version:
+0053=Status:
+0054=Ini-fil:
+0055=Bläddra till Total Commander
+0056=TC kommandorad
+0057=Sökväg till TC:s ini-fil
+0058=Bläddra till wincmd.ini
+0059=Kör TC
+0060=Kör
+0061=Starta om TC!
+0062=Starta om!
+0063=Installera ny modul
+0064=Installera &ny
+0065=Välj alternativ för Plugins Manager
+0066=A&lternativ
+0067=Visa Om
+0068=&Om
+0069=Stäng Plugins Manager
+0070=&Stäng
+0071=Inaktivera/Aktivera markerad modul tillfälligt
+0072=
+0073=Avinstallera markerad modul
+0074=&Avinstallera
+0075=Döp om FS-modul
+0076=&Döp om
+0077=Insticksmodul
+0078=Version
+0079=Status
+0080=Registrerad för:
+0081=&Konfigurera
+0082=Konfigurera insticksmodul (visa .ini-fil eller konfig.dialog)
+0083=O&rdning
+0084=Ändra laddningsordning för Lister-moduler
+0085=&Inaktivera
+0086=&Aktivera
+0087=Läs om listan
+0088=Visa bara moduler av denna typ
+0089=&Bläddra 
+0090=Bläddra till modulmapp
+0091=Installera från &arkiv
+0092=Filnamn
+0093=&Justera
+0094=Justera parametrar för Packar-moduler
+0095=Installera mappinnehållet...
+0096=Installera moduler från mappen:
+0097=
+0098=
+0099=
+0110=Beskriv %s
+0111=Beskrivning:
+0112=&Redigera
+0113=Redigera TC:s ini-fil
+0114=Rappor&t
+0115=Skapa rapportfil för modulen
+
+;UFormAbout
+0100=Plugins Manager for TotalCmd 5.5+
+0101=© 2004 Atl-Soft
+0102=E-post:
+0103=Dina kommentarer:
+0104=Webbplats:
+0105=OK
+
+;UFormAdd
+0150=Association för modul
+0151=Avbryt
+0152=Modul:
+0153=Ange namn/associering:
+
+;UFormOptions
+0200=Registrera filtyperna .wcx/.wlx/.wfx
+0201=(tillåter installation vid tryck på Enter)
+0202=Språk:
+0203=Läs om listan var:
+0204=sekund
+0205=Visa flikar: */Lister/Packare/...
+0206=Visa modultyper
+0207=Visa statusfält
+0208=Vid installering av insticksmoduler:
+0209=Använd '%COMMANDER_PATH%' i sökvägarna
+0210=Starta om TC efter installeringen
+0211=Justera Packar-moduler
+0212=Modulmappar:
+0214=Knappar på %s
+0215=Omstart av TC
+0216=Starta om senaste instansen
+0217=Stäng alla instanser och kör en
+0218=Använd extern omstartare:
+0219=Omstartstid (i msek):
+0220=Visa versioner
+0221=Visa beskrivningar
+
+;UFormOrder
+0250=Modulordning
+0251=Här kan du ändra ordningen som modulerna laddas i (0 laddas först):
+0252=Upp
+0253=Ner
+
+;UFormTweak
+;Finally! Internal TweakWCX utility! :-)
+0300=Modul:
+0301=Filtyp:
+0302=Flaggor:
+0303=Kan skapa nya arkiv
+0304=Kan ändra befintliga arkiv
+0305=Arkiv kan innehålla flera filer
+0306=Kan ta bort filer
+0307=Har dialog för alternativ
+0308=Understödjer packning i minnet
+0309=Känner igen arkivtyp efter innehållet
+0310=Tillåter textsökning i arkiv
+0311=Öppna inte med Enter utan med Ctrl+PgDn
+0312=
+0313=Ta bort
+0314=Lägg till ny
+0315=Standard
+0316=Döp
+
+;UFormReport
+0350=Rapport
+0351=Du kan spara en lista över aktuella moduler i en textfil.
+0352=Filnamn:
+0353=Kolumner:
+0354=Namn
+0355=Beskrivning
+0356=Version
+0357=Status
+0358=Registrerad till
+0359=Filnamn

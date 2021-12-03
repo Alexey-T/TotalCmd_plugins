@@ -1,0 +1,262 @@
+
+[Language]
+
+Version=2.1.0
+Author=J. Kramer
+Homepage=www.despoorkraam.nl
+Email=jkramer@despoorkraam.nl
+
+[Messages]
+0020=niet actief
+0021=geladen
+0022=actief
+0023=uitgeschakeld
+0024=verwijderd
+
+;UFormMain
+0040="Lister:  "
+0041="Packer:  "
+0042="FS:  "
+0043="Content:  " 
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Versie %s %s
+0053=U moet bladeren voor een geldig bestand %s!
+0054=
+0055=Geen plugins geïnstalleerd
+0056=Plugin "%s" is op dit moment uitgeschakeld, activeer deze eerst
+0057=Deinstalleer plugin "%s"?\n\nOpm: Bestand "%s" wordt niet verwijderd.
+0058=Plugin "%s" uitschakelen?
+0059=Plugin "%s" installeren?
+0060=Ongeldige opdrachtregel parameter opgegeven
+0061=
+0062=Deinstalleren %d plugins?
+0063=
+0064=
+0065=
+0066=
+0067=
+0068=\n\nWaarschuwing: is reeds geïnstalleerd!\nGeregistreerd door: %s
+0069=Plugin "%s" heeft geen configuratie dialoog
+0070=Plugin "%s" heeft geen .ini bestand
+0071=Packer plugins:  <standaard extensie> bijv.: cab\n\nLister/Content plugins:  <detect string>  bijv.: EXT="DOC" | EXT="RTF"\n\nFS plugins:  <root_naam>  bijv.: Netwerk Browser
+0072="Alle plugins: %d, uitgeschakeld: %d"
+0073=Plugin "%s":\nUitzondering in functie %s!
+0074=Bestand "%s" niet gevonden, probeer de toepassing te herinstalleren!
+0075=Een plugin met dezelfde naam is al geïnstalleerd in de volgende map:\n\n%s\n\nWilt U deze overschrijven?\nKies nee om te installeren in de standaard locatie.
+0076=Plugin "%s" succesvol gedeinstalleerd
+0077=Kan plugin "%s" niet deïnstalleren, omdat deze niet is geïnstalleerd
+0078=De extensie "%s" is al geregistreerd voor: "%s". Wilt u het toch toewijzen?
+
+;UFormrapport
+0080=TC Plugins Mananager %s rapport, aangemaakt %s %s
+0081=Total Commander: %s. Pad: "%s". .ini bestand: "%s".
+0082=OS: %s, versie %s                  
+0083=Basis plugins path: "%s"             
+0084=\n\rLister plugins (WLX):\n\r       
+0085=\n\rPacker plugins (WCX):\n\r       
+0086=\n\rFile-system plugins (WFX):\n\r  
+0087=\n\rContent plugins (WDX):\n\r      
+0088=
+0089=Kan rapport niet bewaren in  "%s"
+
+;UFormOptions
+0100=Wilt u de  TC Plugins Manager snelkoppelingen toevoegen aan de Total Commander standaard knoppenbalk\n\nOpm: Om de actuele knoppenbalk te verversen, moet u Total Commander opnieuw starten.
+
+[Captions]
+;UFormMain
+0050=TC Plugins Manager
+0051="TC pad:  "
+0052="Versie:  "
+0053="Status:  "
+0054="Instellingen:  "
+0055=Blader naar de Total Commander executable
+0056=Total Commander executable pad
+0057=Total Commander .ini bestand pad
+0058=Blader naar het Total Commander .ini bestand
+0059=Start Total Commander
+0060=&Start
+0061=Herstart Total Commander
+0062=Her&start!
+0063=Installeer plugin(s)
+0064=&Installeer
+0065=Wijzig Plugin Manager opties
+0066=O&pties
+0067=Toon informatie over Plugin Manager
+0068=Over
+0069=Afsluiten Plugin Manager
+0070=Afsluiten
+0071=Activeer/deactiveer geselecteerde plugin(s)
+0072=
+0073=Deinstalleer geselecteerde plugin(s)
+0074=&Deïnstalleer
+0075=Wijzig plugin naam/associatie
+0076=T&weak
+0077=Bestands eigenschappen
+0078=Maak plugins &archief
+0079=
+0080=
+0081=&Configureer
+0082=Configureer plugin (gebruik .ini bestand  of configuratie dialoog)
+0083=&Volgorde
+0084=Wijzig de laad volgorde van de plugins
+0085=&Deactiveer
+0086=&Activeer
+0087=Ververs lijst
+0088=Toon alleen de plugins van het geselecteerde type
+0089=&Blader door map
+0090=Blader door de plugin map
+0091=Installeer uit &archief
+0092=
+0093=&Tweak
+0094=Tweak parameters van paccker plugin
+0095=Installeer uit de map...
+0096=Installeer alle plugins uit de geselecteerde map en diens submappen:
+0097=
+0098=
+0099=
+0110=Beschrijf %s
+0111=Beschrijving:
+0112=&Bewerk
+0113=Bewerk nu het Total Commander .ini bestand
+0114=Maak &rapport
+0115=Sla de plugins lijst op in een bestand
+0116=Filter
+0117=Laad volgorde van %s plugins...
+
+;UFormAbout
+0100=Plugins Manager voor Total Commander
+0102=Feedback:
+0103=
+0104=Homepage:
+0105=OK
+
+;UFormAdd
+0150=Plugin associatie
+0151=Annuleer
+0152=Plugin:
+0153=Stel naam/associatie in:
+
+;UFormOptions
+0200=Registreer WCX/WLX/WFX/WDX extensies
+0201=(geef toestemming om plugins te installeren door op Enter te drukken)
+0202=Taal:
+0203=Ververs lijst elke
+0204=sec.
+0205=Toon tabs voor verschillende plugin types
+0206=Toon plugin types in een lijst
+0207=
+0208=Na het installeren van plugins:
+0209=Gebruik '%COMMANDER_PATH%' in paden
+0210=Herstart TC na installatie
+0211=Tweak packer plugins na installatie
+0212=Standaard mappen voor plugins van andere types:
+0213=Tweak packer plugins voor installatie, indien nodig
+0214=Snelkoppelingen op de TC knoppenbalk...
+0215=TC herstart
+0216=Herstart  de laatste 
+0217=Sluit alle instanties en start een nieuwe
+0218=Gebruik externe herstarter:
+0219=Herstart tijd (msec):
+0220=Toon versie kolom
+0221=Toon beschrijvingen kolom
+0222=Start TC op de voorgrond
+0223=Plugins map
+0224=TC FTP instellingen:
+0225=WinRar executable:
+0226=Toon plugin volgorde nummers in een lijst
+0228=Gebruik specifieke editor:
+0229=Paden
+
+0240=Algemeen
+0241=Geavanceerd
+
+;UFormorder
+0250=Plugins volgorde
+0251=Wijzig de laadvolgorde voor %s plugins
+0252=&Op
+0253=&Neer
+
+;UFormTweak
+0300=Plugin:
+0301=Extensie:
+0302=Flags:
+0303=Kan nieuwe archieven maken
+0304=Kan bestaande archieven bewerken
+0305=Archief kan meerdere bestanden bevatten
+0306=Kan bestanden verwijderen
+0307=Heeft opties venster
+0308=Ondersteunt comprimeren in het geheugen
+0309=Detecteer archief type via inhoud
+0310=Kan tekst zoeken in archieven
+0311=Open niet met Enter maar met Ctrl+PageDown
+0312=Ondersteunt versleuteling
+0313=Verwijder
+0314=Voeg nieuwe toe
+0315=Standaard
+0316=Wijzig
+
+;UVormrapport
+0350=Rapport
+0351=U kunt de huidige plugins lijst bewaren als tekst bestand.
+0352=Bestandsnaam:
+0353=Kolommen:
+0354=Plugin
+0355=Beschrijving
+0356=Versie
+0357=Status
+0358=Geregistreerd door
+0359=Bestandsnaam
+
+;UFormInstallLog
+0400=Plugins installatie log
+0401=Plugin(s) geïnstalleerd: %d
+0402=Fout(en) ontdekt: %d
+0403=Attentie: U moet Total Commander nu herstarten
+0404=Attentie: Na bevestiging wordt Total Commander herstart.
+0405=Herstart van Total Commander niet nodig.
+0406=Kopieër log naar klembord
+
+;Log messages
+0420=Kan plugin niet installeren
+0421=Plugin reeds geïnstalleerd
+0422=Kan uitpak programma niet uitvoeren
+0423=Kan archief niet uitpakken
+0424=Installatie geannuleerd
+0425=Kan geen tijdelijke folder maken
+0426=Geen plugins in archief
+0427=Geen plugins in map
+0428=Onbekend plugin formaat
+0429=Kan de map niet verplaatsen
+0430=Kan de map niet vinden
+0431=Kan de map niet maken
+0432=Kan het bestand niet verplaatsen
+0433=Kan de map niet verwijderen
+0434=Installatie afgebroken
+0435=Plugin niet gevonden (verschillende plugins in dezelfde archief map!)
+0436=Invalid pluginst.inf parameter
+
+;Shortcuts help
+0450=Snelkoppelingen help:
+0451=Installeer plugin(s)
+0452=Installeer plugin(s) uit archie(f)-ven
+0453=Installeer plugin(s) uit map
+0454=Activeer/deactiveer plugin(s)
+0455=Wijzig actieve tab
+0456=Open plugin map in TC
+0457=Wijzig plugin naam/associatie
+0458=Deïnstalleer plugin(s)
+0459=Configureer plugin
+0460=Selecteer alle plugins
+0461=Stel paneel filter in
+0462=Wijzig plugins volgorde
+0463=Ververs lijst
+0464=Beschrijf de plugin in het bestand 'Descript.ion'
+0465=Deze help
+0466=Toon plugin bestands eigenschappen
+
+;UFormInstallProgress
+0490=Operatie voortgang
+0491=Scant map:
+0492=Uitvoerings plugin:
+

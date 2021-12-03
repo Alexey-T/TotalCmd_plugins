@@ -1,0 +1,277 @@
+; Version history:
+; 2.0.0: Cap 0077-0078,0114,0466
+; 2.0.1: Msg 0078
+; 2.1.0: Msg 0228-229
+; 2.2.0 Msg 0063-66, 0040-45 Cap -0078 0120-0121
+;
+; Note for translators: [Language] section should contain info about you,
+; your homepage URL and email (masked).
+
+[Language]
+
+Version=2.2.2
+Author=deus-ex && TychoBarfy
+Homepage=http://www.famlehm.de/deleteme/tychobarfy/
+Email=
+
+[Messages]
+
+0020=Leerlauf
+0021=geladen
+0022=läuft
+0023=deaktiviert
+0024=gelöscht
+0040=Lister
+0041=Packer
+0042=Dateisystem
+0043=Inhalt
+0044="    Alle  "
+0045=Schnellsuche
+
+
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Version %s %s
+0053=Du musst nach gültiger Datei "%s" suchen!
+0054=
+0055=Keine Plugins installiert
+0056=Plugin "%s" ist gegenwärtig deaktiviert, aktiviere es zunächst
+0057="%s" deinstallieren?\n\nHinweis: Datei "%s" wird nicht gelöscht.
+0058=Plugin "%s" deaktivieren?
+0059=Plugin "%s" installieren?
+0060=Ungültiger Kommandozeilenparameter spezifiziert
+0061=
+0062=%d Plugins deinstallieren?
+0063=Plugin-Archiv "%s" installiert über Yorgabe "tcmatch.dll"
+0064=Plugin-Archiv "%s" installiert in den Ordner "%s"
+0065=Plugin-Archiv enthält nicht die Datei "pluginst.inf"
+0066=Kann "tcmatch.dll" nicht aus dem TC-Ordber deinstallieren
+0067=
+0068=\n\nWARNUNG: Bereits installiert!\nRegistriert für: "%s"
+0069=Plugin "%s" unterstützt den Konfigurationsdialog nicht
+0070=Plugin "%s" hat keine INI-Datei
+0071=Packer-Plugins:  <Standard-Erweiterung>  z.B. cab\n\nLister/Inhalts-Plugins:  <Erkennungsfilter>  z.B. EXT="DOC" | EXT="RTF"\n\nDateisystem-Plugins:  <Root-Name>  z.B. Network Browser
+0072="Plugins gesamt: %d, deaktiviert: %d"
+0073=Plugin "%s":\nAusnahmefehler in Funktion %s!
+0074=Datei "%s" nicht gefunden. Versuche die Anwendung zu reinstallieren!
+0075=Ein gleichnamiges Plugin ist bereits in diesem Verzeichnis installiert:\n\n%s\n\nÜberschreiben?\n"Nein" wählen, um es im Standard-Verzeichnis zu installieren.
+0076=Plugin "%s" erfolgreich deinstalliert
+0077=Plugin "%s" kann nicht deinstalliert werden, da es nicht installiert ist.
+0078=Erweiterung "%s" bereits registriert für: "%s". Erweiterung dennoch zuweisen?
+
+;UFormReport
+0080=TC Plugins Manager %s Report, erzeugt %s %s.
+0081=Total Commander: %s. Pfad: "%s". INI-Datei: "%s".
+0082=OS: %s, Version %s
+0083=Plugin-Ordner: "%s"
+0084=\n\rLister-Plugins (WLX):\n\r
+0085=\n\rPacker-Plugins (WCX):\n\r
+0086=\n\rDateisystem-Plugins (WFX):\n\r
+0087=\n\rInhalts-Plugins (WDX):\n\r
+0088=
+0089=Kann Report-Datei nicht nach "%s" speichern
+
+;UFormOptions
+0100=Möchtest Du die Verknüpfungen zu TC Plugins Manager der Standardwerkzeugleiste von Total Commander hinzufügen?\n\nHinweis: Um die Werkzeugleiste zu aktualisieren, muss Total Commander neugestartet werden.
+
+
+[Captions]
+
+;UFormMain
+0050=TC Plugins Manager
+0051=TC-Pfad:
+0052=Version:
+0053=Status:
+0054=Einstellungen:
+0055=Nach Total Commander EXE-Datei suchen
+0056=Total Commander EXE-Datei Pfad
+0057=Total Commander INI-Datei Pfad
+0058=Nach Total Commander INI-Datei suchen
+0059=Total Commander starten
+0060=&Starten
+0061=Total Commander neu starten
+0062=&Neustart
+0063=Plugin(s) installieren
+0064=&Installieren
+0065=Optionen von Plugins Manager ändern
+0066=O&ptionen
+0067=Info über Plugins Manager anzeigen
+0068=Über
+0069=Plugins Manager beenden
+0070=Beenden
+0071=Ausgewählte Plugins deaktivieren/aktivieren
+0072=
+0073=Ausgewählte Plugins deinstallieren
+0074=&Deinstallieren
+0075=Plugin-Name/Verknüpfung ändern
+0076=&Anpassen
+0077=Dateieigenschaften...
+0078=Plugin-&Archiv erstellen
+0079=
+0080=
+0081=&Konfigurieren
+0082=Plugin konfigurieren (per INI-Datei oder Konfigurationsdialog)
+0083=&Reihenfolge
+0084=Plugin-Ladereihenfolge ändern
+0085=&Deaktivieren
+0086=&Aktivieren
+0087=Liste aktualisieren
+0088=Alle Plugins anzeigen oder nur Plugins des gewählten Typs
+0089=&Ordner durchsuchen
+0090=Plugin-Ordner durchsuchen
+0091=Aus Archiv installieren ...
+0092=
+0093=&Anpassen
+0094=Parameter des Packer-Plugins anpassen
+0095=Aus Ordner installieren ...
+0096=Alle Plugins aus gewähltem Ordner und seinen Unterordnern installieren:
+0097=
+0098=
+0099=
+0110=Beschreibe "%s"
+0111=Beschreibung:
+0112=&Bearbeiten
+0113=Total Commander INI-Datei direkt bearbeiten
+0114=&Report erstellen
+0115=Plugin-Liste in eine Datei speichern
+0116=Filter
+0117=Ladereihenfolge der %s-Plugins...
+0120=&Vorgegebene tcmatch.dll verwenden
+0121=&Eigene dll verwenden:
+
+;UFormAbout
+0100=Plugins Manager für Total Commander
+0102=Rückmeldungen
+0103=
+0104=Homepage
+0105=OK
+
+;UFormAdd
+0150=Plugin-Verknüpfung
+0151=Abbrechen
+0152=Plugin:
+0153=Name/Verknüpfung setzen:
+
+;UFormOptions
+0200=WCX/WLX/WFX/WDX-Erweiterungen registrieren
+0201=(erlaubt Plugin-Installation per Eingabetaste)
+0202=Sprache:
+0203=Liste aktualisieren alle
+0204=Sek.
+0205=Tabs für verschiedene Plugin-Typen anzeigen
+0206=Plugin-Typen in Liste anzeigen
+0207=
+0208=Bei Installation von Plugins:
+0209=Variable '%COMMANDER_PATH%' im Pfad verwenden
+0210=Total Commander nach Installation neu starten
+0211=Packer-Plugins nach Installation anpassen
+0212=Standard-Verzeichnisse für Plugin-Typen:
+0213=Packer-Plugins vor Installation anpassen, falls nötig
+0214=Schaltflächen auf TC-Werkzeugleiste...
+0215=TC Neustart
+0216=Letzte Instanz neu starten
+0217=Alle Instanzen schließen und eine starten
+0218=Externen Neustarter verwenden:
+0219=Neustartzeit (msek):
+0220=Versionsspalte anzeigen
+0221=Beschreibungsspalte anzeigen
+0222=TC im Vordergrund starten
+0223=Plugin-Verzeichnisse
+0224=TC FTP-Einstellungen:
+0225=WinRAR EXE-Datei:
+0226=Plugin-Reihenfolge in Liste anzeigen
+0228=Bestimmten Editor verwenden:
+0229=Pfade
+
+0240=Allgemein
+0241=Erweitert
+
+;UFormOrder
+0250=Plugin-Ladereihenfolge
+0251=Ladereihenfolge der %s-Plugins ändern:
+0252=R&auf
+0253=R&unter
+
+;UFormTweak
+0300=Plugin:
+0301=Erweiterung:
+0302=Eigenschaften:
+0303=Kann neue Archive erstellen
+0304=Kann existierende Archive modifizieren
+0305=Archiv kann mehrere Dateien enthalten
+0306=Kann Dateien löschen
+0307=Besitzt Optionsdialog
+0308=Unterstützt Packen im Arbeitsspeicher
+0309=Erkenne Archivtyp anhand des Inhalts
+0310=Erlaubt Textsuche in Archiven
+0311=Nicht mit Eingabe sondern mit Strg+BildAb öffnen
+0312=Unterstützt Verschlüsselung
+0313=Entfernen
+0314=Neu hinzufügen
+0315=Standard-Einstellung
+0316=Ändern
+
+;UFormReport
+0350=Report
+0351=Du kannst aktuelle Plugin-Liste in eine Textdatei speichern.
+0352=Dateiname:
+0353=Spalten:
+0354=Plugin
+0355=Beschreibung
+0356=Version
+0357=Status
+0358=Registriert für
+0359=Dateiname
+
+;UFormInstallLog
+0400=Logging bei Plugin-Installation
+0401=Installierte Plugins: %d
+0402=Aufgetretene Fehler: %d
+0403=Achtung: Du musst Total Commander neu starten.
+0404=Achtung: Nach Bestätigung wird Total Commander neu gestartet.
+0405=Kein Neustart von Total Commander erforderlich.
+0406=Protokoll in Zwischenablage kopieren
+
+;Log messages
+0420=Kann Plugin nicht installieren
+0421=Plugin ist bereits installiert
+0422=Kann Entpacker nicht ausführen
+0423=Kann Archiv nicht entpacken
+0424=Installation abgebrochen
+0425=Kann temporären Ordner nicht erstellen
+0426=Keine Plugins im Archiv
+0427=Keine Plugins im Ordner
+0428=Unbekanntes Plugin-Format
+0429=Kann Ordner nicht verschieben
+0430=Kann Ordner nicht finden
+0431=Kann Ordner nicht erstellen
+0432=Kann Datei nicht verschieben
+0433=Kann Ordner nicht löschen
+0434=Installation abgebrochen
+0435=Plugin nicht gefunden (mehrere Plugins im selben Archivordner?)
+0436=Ungültiger Parameter in <pluginst.inf>
+
+;Shortcuts help
+0450=Hilfe zu Tastaturkürzeln:
+0451=Plugin(s) installieren
+0452=Plugin(s) aus Archiv(en) installieren
+0453=Plugin(s) aus Ordner installieren
+0454=Plugins deaktivieren/aktivieren
+0455=Aktiven Tab ändern
+0456=Plugin-Ordner im TC öffnen
+0457=Plugin-Namen/Verknüpfung ändern
+0458=Plugin(s) deinstallieren
+0459=Plugin konfigurieren
+0460=Alle Plugins auswählen
+0461=Panel-Filter setzen
+0462=Plugin-Reihenfolge ändern
+0463=Liste aktualisieren
+0464=Plugin in Datei <descript.ion> beschreiben
+0465=Diese Hilfe
+0466=Plugin-Dateieigenschaften anzeigen
+0467=OK drücken, um die Konfiguration zu schließen!
+
+;UFormInstallProgress
+0490=Prozessfortschritt
+0491=Durchsuche Ordner:
+0492=Verarbeite Plugin:

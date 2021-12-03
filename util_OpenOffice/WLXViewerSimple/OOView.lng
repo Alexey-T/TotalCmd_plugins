@@ -1,0 +1,12 @@
+; Send new translation to: atorg@yandex.ru
+; Don't forget "Description" line in pluginst.inf.
+
+[Eng]
+1=Title: %s
+2=Subject: %s
+3=Description: %s
+
+[Rus]
+1=Заголовок: %s
+2=Тема: %s
+3=Описание: %s

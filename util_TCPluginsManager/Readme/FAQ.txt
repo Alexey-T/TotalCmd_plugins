@@ -1,0 +1,67 @@
+Hints and FAQ
+-------------
+
+Q1: Why is the program so slow? I have to wait 2 sec on every list refresh!
+
+A:  A possible slowdown might be an AntiVirus scanner monitoring the TC ini file.
+    Try to exclude WINCMD.INI from virus checking.
+    Also try to reset the following options to their default values in the
+    Plugman Options dialog:
+    - "General / Show versions column" = Off
+    - "General / Show descriptions column" = Off
+    - "Advanced / Refresh list every N sec." = Off
+
+----------------------------------------------------------------------------
+
+Q2: "Install from archive" feature doesn't work! I get the error message
+    "Cannot unpack archive".
+
+A:  This feature requires an external unpacker - see Notes in Readme.txt.
+
+----------------------------------------------------------------------------
+
+Q3: What keyboard shortcuts are supported?
+
+A:  Press F1 in Plugman main dialog to see them all.
+
+----------------------------------------------------------------------------
+
+Q4: I always want to see "Deleted" files status, even for disabled plugins.
+
+A:  Set the hidden option in Plugman.ini:
+    [Options]
+    ShowDeletedAlways=1
+
+----------------------------------------------------------------------------
+
+Q5: 1. I have deleted a plugin in TC Plugman, and now I'm trying to delete
+       the plugin from disk. But Windows says the file is locked. What to do?
+    2. I'm often changing plugin settings (detect-strings/FS-plugins names/
+       ini-files settings), so I'm tired to restart TC. Can the changes be
+       applied instantly?
+
+A:  Try this hidden option in Plugman.ini:
+    [Options]
+    UnloadPlugins=1
+
+----------------------------------------------------------------------------
+
+Q6: Can I prevent the external unpacker from running minimized?
+
+A:  Set the hidden option in Plugman.ini:
+    [Options]
+    RunUnpackMinimized=0
+
+----------------------------------------------------------------------------
+
+Q7: Can I create a log file?
+
+A:  Try this hidden option in Plugman.ini:
+    [Options]
+    Log=1
+
+----------------------------------------------------------------------------
+
+
+If you still have questions, please visit the English support forum:
+http://www.ghisler.ch/board/viewtopic.php?t=4798

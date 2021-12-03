@@ -1,0 +1,67 @@
+; Send new or updated translation to: atorg@yandex.ru
+; Don't forget "Description" line in pluginst.inf
+
+[Rus]
+Long description=Длинное описание
+Version info=Версия
+Company name=Компания
+File description=Описание файла
+File version=Версия файла
+Internal name=Внутреннее имя
+Original filename=Оригинальное имя
+Product name=Название продукта
+Product version=Версия продукта
+Legal copyright=Авторское право
+Legal trademarks=Торговые марки
+Comments=Комментарий
+Private build=Внутренний build
+Special build=Специальный build
+
+[Fra] 
+Long description=Longue Description 
+Version info=Info Version 
+Company name=Nom Societe 
+File description=Description du Fichier 
+File version=Version du Fichier 
+Internal name=Nom Interne 
+Original filename=Nom d'Origine 
+Product name=Nom du Produit 
+Product version=Version du Produit 
+Legal copyright=Copyright Legal 
+Legal trademarks=Marque Deposee 
+Comments=Commentaires 
+Private build=Private build
+Special build=Special build
+
+; Kurt <k.lettmaier@onlinehome.de>
+[DEU]
+Long description=Besondere Beschreibung
+Version info=Versionsinfo
+Company name=Firmenname
+File description=Beschreibung
+File version=Version
+Internal name=Interner Name
+Original filename=Originaldateiname
+Product name=Produktname
+Product version=Produktversion
+Legal copyright=Copyright
+Legal trademarks=Marken
+Comments=Kommentare
+Private build=Privatausgabe
+Special build=Sonderausgabe
+
+;[Language]
+;Long description=
+;Version info=
+;Company name=
+;File description=
+;File version=
+;Internal name=
+;Original filename=
+;Product name=
+;Product version=
+;Legal copyright=
+;Legal trademarks=
+;Comments=
+;Private build=
+;Special build=

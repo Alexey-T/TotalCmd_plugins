@@ -1,0 +1,161 @@
+[Language]
+Language=Èesky (Czech)
+Author=KuBA ententyk@centrum.cz
+Version=1.7.8
+
+[Messages]
+0020=neèinný
+0021=zaveden
+0022=èinný
+0023=deaktivován
+0024=odstranìn
+0025=vyžaduje restart
+
+;UFormMain
+0040="Lister-wlx:  "
+0041="Packer-wcx:  "
+0042="FS-wfx:  "
+0043="Content-wdx:  "
+0050=TC Plugins Manager %s
+0051=TC Plugman
+0052=V%s %s
+0053=Soubor %s je tøeba najít ruènì!
+0054=
+0055=Nejsou nainstalovány žádné pluginy.
+0056=Plugin je momentálnì deaktivován, nejprve je tøeba jej aktivovat.
+0057=Odinstalovat "%s"?\n(soubor %s nelze odstranit)
+0058=Deaktivovat "%s"?
+0059=Nainstalovat "%s"?
+0060=Nelze nainstalovat: %s
+0061=Již nainstalován: %s
+0062=Odinstalovat %d plugin(y)?
+0063=Úspìšnì nainstalováno: "%s"\n\nNyní je tøeba restartovat TC.
+0064=Archiv nelze rozbalit: %s\n\nNebo neobsahuje žádné pluginy.
+0065=
+0066=
+0067=
+0068=\n\nPOZOR: Již nainstalováno!\nPøidružen pro: %s
+0069=Plugin není možno konfigurovat.
+0070=Plugin není možno konfigurovat.
+0071=Packer-wcx pluginy:  default_extension  e.g.: cab\n\nLS/Content-wdx pluginy:  detect_string e.g.: EXT="DOC" | EXT="RTF"\n\nFS plugins:  root_name  e.g.: Network Browser
+0072=" Celkem pluginù: %d, deaktivováno: %d"
+0073=%s:\nException in %s!
+0074=Soubor %s nenalezen, TC Plugman je tøeba pøeinstalovat!
+
+[Captions]
+;UFormMain
+0050=TC Plugins Manager
+0051="Cesta k TC:  "
+0052="Verze:  "
+0053="Stav:  "
+0054="Cesta k ini:  "
+0055=Projít cestu k souboru totalcmd.exe
+0056=Cesta k souboru totalcmd.exe
+0057=Cesta k souboru wincmd.ini
+0058=Projít cestu k souboru wincmd.ini
+0059=Spustit TC
+0060=&Spustit
+0061=Restartovat TC
+0062=&Restart
+0063=Instalovat nový plugin
+0064=&Instalovat
+0065=Možnosti nastavení TC Plugman
+0066=&Možnosti
+0067=O programu...
+0068=In&fo...
+0069=Ukonèit program
+0070=Ukonèit
+0071=De/aktivovat vybrané pluginy
+0072=
+0073=Odinstalovat vybrané pluginy
+0074=&Odinstalovat
+0075=Zmìnit název/pøidružení pluginu
+0076=Pø&ejmenovat
+0077=Plugin
+0078=Verze
+0079=Stav
+0080=Pøidružení
+0081=&Konfigurovat
+0082=Možnosti nastavení pluginu (otevøe soubor .ini nebo dialogové okno)
+0083=&Poøadí
+0084=Zmìna poøadí spouštìní pluginù
+0085=&Deaktivovat
+0086=&Aktivovat
+0087=Naèíst seznam
+0088=Zobrazit pluginy jen tohoto typu
+0089=&Procházet adresáø
+0090=Procházet adresáø pluginu
+0091=Nainstalovat z archivu...
+0092=Návez souboru
+0093=&Upravit
+0094=Upravit vlastnosti pluginu typu wcx
+0095=Nainstalovat obsah adresáøe...
+0096=Nainstalovat pluginy z adresáøe:
+0097=
+0098=
+0099=
+0110=Popis %s
+0111=Popis:
+0112=&Editovat
+0113=Editovat ini soubor TC
+
+;UFormAbout
+0100=Plugins Manager for TotalCmd 5.5+
+0101=© 2004 Atl-Soft
+0102=E-mail:
+0103=Your comments?:
+0104=Webpage:
+0105=OK
+
+;UFormAdd
+0150=Pøidružení pluginu
+0151=Storno
+0152=Plugin:
+0153=Nastavení názvu/pøidružení:
+
+;UFormOptions
+0200=Registrace souborù WCX/WLX/WFX/WDX
+0201=(usnadní instalaci pluginù pomocí TC Plugmanu)
+0202=Jazyk:
+0203=Naèíst seznam každých
+0204=s
+0205=Zobrazit záložky: */Lister/Packer/...
+0206=Tøídít pluginy do skupin dle typu
+0207=Zobrazit stavovou lištu
+0208=Pøi instalaci pluginu:
+0209=Použít cestu '%COMMANDER_PATH%'
+0210=Po instalacipluginu restartovat TC
+0211=Upravit vlastnosti pluginù typu wcx
+0212=Adresáøe pluginù:
+0214=Integrovat tlaèítka do lišty %s
+0215=Restart TC
+0216=Restartovat poslední kopii TC
+0217=Ukonèit všechny kopie TC a spustit jedinou
+0218=Použít externí restartovací program:
+0219=Interval restartu (v ms):
+0220=Zobrazit verze pluginù
+0221=Zobrazit popisy pluginù
+
+
+;UFormOrder
+0250=Poøadí pluginù
+0251=Zde lze nastavit poøadí použítí/spouštìní pluginù %s (0...nejvyšší priorita):
+
+;UFormTweak
+;Finally! Internal TweakWCX utility! :-)
+0300=Plugin:
+0301=Pøípona:
+0302=Pøíznaky:
+0303=Možnost vyvtoøit nový archiv
+0304=Možnost zmìnit existující archiv
+0305=Archiv mùže obsahovat více souborù
+0306=Možnost odsrtanit soubory
+0307=Možnost rozšíøené volby nastavení
+0308=Podpora tvorby archivu v pamìti
+0309=Detekce typu archivu dle obsahu
+0310=Možnost hledat textové soubory v archivu
+0311=Možnost otevøít archiv pouze použitím Ctrl+PgDn
+0312=
+0313=Odstranit
+0314=Pøidat nový
+0315=Výchozí

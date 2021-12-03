@@ -1,0 +1,284 @@
+; Version history:
+;
+; 1.8.0.0: Messages 0080-0089, Captions 0114-0115,0350-0359
+; 1.8.2.0: Messages 0050,0075, Captions 0252-0253
+; 1.8.5.0: Caption 0316
+; 1.8.6.0: Captions 0116,0222
+; 1.8.7.0: Captions 0212,0223-0225,0240-0241
+; 1.8.7.4: Message 0100, Caption 0214
+; 1.8.8.0: Messages 0060-0067, Captions 0205-0206,0400-0440
+; 1.8.9.0: Message -0025, Captions 0095-0096,0117,0213,0406-0410,0427-0500, [Language] section changed
+; 1.9.0.0: Captions -0077-0080,-0092,0354
+; 1.9.4.0: Captions -0207,0226
+; 1.9.5.0: Captions 0312
+; 1.9.6.2: Messages 0060,0076-0077
+; 2.0.0.0: Captions 0077-0078,0114,0466
+; 2.0.1.0: Message 0078
+;
+; Note for translators: [Language] section should contain info about you, your homepage URL
+; and e-mail (optionally). The "Author" string, if not empty, is displayed in the Options dialog.
+
+[Language]
+Language=Slovensky (Slovak)
+Version=2.0.1.0
+Author=Roman Horváth
+Homepage=
+Email=rhorvath@zmail.sk
+
+[Messages]
+
+0020=neèinnı
+0021=v pamäti
+0022=spustenı
+0023=-deaktivovanı-
+0024=-odstránenı-
+0025=vyaduje reštart
+
+;UFormMain
+0040="Lister (WLX):  "
+0041="Packer (WCX):  "
+0042="FS (WFX):  "
+0043="Content (WDX):  "
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Verzia %s %s
+0053=Súbor %s je potrebné vyh¾ada ruène!
+0054=
+0055=Nie sú nainštalované iadne rozšírenia
+0056=Rozšírenie je momentálne deaktivované, najskôr ho aktivujte
+0057=Odinštalova "%s"?\n\n(súbor "%s" nebude zmazanı)
+0058=Deaktivova "%s"?
+0059=Nainštalova "%s"?
+0060=Nemono nainštalova: %s
+0061=U je nainštalovanı: %s
+0062=Odinštalova %d rozšírenie(ia/í)?
+0063=Úspešne nainštalovanı: "%s"\n\nTeraz je potrebné reštartova TC.
+0064=Archív nemono rozbali: %s\n\nAlebo neobsahuje iadne rozšírenia.
+0065=
+0066=
+0067=
+0068=\n\nVAROVANIE: u je nainštalované!\nPridruené k: %s
+0069=Rozšírenie "%s" nepodporuje konfiguráciu
+0070=Rozšírenie "%s" nemá .ini súbor
+0071=Packer (WCX) rozšírenia:  <predvolená koncovka>  napr.: cab\n\nLister/Content (WLX/WDX) rozšírenia:  <detekènı reazec> napr.: EXT="DOC" | EXT="RTF"\n\nFS (WFX) rozšírenia:  <názov koreòa>  napr.: Sieovı prehliadaè
+0072=Celkovo rozšírení: %d, deaktivovanıch: %d
+0073=Rozšírenie "%s":\nVyskytla sa vınimka vo funkcii %s!
+0074=Súbor "%s" nebol nájdenı, pokúste sa preinštalova aplikáciu!
+0075=V uvedenom prieèinku je u nainštalované rozšírenie s rovnakım názvom:\n\n%s\n\neláte si ho prepísa?\nZvo¾te Nie pre inštaláciu do predvoleného prieèinka.
+0076=Rozšírenie "%s" úspešne nainštalované
+0077=Rozšírenie "%s" nie je moné odinštalova, pretoe nie je nainštalované
+0078=Prípona "%s" je u pridruená ku: "%s". Chcete ju napriek tomu pridrui?
+                                               
+;UFormReport
+0080=Tlaèová správa %s programu TC Plugins Manager bola vygenerovaná %s %s.
+0081=Total Commander: %s. Cesta: "%s". Súbor .ini: "%s".
+0082=OS: %s, verzia %s.
+0083=Prieèinok rozšírení: "%s".
+0084=\n\rLister rozšírenia (WLX):\n\r
+0085=\n\rPacker rozšírenia (WCX):\n\r
+0086=\n\rFile-system rozšírenia (WFX):\n\r
+0087=\n\rContent rozšírenia (WDX):\n\r
+0088=
+0089=Nemôem uloi tlaèovú správu do "%s"
+
+;UFormOptions
+0100=eláte si prida zástupcov manaéra TC Plugins Manager na hlavnı panel nástrojov programu Total Commander?\n\nPoznámka: Pre obnovenie aktuáleho stavu panela nástrojov bude potrebné reštartova Total Commander.
+
+
+[Captions]
+
+;UFormMain
+0050=TC Plugins Manager
+0051="Cesta k TC:  "
+0052="Verzia:  "
+0053="Stav:  "
+0054="Nastavenia:  "
+0055=Vyh¾ada spustite¾nı súbor Total Commandera ruène
+0056=Cesta k spustite¾nému súboru Total Commandera
+0057=Cesta ku .ini súboru Total Commandera
+0058=Vyh¾ada .ini súbor Total Commandera ruène
+0059=Spusti Total Commander
+0060=&Spusti
+0061=Reštartova Total Commander!
+0062=&Reštart
+0063=Inštalova rozšírenie(a)
+0064=&Inštalova
+0065=Monosti nastavenia manaéra rozšírení
+0066=&Monosti
+0067=Zobrazi informácie o programe Plugins Manager
+0068=O programe
+0069=Ukonèi Plugins Manager
+0070=Ukonèi
+0071=Deaktivova/aktivova vybrané rozšírenie(a)
+0072=
+0073=Odinštalova vybrané rozšírenie(a)
+0074=&Odinštalova
+0075=Zmeni názov/pridruenie rozšírenia
+0076=Upr&avi
+0077=Vlastnosti súboru…
+0078=Vytvori ar&chív rozšírenia
+0079=Stav
+0080=Pridruenie
+0081=&Konfigurova
+0082=Monosti nastavenia rozšírenia (otvorí súbor .ini alebo dialogové okno)
+0083=&Poradie
+0084=Zmena poradia naèítania rozšírení
+0085=&Deaktivova
+0086=&Aktivova
+0087=Obnovi zoznam
+0088=Zobrazi všetky rozšírenia alebo len rozšírenia vybraného typu
+0089=&Prechádza prieèinok
+0090=Prechádza prieèinok rozšírenia
+0091=Nainštalova z archívu...
+0092=Názov súboru
+0093=Pr&ispôsobi
+0094=Prispôsobi vlastnosti Packer (WCX) rozšírenia
+0095=Nainštalova z prieèinka...
+0096=Inštalova všetky rozšírenia zo zvoleného prieèinka a všetkıch jeho podprieèinkov:
+0097=
+0098=
+0099=
+0110=Opísa %s
+0111=Opis:
+0112=&Upravi
+0113=Upravi ini súbor TC
+0114=Tlaè&ová správa
+0115=Uloi zoznam rozšírení do súboru
+0116=Filter
+0117=Poradie naèítania modulov %s...
+
+;UFormAbout
+0100=Správca rozšírení pre Total Commander
+0101=
+0102=Pripomienky
+0103=
+0104=Domovská stránka:
+0105=OK
+
+;UFormAdd
+0150=Pridruenie rozšírenia
+0151=Zruši
+0152=Rozšírenie:
+0153=Nastavi názov/pridruenie:
+
+;UFormOptions
+0200=Registrácia koncoviek súborov WCX/WLX/WFX/WDX
+0201=(dovo¾uje inštalova rozšírenia klávesom Enter)
+0202=Jazyk:
+0203=Obnovi zoznam kadıch
+0204=s
+0205=Zobrazi záloky pre rôzne typy rozšírení
+0206=Zobrazi typy rozšírení v zozname
+0207=Zobrazi stavovú lištu
+0208=Pri inštalácii rozšírenia:
+0209=Poui cestu '%COMMANDER_PATH%'
+0210=Po inštalácii rozšírenia reštartova TC
+0211=Prispôsobi vlastnosti rozšírenia Packer (WCX) po inštalácii
+0212=Predvolené prieèinky rozšírení jednotlivıch typov:
+0213=Prispôsobi rozšírenie Packer (WCX) pred inštaláciou, ak treba
+0214=Zástupcovia na paneli TC…
+0215=Reštart TC
+0216=Reštartova poslednú kópiu TC
+0217=Ukonèi všetky kópie TC a spusti jedinú
+0218=Poui externı reštartovací program:
+0219=Interval reštartu (v ms):
+0220=Zobrazi verzie rozšírení
+0221=Zobrazi opisy rozšírení
+0222=Spusti TC v popredí
+0223=Prieèinky rozšírení
+0224=Nastavenia TC FTP:
+0225=Spustite¾nı súbor WinRAR:
+0226=Zobrazi poradové èísla rozšírení v zozname
+
+0240=Všeobecné
+0241=Rozšírené
+
+;UFormOrder
+0250=Poradie rozšírení
+0251=Zmeni poradie naèítania pre rozšírenia %s:
+0252=Hore
+0253=Dole
+
+;UFormTweak
+;Finally! Internal TweakWCX utility! :-)
+0300=Rozšírenie:
+0301=Prípona:
+0302=Príznaky:
+0303=Umoni vytvori novı archív
+0304=Umoni meni existujúce archívy
+0305=Archív môe obsahova viac súborov
+0306=Umoni odstráni súbory
+0307=Obsahuje dialóg s nastaveniami
+0308=Podporuje tvorbu archívu v pamäti
+0309=Deteguje typ archívu pod¾a obsahu
+0310=Dovo¾uje h¾adanie textovıch súborov v archíve
+0311=Nedovoli otváranie klávesom Enter ale Ctrl+PgDn
+0312=Podporuje šifrovanie
+0313=Odstráni
+0314=Prida novı
+0315=Predvolené
+0316=Zmeni
+
+;UFormReport
+0350=Tlaèová správa
+0351=Môete uloi zoznam aktuálnych rozšírení do textového súboru.
+0352=Názov súboru:
+0353=Ståpce:
+0354=Rozšírenie
+0355=Opis
+0356=Verzia
+0357=Stav
+0358=Pridruené k
+0359=Názov súboru
+
+;UFormInstallLog
+0400=Denník inštalácie rozšírení
+0401=Nainštalované rozšírenie(a): %d
+0402=Poèet chıb: %d
+0403=Upozornenie: Teraz je nutné reštartova Total Commander.
+0404=Upozornenie: Po potvrdení bude Total Commander reštartovanı.
+0405=Nie je potrebné reštartova Total Commander.
+0406=Kopírova denník do schránky Windows
+
+;Log messages
+0420=Rozšírenie nie je moné nainštalova
+0421=Rozšírenie u je nainštalované
+0422=Nie je moné spusti rozba¾ovací program
+0423=Nie je moné rozbali archív
+0424=Inštalácia bola zrušená
+0425=Nie je moné vytvori doèasnı prieèinok
+0426=V archíve nie sú iadne rozšírenia
+0427=V prieèinku nie sú iadne rozšírenia
+0428=Neznámy formát rozšírenia
+0429=Nie je moné presunú prieèinok
+0430=Prieèinok nebolo moné nájs
+0431=Prieèinok nebolo moné vytvori
+0432=Prieèinok nebolo moné presunú
+0433=Prieèinok nebolo moné odstráni
+0434=Inštalácia zrušená
+0435=Rozšírenie nebolo nájdené (nie je viac rozšírení v tom istom prieèinku archívu?)
+0436=Neplatnı pluginst.inf parameter
+
+;Shortcuts help
+0450=Pomocník zástupcov:
+0451=Inštalova rozšírenie(a)
+0452=Inštalova rozšírenie(a) z archívu(ov)
+0453=Inštalova rozšírenie(a) z prieèinka
+0454=Deaktivova/aktivova rozšírenie(a)
+0455=Zmeni aktívnu záloku
+0456=Otvori prieèinok rozšírenia v TC
+0457=Zmeni názov/pridruenie rozšírenia
+0458=Odinštalova rozšírenie(a)
+0459=Nastavenia rozšírenia
+0460=Oznaèi všetky rozšírenia
+0461=Nastavi filter panela
+0462=Zmeni poradie rozšírení
+0463=Obnovi zoznam
+0464=Opísa rozšírenie v súbore Descript.ion
+0465=Tento pomocník
+0466=Zobrazi súbor nastavení rozšírenia
+
+;UFormInstallProgress
+0490=Priebeh èinnosti
+0491=Preh¾adávam prieèinok:
+0492=Spracúvam rozšírenie:

@@ -1,0 +1,69 @@
+FAQ og gode råd
+-------------
+
+Sp1: Hvorfor er programmet så langsomt?  Jeg må vente 2 sekunder på
+     opdateringen af hver liste!
+
+Sv: En mulig årsag til en langsom programafvikling kan være en AntiVirus
+    scanner, som overvåger TC's ini fil.  Prøv at udelukke WINCMD.INI fra
+    viruscheckning.
+    Prøv også at nulstille følgende i Plugmans dialogboks "Indstillinger":
+    - "Generelt / Kolonner: Version" = Fra
+    - "Generelt / Kolonner: Beskrivelse" = Fra
+    - "Avanceret / Indlæs listen hvert ... sekund" = Fra
+
+----------------------------------------------------------------------------
+
+Sp2: Funktionen "Installer fra arkiv" virker ikke!  Jeg får fejlmeddelsen
+     "Kan ikke udpakke arkivet".
+
+Sv:  Denne funktion kræver en ekstern udpakker - se Bemærkninger i Readme.Dan.txt.
+
+----------------------------------------------------------------------------
+
+Sp3: Hvilke tastaturgenveje findes der?
+
+Sv:  Tryk F1 i Plugmans hovedvindue for at se dem alle.
+
+----------------------------------------------------------------------------
+
+Sp4: Jeg vil gerne altid se status: "Stettet", også for deaktiverede plugins.
+
+Sv:  Brug denne skjulte parameter i Plugman.ini:
+     [Options]
+     ShowDeletedAlways=1
+
+----------------------------------------------------------------------------
+
+Sp5: 1. Jeg har slettet et plugin i TC Plugman, og vil nu prøve at slette
+        plugin'et fra harddisken.  Men Windows giver besked om at filen er
+        låst. Hvad skal jeg gøre?
+     2. Jeg skifter ofte plugin-indstillinger (associeringer/FS-plugin navne
+        /indstillinger af ini-fil), så jeg er træt af at genstarte TC hele
+        tiden.  Kan ændringerne blive udført med det samme?
+
+Sv:  Prøv denne skjulte parameter i Plugman.ini:
+     [Options]
+     UnloadPlugins=1
+
+----------------------------------------------------------------------------
+
+Sp6: Kan jeg undgå at den externe udpakker kører mnimeret?
+
+Sv:  Brug denne skjulte parameter i Plugman.ini:
+     [Options]
+     RunUnpackMinimized=0
+
+----------------------------------------------------------------------------
+
+Sp7: Kan jeg oprette en logfil?
+
+Sv:  Brug denne skjulte parameter i Plugman.ini:
+     [Options]
+     Log=1
+
+----------------------------------------------------------------------------
+
+
+Hvis du har flere spørgsmål, så besøg det engelske support forum:
+http://www.ghisler.ch/board/viewtopic.php?t=4798

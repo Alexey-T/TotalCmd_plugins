@@ -1,0 +1,6 @@
+[PluginInstall]
+Description=OpenOffice.org Simple Viewer - Lister plugin
+DescriptionRus=Плагин просмотра документов OpenOffice.org
+Type=wlx
+File=OOView.wlx
+DefaultDir=OOView

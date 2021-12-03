@@ -1,0 +1,113 @@
+; Send new or updated translation to: atorg@yandex.ru
+; Don't forget "Description" line in pluginst.inf
+
+[Rus]
+Description=Описание
+Description (2)=Описание (2)
+Description (3)=Описание (3)
+Description (4)=Описание (4)
+Description (5)=Описание (5)
+Description (6)=Описание (6)
+Description (7)=Описание (7)
+Description (8)=Описание (8)
+Version info=Версия
+Company name=Компания
+File description=Описание файла
+File version=Версия файла
+Internal name=Внутреннее имя
+Original filename=Оригинальное имя
+Product name=Название продукта
+Product version=Версия продукта
+Legal copyright=Авторское право
+Legal trademarks=Торговые марки
+Comments=Комментарий
+Private build=Внутренний build
+Special build=Специальный build
+
+[Fra] 
+Description=Description 
+Version info=Info Version 
+Company name=Nom Societe 
+File description=Description du Fichier 
+File version=Version du Fichier 
+Internal name=Nom Interne 
+Original filename=Nom d'Origine 
+Product name=Nom du Produit 
+Product version=Version du Produit 
+Legal copyright=Copyright Legal 
+Legal trademarks=Marque Deposee 
+Comments=Commentaires 
+Private build=Private build
+Special build=Special build
+
+; Kurt <k.lettmaier@onlinehome.de>
+[Deu]
+Description=Beschreibung
+Description (2)=Beschreibung (2)
+Description (3)=Beschreibung (3)
+Description (4)=Beschreibung (4)
+Description (5)=Beschreibung (5)
+Description (6)=Beschreibung (6)
+Description (7)=Beschreibung (7)
+Description (8)=Beschreibung (8)
+Version info=Versionsinfo
+Company name=Firmenname
+File description=Beschreibung
+File version=Version
+Internal name=Interner Name
+Original filename=Originaldateiname
+Product name=Produktname
+Product version=Produktversion
+Legal copyright=Copyright
+Legal trademarks=Marken
+Comments=Kommentare
+Private build=Privatausgabe
+Special build=Sonderausgabe
+
+; <DirektX@freemail.hu>
+[Hun]
+Description=Leнrбs
+Description (2)=Leнrбs (2)
+Description (3)=Leнrбs (3)
+Description (4)=Leнrбs (4)
+Description (5)=Leнrбs (5)
+Description (6)=Leнrбs (6)
+Description (7)=Leнrбs (7)
+Description (8)=Leнrбs (8)
+Version info=Verziуadatok
+Company name=Cйgnйv
+File description=Fбjl leнrбs
+File version=Fбjl verziу
+Internal name=Belsх nйv
+Original filename=Eredeti fбjlnйv
+Product name=Termйknйv
+Product version=Termйk verziу
+Legal copyright=Szerzхi jog
+Legal trademarks=Vйdjegy
+Comments=Megjegyzйs
+Private build=Sajбt kiadбs
+Special build=Egyedi kiadбs
+
+; RomSaz <romsaz@gmail.com>
+[Esp]
+Description=Descripciуn 1
+Description (2)=Descripciуn 2
+Description (3)=Descripciуn 3
+Description (4)=Descripciуn 4
+Description (5)=Descripciуn 5
+Description (6)=Descripciуn 6
+Description (7)=Descripciуn 7
+Description (8)=Descripciуn 8
+Version info=Informaciуn de versiуn
+Company name=Nombre de la Compaснa
+File description=Descripciуn
+File version=Versiуn
+Internal name=Nombre Interno
+Original filename=Nombre original del Fichero
+Product name=Nombre del Producto
+Product version=Versiуn del Producto
+Legal copyright=Derechos Reservados
+Legal trademarks=Marca Registrada
+Comments=Comentarios
+Private build=Compilaciуn privada
+Special build=Compilaciуn especial

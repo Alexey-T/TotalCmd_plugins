@@ -1,0 +1,20 @@
+1 VERSIONINFO LOADONCALL MOVEABLE DISCARDABLE IMPURE
+FILEVERSION    1, 4, 5, 0
+PRODUCTVERSION 1, 4, 5, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "041904E3"
+  {
+   VALUE "FileDescription", "TC Plugins Manager: FS-Plugins configuration tool\000"
+   VALUE "FileVersion", "1.4.5\000"
+   VALUE "CompanyName", "UVViewSoft\000"
+  }
+ }
+}
+
+
+1 24 Manifest.txt

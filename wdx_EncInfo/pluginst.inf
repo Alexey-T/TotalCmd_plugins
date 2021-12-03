@@ -1,0 +1,5 @@
+[plugininstall]
+Description=EncInfo content plugin
+Type=wdx
+File=EncInfo.wdx
+DefaultDir=EncInfo

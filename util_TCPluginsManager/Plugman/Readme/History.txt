@@ -1,0 +1,139 @@
+Versions history
+
+
+2.2.6 (2012)
+-fix: UW*X and W*X64 files considered for "Deleted" state
+-fix: Totalcmd/64 exe support 
+
+2.2.4 (jun 2011)
+-fix: enabling of plugins with same filenames (diff. types)
+
+2.2.2 (aug 2010)
+- added: compatability with VirtualPanel config dlg.
+
+2.2.0 (nov 2009)
+
+- Added: support for Quick Search plugins (separate tab)
+- Removed: "Show tabs" option
+
+2.1.2 (sep 2009)
+
+- Added: option "Paths -- Use specific editor" for F4Menu.
+- Added: button "..." in Tweak packer dialog.
+
+2.0.2.0 (Jan 2008)
+
+- Added: Packer-plugins tweak dialog: Confirmation on adding the extension,
+  which is registered for another plugin.
+- Added: Link to SF project in Readme.
+- Fixed: Listview icons transparency.
+
+2.0.0.0 (Aug 2007)
+
+- Updated: Program icons updated. To fix associated icons you need to uncheck the
+  "Register extensions" option, save options, check this option again, save options.
+- Changed: Command "Report" moved into submenu of "Options" button.
+- Added: Command Alt+Enter shows plugin file properties.
+- Added: Support for wdx_XML plugin (required CoInitialize system call).
+
+1.9.6.2 (05 Aug 2007)
+
+- Added: Command line parameter "/Uninstall".
+- Added: Option "Register extensions" adds also "Uninstall" Explorer context menu item.
+- Fixed: Option "Register extensions" didn't remove menu item when unchecked.
+- Added: Option "Show plugins' order numbers in list": when unchecked it allows to sort
+  Lister/Content plugins alphabetically.
+- Added: Support for new flag (PK_CAPS_ENCRYPT = 512) in "Tweak Packer plugin" dialog.
+- Added: Error message when unknown command line parameter specified.
+
+1.9.3.0 (09 Jul 2007)
+
+- Added: An "hourglass" cursor is shown when appropriate (e.g. on plugins list reread).
+- Added: Now the Editor configured in Total Commander will be used (instead of Notepad).
+- Added: Several command line options, see Readme.txt.
+- Added: Case-insensitivity for command line parameters.
+- Fixed: When a plugin was installed using command line, option "Restart TC after install"
+  didn't work.
+
+1.9.0.0 (22 Apr 2007)
+
+- Changed: Actually this is the previous version 1.8.9 renamed to 1.9. The Program has
+  had very big internal changes, hence it was appropriate to raise the "major" version.
+
+1.8.9.6 (21 Apr 2007)
+
+- Added: Any column, except first, can be hidden using Options dialog.
+- Added: Optimization for huge plugins lists: "Loaded" plugin status is obtained only
+  when "State" column is to be shown, so if you hide this column list will be read faster.
+- Fixed: Ctrl+GrayPlus now doesn't show hidden columns at all.
+
+1.8.9.1 (15 Apr 2007)
+
+- Added: Reworked batch plugin installation:
+  + "Install from folder" command added: Allows to install all plugins from specified
+     folder and all its subfolders. You can even choose "C:\" root folder for this.
+  + "Install from archive" command allows to install plugin packs. You can have multiple
+    plugins in one single archive, in several subfolders of any depth.
+    Note: It's not allowed to have more than one .W?X file in the same archive folder -
+    you will get an error message in this case!
+  + "Copy to Clipboard" context menu item for installation logs.
+  + "Tweak Packer plugins before installing" option allows to ask for default Packer
+    extension, if this option is missing in pluginst.inf.
+- Added: "Order" command button expanded by 3 subbuttons.
+- Added: All long operations display an interuptable progress window.
+- Added: UnZip/UnRAR freeware unpackers are included in the distribution. There is
+  no need to copy them anywhere, they should run directly from the Plugman folder.
+  You may delete them if you have WinRAR installed.
+- Added: Hidden option "Log": allows to create Plugman.log which logs the status
+  of the unpackers and the installation status of the plugins
+  (installed/failed to install).
+- Removed: Hidden option "ShowNames".
+
+1.8.8.0 (07 Apr 2007)
+
+- Added: Reworked batch plugins installation:
+  + Single installation log window instead of multiple message boxes
+  + More errors are handled and logged
+  + Fixed detection of already installed plugins
+- Added: F1 displays shortcuts help.
+
+1.8.7.4 (21 Mar 2007)
+
+- Changed: Executable and configuration files renamed from TC_Plugman.* to Plugman.*.
+- Added: Support for Total Commander 7 feature: Using "RedirectSection" key in
+  wincmd.ini you can move some parts of the ini file to external files.
+- Added: Support for %COMMANDER_INI% variable.
+- Added: Path to WinRAR.exe can now be saved with env variables.
+- Removed: Support for external TC restarters.
+- Added: Confirmation before adding shortcuts to TC button bar.
+
+1.8.6.5 (29 Oct 2006)
+
+- Added: Better support for XP themes.
+- Fixed: Packer plugins now don't change order after tweaking.
+- Fixed: Context menu now can be called from empty list.
+
+1.8.6.0 (04 Feb 2006)
+
+- Added: List filter can be defined by Ctrl+F - only matched strings will be listed
+- Added: Option "Start TC in foreground"
+- Added: Button "Default" in "Change association" dialog
+- Added: Hidden option in Plugman.ini: [Options] ShowDeletedAlways (0/1):
+- Fixed: Enabling of several plugins.
+- Added: FAQ.
+
+1.8.5.0 (05 Jan 2006)
+
+Changes by Led <led@me.by>:
+- Added: After refreshing list is scrolled to previous position.
+- Added: Tweaking Packer plugin: Added button to change extension.
+- Added: Enabling Packer plugin: If a plugin with the same extension already exists,
+  it will be automatically disabled. Now it's easy to switch between several
+  plugins with the same assotiation.
+- Changed: First tab always shows plugins types, others in regard to option "Show types".
+
+...
+
+1.0.1 (?? Aug 2004)
+
+- Initial release

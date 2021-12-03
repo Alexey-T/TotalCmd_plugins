@@ -1,0 +1,13 @@
+[plugininstall]
+description=OpenOffice/DOCX/FB2 Viewer
+type=wlx
+file=OOoViewer.wlx
+defaultDir=OOoViewer
+
+
+
+
+
+
+
+

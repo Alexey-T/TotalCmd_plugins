@@ -1,0 +1,4 @@
+- My suggestion: The background colour of the "header" (Title, subject and
+description) seems to be the same as for the TC window. Would it be possible
+to add an option in the ini file where this background colour can be set
+separately?

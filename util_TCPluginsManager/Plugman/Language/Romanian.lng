@@ -1,0 +1,262 @@
+; 1.8.9.0: Message -0025, Captions 0095-0096,0117,0213,0406-0410,0427-0500 
+
+[Language]
+Version=1.9.1.0
+Language=Romanian (Româna)
+Author=Cãutãtor K.
+Homepage=
+Email=
+
+[Messages]
+0020=activ
+0021=încãrcat
+0022=pornit
+0023=-dezactivat-
+0024=-ºters-
+
+;UFormMain
+0040="Afiºier: "
+0041="Arhivator: "
+0042="Fiºier Sistem (FS): "
+0043="Conþinut:  "
+0050=TC Plugins Manager %s
+0051=TC PlugMan
+0052=Versiune %s %s
+0053=Trebuie sã cauþi pentru validare %s!
+0054=
+0055=Nu este nici un conectator instalat.
+0056=Conectatorul curent este dezactiat, activeazã-l mai întâi
+0057=Dezinstalare "%s"?\n(Fiºierul %s va fi ºters in listã)
+0058=Dezactivare "%s"?
+0059=Instalare "%s"?
+0060=
+0061=
+0062=Dezinstalare conectatori %d?
+0063=
+0064=
+0065=
+0066=
+0067=
+0068=\n\nATENÞIE: Este deja instalat!\nÎnregistreazã pentru: %s
+0069=Conectatorul nu suportã configuraþie
+0070=Conectatorul nu are fiºierul cu ext. ".ini".
+0071=Arhivatorul conectator:  extensie_predefinitã  ex.: cab\n\nLS-conectator:  
+detectare_expresie  ex.: EXT="DOC" | EXT="RTF"\n\nFS-conectator:  nume_rãdãcinã  
+ex.: Network Browser
+0072=Total conectatori: %d, dezactivaþi: %d
+0073=%s:\nExcepþie în %s!
+0074=Fiºierul %s nu existã! Reinstaleazã TC Plugman!
+0075=Conectatorzul cu acest nume existã deja instalat în 
+directorul:\n\n%s\n\nDoreºti sã-l instalezi peste cel vechi?\nNu doreºti sã-l 
+instalezi in directorul destinat.
+
+;UFormReport
+0080=TC Plugman %s raport, generat %s %s
+0081=TC versiune: %s, cale: "%s", fiºier ini: "%s"
+0082=OS: %s, versiune %s                  
+0083=Calea de bazã: "%s"             
+0084=\n\rLister plugins (WLX):\n\r       
+0085=\n\rPacker plugins (WCX):\n\r       
+0086=\n\rFile-system plugins (WFX):\n\r  
+0087=\n\rContent plugins (WDX):\n\r      
+0088=
+0089=Nu poate salva raportul în "%s"
+
+;UFormOptions
+0100=Doreºti sã adaugi scurtãturile TC Plugins Manager în bara de butoane din Total Commander ?\n\nNotã: Pentru a apãrea aceste scurtãturi trebuie repornit 
+TC.
+
+[Captions]
+;UFormMain
+0050=TC Plugins Manager
+0051="TC cale:  "
+0052="Versiune:  "
+0053="Stare:  "
+0054="Fiºier INI:  "
+0055=Cãutare pentru Total Commander
+0056=TC cale comandã
+0057=TC cale fiºier INI
+0058=Cãutare pentru "wincmd.ini"
+0059=Pornire TC
+0060=&Pornire
+0061=Repornire TC!
+0062=&Repornire!
+0063=Instalare un nou conectator(s)
+0064=&Instalare nouã
+0065=Opþiuni Set PlugMan
+0066=&Opþiuni
+0067=Afiºare "Despre..."
+0068=&Despre
+0069=Închide PlugMan
+0070=Închide
+0071=Dezactivat/activat conectator(i) selectat/selectaþi
+0072=
+0073=Deinstalare conectator(i) selectat/selectaþi
+0074=&Deinstalare
+0075=Schimbare nume rãdãcinã Fiºier Sistem (FS), asocire LS
+0076=T&weak
+0077=
+0078=
+0079=
+0080=
+0081=&Configurare
+0082=Configurare conectator (vezi Fiºier ".ini" sau fereastrã de configurare)
+0083=Ordine &LS ...
+0084=schimbã ordinea listei încãrcate pentru conectori Afiºier
+0085=&Dezactivat
+0086=&Activat
+0087=Reîmprospãtare listã
+0088=Afiºare numai acest tip de conectatori
+0089=Cãutare
+0090=Cãtare director conectator
+0091=Instalare din &arhivã
+0092=
+0093=Au&xiliar
+0094=Parametrii auxiliari pentru conectator arhivator
+0095=Instalare din directorul...
+0096=Instalare conectatori din toate directoarele selectate:
+0097=
+0098=
+0099=
+0110=Descrie %s
+0111=Descriere:
+0112=&Editare
+0113=Editare fiºier "ini" pentru TC
+0114=Rapor&t
+0115=Generare fiºier raport
+0116=Filtru
+0117=Încãrcare ordinii conectorilor %s...
+
+;UFormAbout
+0100=Plugins Manager pentru TotalCmd 5.5x/6.x
+0101=Copyright © 2004 - 2005 Atl-Soft
+0102=Poºtã electronicã:
+0103=Comentariile tale:
+0104=Paginã Web:
+0105=OK
+
+;UFormAdd
+0150=Asociere conectator
+0151=Anulare
+0152=Conectator:
+0153=Set nume/asociere:
+
+;UFormOptions
+0200=Înregistrare extensie .wcx/.wlx/.wfx
+0201=(instalare de conectatori prin apãsarea tastei "Enter")
+0202=Limba/Language:
+0203=Reîmprospãtare listã la:
+0204=sec.
+0205=Afiºare conectori toþi/Afiºier/Arhivator/Fiºier Sistem (FS)
+0206=Afiºare tip conectori în listã
+0207=Afiºare bara stare
+0208=Când instaleazã conectatori:
+0209=Folosire calea '%COMMANDER_PATH%'
+0210=Repornire TC dupã instalare conectator
+0211=Conectatori auxiliari pentru arhivator
+0212=Directori definiþi pentru conectori de diferite tipuri:
+0213=Tweak Packer pentru instalãri de conectori
+0214=Scurtãturi în bara de butoane din TC
+0215=Reporneºte TC
+0216=Reporneºte dupã ultimul caz
+0217=Închide toate exemplele ºi porneºte odatã
+0218=Foloseºte repornire externã:
+0219=Reporneºte în timp de (în msec):
+0220=Afiºeazã versiunile
+0221=Afiºeazã descrierile
+0222=Pornire TC în prim-plan
+0223=Director conectatori
+0224=Setãri TC FTP:
+0225=WinRAR executabil:
+
+0240=General
+0241=Avansat
+ 
+;UFormOrder
+0250=Ordine Conectatori
+0251=Aici trebuie sã schimbi ordinea pentru conectori %s (0 încãrcat):
+0252=Sus
+0253=Jos
+
+;UFormTweak
+;Finally! Internal TweakWCX utility! :-)
+0300=Conectator:
+0301=Extensie:
+0302=Semne:
+0303=Se poate crea arhive noi
+0304=Se poate modifica arhive existente
+0305=Arhiva poate conþine mai multe fiºiere
+0306=Se poate ºterge fiºiere
+0307=Fereastrã opþiuni
+0308=Suportã arhivare în memorie
+0309=Detectare tip arhivã dupã conþinut
+0310=Permite cãutare text în arhive
+0311=Nu se deschide cu tasta Enter, doar cu  tastele Ctrl+PgDn
+0312=
+0313=ªterge
+0314=Adãugare nouã
+0315=Predefinit
+0316=Schimbare
+
+;UFormReport
+0350=Raport
+0351=Poþi salva lista curentã de conectori într-un fiºier text.
+0352=Nume fiºier:
+0353=Coloane:
+0354=Conector
+0355=Descriere
+0356=Versiune
+0357=Stare
+0358=Înregistrat pentru
+0359=Nume fiºier
+
+;UFormInstallLog
+0400=Instalare conectori (log)
+0401=Conector(i) instalat (instalaþi): %d
+0402=Eroare(erori) survenitã(e): %d
+0403=Atenþie: acum trebuie repornit Total Commander.
+0404=Atenþie: dupã confirmare, Total Commander va fi repornit.
+0405=Nu trebuie repornit Total Commander.
+0406=Copiere log în Clipboard
+
+0420=Nu se poate instala conectorul
+0421=Conectorul este deja instalat
+0422=Nu se poate executa despachetarea
+0423=Nu se poate despacheta arhiva
+0424=Instalararea anulatã
+0425=Nu pot crea directorul temporar
+0426=Nu existã conectori în arhivã
+0427=Nu existã conectori în director
+0428=Format necunoscut pt. acest conector
+0429=Nu pot muta acest director
+0430=Nu pot gãsi acest director
+0431=Nu pot crea acest director
+0432=Nu pot muta acest fiºier
+0433=Nu pot ºterge acest  director
+0434=Instalare abandonatã
+0435=Conector negãsit (several plugins in the same archive folder?)
+0436=Parametrul invalid în pluginst.inf
+
+;Shortcuts help
+0450=Scurtãturi ghid:
+0451=Instalare conector(i)
+0452=Instalare conector(i) din arhivã(e)
+0453=Instalare conector(i) din director
+0454=Dezactivare/activare conector(i)
+0455=Schimbare panou activ
+0456=Deschidere director-conector în TC
+0457=Schimbare nume de conector/asociat
+0458=Dezinstalare conector(i)
+0459=Configurare conector
+0460=Selectarea conectorilor
+0461=Panou filtre
+0462=Schimbarea ordinii a conectorilor
+0463=Reîmprospãtarea listei
+0464=Descrierea conectorului în in Descript.ion
+0465=Acest ghid
+
+;UFormInstallProgress
+0490=Operation progress
+0491=Scanare director:
+0492=Procesare conector:
+

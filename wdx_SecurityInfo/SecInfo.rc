@@ -1,0 +1,28 @@
+1 VERSIONINFO LOADONCALL MOVEABLE DISCARDABLE IMPURE 
+FILEVERSION    1, 0, 0, 0
+PRODUCTVERSION 1, 0, 0, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "041904E3"
+  {
+   VALUE "FileDescription", "Security Info for TC\000"
+   VALUE "ProductName",     "Security Info for TC\000"
+   VALUE "InternalName",    "SecInfo\000"
+   VALUE "LegalCopyright",  "Copyright © 2006 Alexey Torgashin\000"
+   VALUE "ProductVersion",  "1.0.0\000"
+   VALUE "CompanyName",     "Atl-Soft\000"
+   VALUE "Comments",        "http://alextpp.narod.ru\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 1049, 1251
+ }
+
+}

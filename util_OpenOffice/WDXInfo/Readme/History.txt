@@ -1,0 +1,28 @@
+Version history
+---------------
+
+sep 2011:
+  - Removed fulltext field
+  - x64 recompiled
+  - unzip.dll -> .exe
+
+11.05: added detection of extensions: OT* ST*
+10.05: added full-text search: Text field;
+       added decoding of specials symbols: &quot; &amp;...
+10.05: UTF-8 strings properly decoded;
+       unzip messages supressed
+10.05: added support for OpenOffice 1.0
+          added fields: Generator, Title, Description, Subject, Keywords, User info,
+          URL, Print date, Printed by, Edition time, Edition cycles
+10.05: initial version
+
+
+
+
+
+
+
+
+
+
+

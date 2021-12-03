@@ -1,0 +1,287 @@
+; Version history:
+;
+; 1.8.0.0: Messages 0080-0089, Captions 0114-0115,0350-0359
+; 1.8.2.0: Messages 0050,0075, Captions 0252-0253
+; 1.8.5.0: Caption 0316
+; 1.8.6.0: Captions 0116,0222
+; 1.8.7.0: Captions 0212,0223-0225,0240-0241
+; 1.8.7.4: Message 0100, Caption 0214
+; 1.8.8.0: Messages 0060-0067, Captions 0205-0206,0400-0440
+; 1.8.9.0: Message -0025, Captions 0095-0096,0117,0213,0406-0410,0427-0500, [Language] section changed
+; 1.9.0.0: Captions -0077-0080,-0092,0354
+; 1.9.4.0: Captions -0207,0226
+; 1.9.5.0: Captions 0312
+; 1.9.6.2: Messages 0060,0076-0077
+; 2.0.0.0: Captions 0077-0078,0114,0466
+; 2.0.1.0: Msg 0078
+; 2.1.0.0: Msg 0228-229
+; 2.2.0.0: Msg 0063-66, 0040-45 Cap -0078 0120-0121
+;
+; Note for translators: [Language] section should contain info about you, your homepage URL
+; and e-mail (optionally). The "Author" string, if not empty, is displayed in the Options dialog.
+
+[Language]
+
+Version=2.2.4.0
+Author=TJL73 <tjl73.altervista.org>
+Homepage=http://tjl73.altervista.org/
+Email=tjl73.it@gmail.com
+
+[Messages]
+
+0020=inattivo
+0021=caricato
+0022=in esecuzione
+0023=disabilitato
+0024=cancellato
+0040="Visualizzatore:  "
+0041="Compressore:  "
+0042="FileSystem:  "
+0043="Contenuti:  "
+0044="  Tutti  "
+0045=Ricerca Veloce
+
+
+0050=TC Plugins Manager v%s
+0051=TC Plugins Manager
+0052=Versione %s %s
+0053=Indicare il corretto percorso per il file "%s"!
+0054=
+0055=Nessun plugin installato
+0056=Il plugin "%s" è attualmente disabilitato.\n\nPrima di procedere, è necessario abilitarlo.
+0057=Disinstallare il plugin "%s"?\n\nNota: il file "%s" non verrà cancellato.
+0058=Disabilita il plugin "%s"?
+0059=Installa il plugin "%s"?
+0060=Parametro di linea di comando specificato non valido
+0061=
+0062=Disinstallare il plugin %d?
+0063=Archivio del plugin "%s" installato sul predefinito "tcmatch.dll"
+0064=Archivio del plugin "%s" installato in "%s"
+0065=L'archivio del plugin non contiene il file "pluginst.inf"
+0066=Impossibile disinstallare "tcmatch.dll" dalla cartella di TC
+0067=
+0068=\n\nATTENZIONE: è già installato!\nRegistrato per: "%s"
+0069=Il plugin "%s" non ha possibilità di configurazione
+0070=Il plugin "%s" non ha un file .ini
+0071=Plugin di compressione:  <default extension>  es.: cab\n\nPlugin di visualizzazione:  <detect string>  es.: EXT="DOC" | EXT="RTF"\n\nPlugin di FileSystem:  <root name>  es.: Browser
+0072=" Totale plugin: %d, disabilitati: %d"
+0073=Plugin "%s":\nErrore nella funzione "%s"!
+0074=Il file "%s" non trovato, prova a reinstallare l'applicativo!
+0075=Un plugin con lo stesso nome risulta già installato nella directory:\n\n%s\n\nVuoi sovrascriverlo?\nScegli NO per installare nella cartella predefinita.
+0076=Plugin "%s" disinstallato con successo
+0077=Impossibile disinstallare il plugin "%s", poiché non risulta installato
+0078=L'estensione "%s" è già registrata per: "%s". La vuoi associare ugualmente?
+
+;UFormReport
+0080=TC Plugins Manager %s - Rapporto generato il %s alle %s.
+0081=Total Commander: %s. Percorso: "%s". File .ini: "%s".
+0082=OS: %s - Versione %s.
+0083=Percorso dei plugin: "%s".
+0084=\n\rPlugin di Visualizzazione (WLX):\n\r
+0085=\n\rPlugin di Compressione (WCX):\n\r
+0086=\n\rPlugin di FileSystem (WFX):\n\r
+0087=\n\rPlugin di Contenuto (WDX):\n\r
+0088=
+0089=Impossibile salvare il report in "%s"
+
+;UFormOptions
+0100=Vuoi aggiungere un collegamento a TC Plugin Manager sulla barra degli strumenti predefinita di Total Commander?\n\nNota: per attivare il nuovo pulsante, sarà necessario riavviare Total Commander.
+
+[Captions]
+;UFormMain
+0050=TC Plugins Manager
+0051="Percorso TC:"
+0052="Versione:"
+0053="Stato:"
+0054="Impostazioni:"
+0055=Sfoglia per l'eseguibile di Total Commander
+0056=Percorso dell'eseguibile di Total Commander
+0057=Percorso file .ini di Total Commander
+0058=Sfoglia per il file .ini di Total Commander
+0059=Avvia Total Commander
+0060=&Avvia
+0061=Riavvia Total Commander
+0062=Ria&vvia!
+0063=Installa plugin
+0064=&Installa
+0065=Modifica le impostazioni di Plugins Manager
+0066=Im&postazioni
+0067=Mostra informazioni su Plugins Manager
+0068=Informazioni
+0069=Chiude Plugins Manager
+0070=Chiudi
+0071=Disabilita/abilita i plugin selezionati
+0072=
+0073=Disinstalla i plugin selezionati
+0074=&Disinstalla
+0075=Modifica l'associazione dei plugin
+0076=Perso&nalizza
+0077=Proprietà...
+0078=
+0079=
+0080=
+0081=&Configura
+0082=Configura plugin (mediante file .ini o finestra di configurazione)
+0083=&Ordina
+0084=Cambia l'ordine di priorità dei plugin
+0085=&Disabilita
+0086=&Abilita
+0087=Ricarica lista
+0088=Mostra tutti i plugin o solo i plugin del tipo selezionato
+0089=&Sfoglia cartella
+0090=Sfoglia cartella plugin
+0091=Installa dall'archivio...
+0092=
+0093=&Parametri
+0094=Configura parametri del plugin di compressione
+0095=Installa dalla cartella...
+0096=Installa tutti i plugin dalla cartella selezionata e da tutte le sue sottocartelle:
+0097=
+0098=
+0099=
+0110=Descrive %s
+0111=Descrizione:
+0112=&Modifica
+0113=Modifica direttamente il file .ini di Total Commander
+0114=Crea rappor&to
+0115=Salva la lista dei plugin su file
+0116=Filtro
+0117=Ordine del caricamento dei plugin di tipo "%s"...
+0120=Usa il tcmatch.dll pre&definito
+0121=Usa dll pers&onalizzata:
+
+;UFormAbout
+0100=Plugins Manager per Total Commander
+0102=Commenti
+0103=
+0104=Homepage:
+0105=OK
+
+;UFormAdd
+0150=Associazione plugin
+0151=Annulla
+0152=Plugin:
+0153=Imposta nome/associazione:
+
+;UFormOptions
+0200=Registra le estensioni WCX/WLX/WFX/WDX
+0201=(consente di installare i plugin premendo Invio)
+0202=Lingua:
+0203=Ricarica lista dei plugin ogni
+0204=secondi
+0205=Mostra tab per i differenti tipi di plugin
+0206=Mostra il tipo di plugin nella lista
+0207=
+0208=Durante l'installazione dei plugin:
+0209=Usa '%COMMANDER_PATH%' nei percorsi
+0210=Riavvia Total Commander dopo l'installazione
+0211=Configura plugin di compressione dopo l'installazione
+0212=Cartella predefinita per i diversi tipi di plugin:
+0213=Se necessario, configura i plugin di compressione, prima di installarli
+0214=Collegamenti sulla toolbar di TC...
+0215=Riavvio Total Commander
+0216=Riavvio ultima istanza
+0217=Chiudi tutte le istanze e riavviane una sola
+0218=Utilizza un riavviatore esterno:
+0219=Tempo di riavvio (ms):
+0220=Mostra colonna "Versione"
+0221=Mostra colonna "Descrizione"
+0222=Avvia Total Commander in primo piano
+0223=Cartelle plugin
+0224=Impostazioni FTP:
+0225=Eseguibile WinRAR:
+0226=Nell'elenco, mostra l'ordine dei plugin
+0228=Usa editor specifico:
+0229=Percorsi
+
+0240=Generale
+0241=Avanzate
+
+;UFormOrder
+0250=Ordine plugin
+0251=Qui puoi cambiare l'ordine di caricamento dei plugin di tipo "%s":
+0252=&Su
+0253=&Giù
+
+;UFormTweak
+0300=Plugin:
+0301=Estensione:
+0302=Flag:
+0303=Può creare nuovi archivi
+0304=Può modificare archivi esistenti
+0305=Gli archivi possono contenere più file
+0306=Può cancellare i file
+0307=Ha una finestra di opzioni
+0308=Supporta la compressione in memoria
+0309=Rileva il tipo di archivio dai contenuti
+0310=Consente la ricerca del testo negli archivi
+0311=Non apre gli archivi con Invio ma con Ctrl+PaginaGiù
+0312=Supporta la cifratura
+0313=Rimuovi
+0314=Aggiungi nuovo
+0315=Predefiniti
+0316=Cambia
+
+;UFormReport
+0350=Rapporto
+0351=E` possibile salvare in un file di testo, la lista degli attuali plugin.
+0352=Nome file:
+0353=Colonne:
+0354=Plugin
+0355=Descrizione
+0356=Versione
+0357=Stato
+0358=Registrato per
+0359=Nome file
+
+;UFormInstallLog
+0400=Log installazione plugin
+0401=Plugin installati: %d
+0402=Errori: %d
+0403=Attenzione: ora è necessario riavviare Total Commander.
+0404=Attenzione: dopo la conefrma, Total Commander verrà riavviato.
+0405=Non è necessario riavviare Total Commander.
+0406=Copia il log negli appunti
+
+;Log messages
+0420=Impossibile installare il plugin
+0421=Plugin già installato
+0422=Impossibile eseguire il compressore
+0423=Impossibile decomprimere l'archivio
+0424=Installazione annullata
+0425=Impossibile creare la cartella temporanea
+0426=Nessun plugin nell'archivio
+0427=La cartella non contiene plugin
+0428=Formato del plugin sconosciuto
+0429=Impossibile spostare la cartella
+0430=Impossibile trovare la cartella
+0431=Impossibile creare la cartella
+0432=Impossibile spostare il file
+0433=Impossibile rimuovere la cartella
+0434=Installazione interrotta
+0435=Plugin non trovato (differenti plugin nella stessa cartella di un archivio?)
+0436=Parametro in pluginst.inf non valido
+
+;Shortcuts help
+0450=Tasti veloci:
+0451=Installa plugin
+0452=Installa plugin dall'archivio
+0453=Installa plugin dalla cartella
+0454=Abilita/Disabilita plugin
+0455=Cambia tab attivo
+0456=Apri cartella dei plugin in TC
+0457=Cambia nome/associazione plugin
+0458=Disinstalla plugin
+0459=Configura plugin
+0460=Seleziona tutti i plugin
+0461=Seleziona filtro sul pannello
+0462=Cambia ordine dei plugin
+0463=Ricarica lista
+0464=Mostra la descrizione del plugin (da Descript.ion)
+0465=Questo aiuto
+0466=Mostra proprietà del plugin
+
+;UFormInstallProgress
+0490=Avanzamento operazione
+0491=Scansione cartella:
+0492=Elaborazione plugin:

@@ -1,0 +1,28 @@
+1 VERSIONINFO LOADONCALL MOVEABLE DISCARDABLE IMPURE 
+FILEVERSION 1, 2, 0, 0
+PRODUCTVERSION 1, 2, 0, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "041904E3"
+  {
+   VALUE "FileDescription", "OpenOffice.org Info for TC\000"
+   VALUE "ProductName", "OpenOffice.org Info for TC\000"
+   VALUE "InternalName", "OOInfo\000"
+   VALUE "LegalCopyright", "Copyright © 2006 Alexey Torgashin\000"
+   VALUE "ProductVersion", "1.2\000"
+   VALUE "CompanyName", "Alexey Torgashin\000"
+   VALUE "Comments", "http://atorg.net.ru\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 1049, 1251
+ }
+
+}

@@ -1,0 +1,377 @@
+{$IFDEF VER130} // Delphi 5
+  {$DEFINE _D5}
+{$ENDIF}
+
+{$IFDEF VER140} // Delphi 6
+  {$DEFINE _D6}
+  {$DEFINE _D6orHigher}
+{$ENDIF}
+
+{$IFDEF VER150} // Delphi 7
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7}
+  {$DEFINE _D7orHigher}
+  {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER160} // Delphi 8
+  Delphi version 8 not supported! (delphi 8 is .net only)
+{$ENDIF}
+
+{$IFDEF VER170} // Delphi 2005
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D8}
+  {$DEFINE _D8orHigher}
+  {$DEFINE _D2005}
+  {$DEFINE _D2005orHigher}
+  {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER180} // Delphi 2006
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D8orHigher}
+  {$DEFINE _D2005}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF _D2005orHigher} // by Thaddy de Koning:
+  {$IFDEF VER185} // Delphi 2007 ( and Highlander )
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007}
+  {$DEFINE _D2007orHigher}
+    {$WARN UNIT_DEPRECATED OFF}
+    {$WARN SYMBOL_PLATFORM OFF}
+    {$WARN UNSAFE_TYPE OFF}
+    {$WARN UNSAFE_CAST OFF}
+    {$WARN UNSAFE_CODE OFF}
+  {$ENDIF}
+  {$INLINE OFF}
+{$ENDIF}
+
+{$IFDEF VER200} // Delphi 2009
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009}
+  {$DEFINE _D2009orHigher}
+  {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER210} // Delphi 2010
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010}
+  {$DEFINE _D2010orHigher}
+  {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER220} // Delphi XE
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXE}
+  {$DEFINE _DXEorHigher}
+    {$WARN UNIT_DEPRECATED OFF}
+  {$WARN SYMBOL_PLATFORM OFF}
+  {$WARN UNSAFE_TYPE OFF}
+  {$WARN UNSAFE_CAST OFF}
+  {$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER230} // Delphi XE2
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+  {$DEFINE _DXE2}
+    {$DEFINE _DXE2orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+    {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER240} // Delphi XE3
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+    {$DEFINE _DXE2orHigher}
+  {$DEFINE _DXE3}
+    {$DEFINE _DXE3orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+    {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+{$ENDIF}
+
+{$IFDEF VER250} // Delphi XE4
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+    {$DEFINE _DXE2orHigher}
+    {$DEFINE _DXE3orHigher}
+  {$DEFINE _DXE4}
+    {$DEFINE _DXE4orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+    {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+    {$DEFINE TMSG_WINDOWS}
+{$ENDIF}
+
+{$IFDEF VER260} // Delphi XE5
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+    {$DEFINE _DXE2orHigher}
+    {$DEFINE _DXE3orHigher}
+    {$DEFINE _DXE4orHigher}
+  {$DEFINE _DXE5}
+    {$DEFINE _DXE5orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+   {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+    {$DEFINE TMSG_WINDOWS}
+{$ENDIF}
+
+{$IFDEF VER270} // Delphi XE6
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+    {$DEFINE _DXE2orHigher}
+    {$DEFINE _DXE3orHigher}
+    {$DEFINE _DXE4orHigher}
+    {$DEFINE _DXE5orHigher}
+    {$DEFINE _DXE6}
+    {$DEFINE _DXE6orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+   {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+    {$DEFINE TMSG_WINDOWS}
+{$ENDIF}
+
+{$IFDEF VER280} // Delphi XE7
+  {$DEFINE _D6orHigher}
+  {$DEFINE _D7orHigher}
+  {$DEFINE _D2005orHigher}
+  {$DEFINE _D2006orHigher}
+  {$DEFINE _D2007orHigher}
+  {$DEFINE _D2009orHigher}
+  {$DEFINE _D2010orHigher}
+  {$DEFINE _DXEorHigher}
+    {$DEFINE _DXE2orHigher}
+    {$DEFINE _DXE3orHigher}
+    {$DEFINE _DXE4orHigher}
+    {$DEFINE _DXE5orHigher}
+    {$DEFINE _DXE6orHigher}
+    {$DEFINE _DXE7}
+    {$DEFINE _DXE7orHigher}
+    {$IFDEF WIN64}
+      {$DEFINE PAS_VERSION}
+      {$DEFINE PAS_ONLY}
+    {.$DEFINE UNICODE_CTRLS}
+    {$DEFINE STREAM_LARGE64}
+    {$ENDIF}
+   {$WARN UNIT_DEPRECATED OFF}
+  {.$WARN SYMBOL_PLATFORM OFF}
+  {.$WARN UNSAFE_TYPE OFF}
+  {.$WARN UNSAFE_CAST OFF}
+  {.$WARN UNSAFE_CODE OFF}
+    {$DEFINE TMSG_WINDOWS}
+{$ENDIF}
+
+// TODO: check DLL project
+{$IFNDEF NO_STRIP_RELOC}
+  // by Thaddy de Koning:
+  {$IFDEF _D2006orHigher}
+  // strips relocs, like stripreloc.exe does
+  {$SetPEFlags 1}
+//	{$SETPEFlAGS IMAGE_FILE_RELOCS_STRIPPED or IMAGE_FILE_DEBUG_STRIPPED or IMAGE_FILE_LINE_NUMS_STRIPPED or IMAGE_FILE_LOCAL_SYMS_STRIPPED or IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP or IMAGE_FILE_NET_RUN_FROM_SWAP}
+  {$ENDIF}
+{$ENDIF}
+
+{$IFDEF FPC}
+  {$MODE DELPHI}
+  {$ASMMODE INTEL}
+  {$DEFINE PAS_ONLY}
+  {$DEFINE USE_OLD_FLAGS} //size of set type in fpc is 4 bytes
+  {------------------------------------
+  by Thaddy de Koning:
+  FPC version 2.1.1 is very compatible with Delphi and kol now.
+  You can simply use the $(DELPHI)\source\rtl\win\*.pas files from Delphi 4/5 instead of the prepared files that were needed for
+  FPC1.X
+  That is all to have full compatibility.
+  ------------------------------------}
+  {$DEFINE PAS_VERSION}
+  {$IFDEF VER2}
+          {$DEFINE _D6orHigher}
+    {$DEFINE _D7}
+    {$DEFINE _D7orHigher}
+  {$ENDIF}
+  {$IFDEF VER3}
+    // I should clean this up later.
+    {$DEFINE VER2}
+          {$DEFINE _D6orHigher}
+    {$DEFINE _D7}
+    {$DEFINE _D7orHigher}
+    {$DEFINE _D2005orHigher}
+    {$DEFINE _D2006orHigher}
+    {$DEFINE _D2007orHigher}
+  {$ENDIF}
+{$ENDIF FPC}
+
+{$IFNDEF _NOT_KOLCtrlWrapper_}
+ {$DEFINE _KOLCtrlWrapper_}
+{$ENDIF}
+
+{$IFNDEF _NOT_KOLCtrlWrapper_}
+  {$DEFINE _KOLCtrlWrapper_}
+{$ENDIF}
+
+//// from delphidef.inc ////
+
+//{$DEFINE _FPC}
+{$DEFINE ASM_VERSION} // Comment this line to produce Pascal code.
+                      // Or, just add PAS_VERSION to conditionals of your project (must be rebuilt).
+
+{$IFDEF ASM_VERSION}
+  {$IFDEF PAS_VERSION}
+    {$UNDEF ASM_VERSION}
+    // To compile a project with ASM_VERSION option turned off,
+    // define a symbol PAS_VERSION in project options.
+  {$ENDIF}
+{$ENDIF}
+
+//{$DEFINE USE_CUSTOMEXTENSIONS}
+// Uncomment this option or add it to your project conditional defines,
+// if You wish to extend existing TControl object from
+// the inner of those. When this option is turned on, include directive at the
+// tail of TControl declaration is enabled, causing a compiler to include your
+// portion of source directly into the TControl body. See comments near this
+// directive there. (Search the word: USE_CUSTOMEXTENSIONS).
+// Please note, that this option is not fully supported now.
+
+//{$IFNDEF NOT_UNLOAD_RICHEDITLIB}
+//  {$DEFINE UNLOAD_RICHEDITLIB}
+//{$ENDIF}
+// You can freely comment this directive. 1st, if the application does not
+// use richedit control. 2nd, even if it does, freeing the library handle actually is not needed.
+// Another way to turn this option off is to define symbol NOT_UNLOAD_RICHEDITLIB in your project options.
+
+{$IFNDEF USE_OLD_FLAGS}
+  {$DEFINE USE_FLAGS}
+{$ELSE}
+  {$UNDEF  USE_FLAGS}
+{$ENDIF}
+
+{$IFnDEF EVENTS_STATIC}
+  {$DEFINE EVENTS_DYNAMIC}
+{$ENDIF}
+
+{$IFnDEF CMDACTIONS_RECORD}
+  {$DEFINE COMMANDACTIONS_OBJ}
+  {$DEFINE PACK_COMMANDACTIONS}
+  {$IFDEF  NOT_PACK_COMMANDACTIONS}
+    {$UNDEF PACK_COMMANDACTIONS}
+  {$ENDIF}
+{$ENDIF}
+
+{$DEFINE KOL3XX}

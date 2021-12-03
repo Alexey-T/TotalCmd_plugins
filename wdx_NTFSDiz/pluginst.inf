@@ -1,0 +1,6 @@
+[PluginInstall]
+Description=Content plugin for NTFS comments
+DescriptionRus=Content-плагин для NTFS-комментариев 
+Type=wdx
+File=NTFS_diz.wdx
+DefaultDir=NTFS_diz

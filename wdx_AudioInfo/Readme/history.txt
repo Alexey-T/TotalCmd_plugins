@@ -1,0 +1,52 @@
+Version history
+---------------
+2019.04.16 (Progman13): 
+- fixed many memory leaks  (ATL, plugin); 
+- mp4: rare possibility of infinity loop (ATL); 
+- mp3: track number for id3v1 (ATL); 
+- mp3: track number for id3v2 (plugin); 
+- mp3: id2v2 genre, "(12)" support, as well as "(12)Other" (ATL). 
+* flac: genre compiling from multiple fields (ATL, plugin); 
++ mp3: id3v2 version number in "Tags" field (ATL, plugin); 
+* mp3: determine utf8/ansi (ATL); 
+* mp3: determine lame 3.100 encoder (ATL); 
+* ape: bitrate support (plugin); 
++ column "Duration Ext" with milliseconds support and correct soring (plugin).
+ 
+2019.04.02: optimized work with bass.dll (thanks Progman13) 
+2019.04.02: fixes in mp4 support code (thanks Progman13) 
+2019.04.01: fixed crash on WAV files in x64 version
+2019.03.31: fixed detect string mistake
+2017.05.16: fixed reading UTF16BE-encoded ID3v2 tags
+2017.04.02: fixed reading VQF tags (though, is this ever needed for anyone?)
+2017.03.23: fixed bug with incorrect reading loooong ID3v2 tags
+2017.02.13: added support for MP4, M4A (info and tags);
+2017.02.13: improved OggVorbis module for support Opus and Speex (info and tags);
+2017.02.12: for ID3V2 it's possible to get year from TDRC frame (recording date) in case of TYER absent;
+2017.02.12: added ability for retrieve multiple comments from ID3V2-tags;
+2017.02.12: added support (info and tags): OFR, WV, TTA
+2017.02.12: updated OggVorbis, MPC modules;
+2017.02.11: BASSMOD (not supported and not having x64-version) replaced with BASS;
+2017.02.11: code updated for newer compilers, x64 version, unicode support;
+
+(old versions by Alexey)
+
+2005.12.06: added CDA support, "Comment" field shows track position in sec.;
+            added field "Tags", it lists tags present in file
+2005.12.05: fixed bitrate display for WAV, AAC
+2005.11.22: fixed support for MP3, APE;
+            field "Bit rate" renamed to "Bitrate";
+            added field "Bitrate type" (supported for MP3, WMA, AAC)
+2005.11.12: added support for tracker formats: IT, XM, S3M, MTM, MOD, UMX;
+            added support for FLAC and multichannel WAV;
+            added fields: "Track (zero-filled)", "Copyright", "URL",
+            "Full text" (allows to perform full-text search);
+            field "Vendor" renamed to "Encoder"
+2005.05.09: added MPC support
+2005.05.05: fixed WMA support
+2004.02.09: added APE support
+2005.01.30: fixed time display when duration >1hr;
+            added field "Duration (H/M/S)"
+2004.11.03: added support for MPEG, WAV, WMA, AAC, VQF
+2004.10.27: duration is shown in H:M:S, bitrate in Kbps, sample rate in Hz/HKz
+2004.10.26: initial version supported OGG

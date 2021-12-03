@@ -1,0 +1,41 @@
+1 VERSIONINFO LOADONCALL MOVEABLE DISCARDABLE IMPURE 
+FILEVERSION    2, 0, 0, 0
+PRODUCTVERSION 2, 0, 0, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+ BLOCK "StringFileInfo"
+ {
+  BLOCK "041904E3"
+  {
+   VALUE "FileDescription", "TC Plugins Manager\000"
+   VALUE "InternalName",    "TC Plugins Manager\000"
+   VALUE "ProductName",     "TC Plugins Manager\000"
+   VALUE "LegalCopyright",  "Copyright © 2004-2007 Alexey Torgashin\000"
+   VALUE "CompanyName",     "Alexey Torgashin\000"
+   VALUE "OriginalFilename", "Plugman.exe\000"
+   VALUE "FileVersion",      "2.0\000"
+  }
+
+ }
+
+ BLOCK "VarFileInfo"
+ {
+  VALUE "Translation", 1049, 1251
+ }
+
+}
+
+
+1 24 manifest.txt
+
+
+MAINICON  ICON  Type_Lister.ico
+MAINICON2 ICON  Type_Packer.ico
+MAINICON3 ICON  Type_FS.ico
+MAINICON4 ICON  Type_Content.ico
+MAINICON5 ICON  Type_New1.ico
+MAINICON6 ICON  Type_New2.ico
+TOOLBAR1 ICON  Toolbar_Restart.ico
+TOOLBAR2 ICON  Toolbar_OldIcon.ico

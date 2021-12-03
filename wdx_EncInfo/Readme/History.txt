@@ -1,0 +1,15 @@
+Versions history
+
+1.2.1
++ ini opt "oem_ignore"
+
+1.2
++ more ini opts
+
+1.1.0
++ detection of russian txt
++ ini file (created from .example.ini)
++ x64
+
+1.0.0 (oct 2013)
+- init

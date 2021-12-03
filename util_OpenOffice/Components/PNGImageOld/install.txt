@@ -1,0 +1,12 @@
+To install the PNG library.
+
+Decompress all of the files. Include the location of the 'PNG'
+directory in Delphi's library paths. To do this, launch Delphi
+and select 'Environment Options...' from the 'Tools' menu. Next,
+click on the 'Library'tab and add the location of the folder to
+the 'Library Paths' string (e.g. add 'c:\borland\png;'). Press 
+the 'OK' button.
+
+To load the sample application, choose 'Open' from the file menu
+and select the file PNGproj.dpr
+

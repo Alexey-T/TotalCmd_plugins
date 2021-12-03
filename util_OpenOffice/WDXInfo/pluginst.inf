@@ -1,0 +1,11 @@
+[PluginInstall]
+Description=OpenOfficeInfo content plugin
+DescriptionRus=Плагин отображения свойств документов OpenOffice
+DescriptionDeu=OpenOfficeInfo Content-Plugin zur Anzeige der Eigenschaften von Open Office Dokumenten
+DescriptionPol=Wtyczka sіuї№ca do podgl№du wіaњciowoњci plikуw OpenOffice
+DescriptionHun=OpenOffice tartalom-beйpьlх
+DescriptionEsp=OpenOfficeInfo: Plugin de contenido para documentos OpenOffice.org
+
+Type=wdx
+File=OOInfo.wdx
+DefaultDir=OOInfo

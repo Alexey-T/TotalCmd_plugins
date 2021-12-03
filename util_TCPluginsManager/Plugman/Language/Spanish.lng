@@ -1,0 +1,268 @@
+[Language]
+
+Version=2.2.2
+Author=Vico//Koby
+Homepage=
+Email=vicokoby at gmail dot com
+
+[Messages]
+
+0020=esperando
+0021=cargado
+0022=ejecutándose
+0023=desactivado
+0024=eliminado
+0040=Lister
+0041=Compresor
+0042=FS
+0043=Contenido
+0044="    Todos  "
+0045=Búsqueda rápida
+
+
+0050=TC Plugins Manager %s
+0051=TC Plugins Manager
+0052=Versión %s %s
+0053=Debe examinar un archivo válido "%s"
+0054=
+0055=No hay plugins instalados
+0056=El plugin "%s" actualmente está desactivado, actívelo primero
+0057=¿Desinstalar el plugin "%s"?\n\nNota: El archivo "%s" no será borrado.
+0058=¿Desactivar el plugin "%s"?
+0059=¿Instalar el plugin "%s"?
+0060=Parámetro de línea de comandos especificado inválido
+0061=
+0062=¿Desinstalar los %d plugins?
+0063=Plugin "%s" instalado sobre el "tcmatch.dll" predeterminado"
+0064=Plugin "%s" instalado en la carpeta "%s"
+0065=El plugin no contiene un archivo "pluginst.inf"
+0066=No se puede desinstalar "tcmatch.dll" de la carpeta de TC
+0067=
+0068=\n\nADVERTENCIA: ¡Ya esta instalado!\nRegistrado para: %s
+0069=El plugin "%s" no soporta el diálogo de configuración
+0070=El plugin "%s" no tiene un archivo .ini
+0071=Plugin compresores:  <extension_predefinida>  p.e.: cab\n\nLister/Plugins de contenido:  <cadena_detectada>  p.e.: EXT="DOC" | EXT="RTF"\n\nPlugins FS:  <nombre_raíz>  p.e.: Network Browser
+0072=Total de plugins: %d, desactivados: %d
+0073=¡Plugin "%s":\n¡Excepción en función %s!
+0074=¡Archivo "%s" no hallado, intente reinstalar la aplicación!
+0075=Un plugin con el mismo nombre ya está instalado en el siguiente directorio:\n\n%s\n\n¿Quiere sobrescribirlo?\nElija No para instalar en la ubicación predefinida.
+0076=Plugin "%s" instalado exitosamente
+0077=No se puede desinstalar el plugin "%s", por que no está instalado
+0078=La extensión "%s" ya está registrada para: "%s". ¿Quiere asignarla de todas maneras?
+
+;UFormReport
+0080=Reporte de TC Plugins Manager %s, generado %s %s
+0081=Total Commander: %s, Ruta: "%s", Archivo ini: "%s".
+0082=SO: %s, versión %s
+0083=Carpeta de plugins: "%s".
+0084=\n\rPlugins de Lister (WLX):\n\r
+0085=\n\Plugins compresores (WCX):\n\r
+0086=\n\rPlugins de sistema de archivos (WFX):\n\r
+0087=\n\rPlugins de contenido (WDX):\n\r
+0088=
+0089=No se puede guardar el archivo de reporte en "%s"
+
+;UFormOptions
+0100=¿Quiere añadir los atajos de TC Plugins Manager a la barra de botones predefinida de Total Commander?\n\nNota: Para refrescar la barra actual de botones tiene que reiniciar Total Commander.
+
+
+[Captions]
+
+;UFormMain
+0050=TC Plugins Manager
+0051="Ruta de TC:  "
+0052="Versión:  "
+0053="Estado:  "
+0054=Configuración:
+0055=Examinar por Total Commander
+0056=Ruta del ejecutable de Total Commander
+0057=Ruta del archivo ini de Total Commander
+0058=Examinar por archivo ini de Total Commander
+0059=Ejecutar Total Commander
+0060=&Ejecutar
+0061=¡Reiniciar Total Commander!
+0062=¡&Reiniciar!
+0063=Instalar plugin(s)
+0064=&Instalar
+0065=Cambiar las opciones de Plugins Manager
+0066=O&pciones
+0067=Mostrar información acerca de Plugins Manager
+0068=Acerca de
+0069=Cerrar Plugins Manager
+0070=Cerrar
+0071=Desactivar/activar plugins seleccionados
+0072=
+0073=Desinstalar plugins seleccionados
+0074=De&sintalar
+0075=Cambiar nombre/asociación del plugin
+0076=A&justes
+0077=Propiedades del archivo...
+0078=
+0079=
+0080=
+0081=&Configurar
+0082=Configurar plugin (mostrar archivo .ini o diálogo de configuración)
+0083=&Orden
+0084=Cambiar orden de carga de plugins
+0085=&Desactivar
+0086=Acti&var
+0087=Refrescar lista
+0088=Mostrar todos los plugins o solo del tipo seleccionado
+0089=E&xaminar carpeta
+0090=Examinar carpeta de plugin
+0091=Instalar desde un arc&hivo...
+0092=
+0093=A&justes
+0094=Ajustar parámetros del plugin de compresión
+0095=Instalar desde una carpeta...
+0096=Instalar todos los plugins desde la carpeta seleccionada y todas sus subcarpetas:
+0097=
+0098=
+0099=
+0110=Describir %s
+0111=Descripción:
+0112=&Editar
+0113=Editar archivo ini de Total Commander directamente
+0114=Crear repor&te
+0115=Guardar lista de plugins en un archivo
+0116=Filtro
+0117=Orden de carga de plugins %s...
+0120=Usar tcmatch.dll pre&determinado
+0121=Usar dll pers&onalizada:
+
+;UFormAbout
+0100=Plugins Manager para Total Commander
+0102=Retroalimentación
+0103=
+0104=Página Web:
+0105=Aceptar
+
+;UFormAdd
+0150=Asociación de Plugin
+0151=Cancelar
+0152=Plugin:
+0153=Establecer nombre/asociación:
+
+;UFormOptions
+0200=Registrar extensiones WCX/WLX/WFX/WDX
+0201=(permite instalar plugins presionando Enter)
+0202=Idioma:
+0203=Refrescar lista cada
+0204=seg.
+0205=Mostrar tabs para tipos de plugins diferentes
+0206=Mostrar tipos de plugins en la lista
+0207=
+0208=Cuando se instala plugins:
+0209=Usar '%COMMANDER_PATH%' en rutas
+0210=Reiniciar TC después de la instalación
+0211=Ajustar plugins de compresión tras instalarlos
+0212=Carpetas predefinidas para tipos diferentes de plugins:
+0213=Ajustar plugins de compresión antes de instalarlos, si es necesario
+0214=Atajos en la barra de TC...
+0215=Reiniciar TC
+0216=Reiniciar la última instancia
+0217=Cerrar todas las instancias y ejecutar una nueva
+0218=Usar reiniciador externo:
+0219=Tiempo de reinicio (en mseg):
+0220=Mostrar columna de versiones
+0221=Mostrar columna de descripciones
+0222=Iniciar TC en primer plano
+0223=Carpetas de plugins
+0224=Configuración de TC FTP:
+0225=Ejecutable de WinRAR:
+0226=Mostrar números de orden de plugins en la lista
+0228=Usar editor específico:
+0229=Rutas
+
+0240=General
+0241=Avanzado
+
+;UFormOrder
+0250=Orden de plugins
+0251=Cambiar orden de carga de plugins de %s:
+0252=Arriba
+0253=Abajo
+
+;UFormTweak
+0300=Plugin:
+0301=Extensión:
+0302=Banderas:
+0303=Puede crear nuevos archivos
+0304=Puede modificar archivos existentes
+0305=El archivo puede contener varios archivos
+0306=Puede borrar archivos
+0307=Tiene diálogo de opciones
+0308=Soporta compresión en memoria
+0309=Detecta tipo de archivo por contenido
+0310=Permite búsqueda de texto en archivos
+0311=No abre con Intro pero si con Ctrl+AvPag
+0312=Soporta encriptación
+0313=Remover
+0314=Añadir nuevo
+0315=Predefinido
+0316=Cambiar
+
+;UFormReport
+0350=Reporte
+0351=Puede guardar la lista actual de plugins en un archivo de texto.
+0352=Nombre de archivo:
+0353=Columnas:
+0354=Plugin
+0355=Descripción
+0356=Versión
+0357=Estado
+0358=Registrado para
+0359=Nombre archivo
+
+;UFormInstallLog
+0400=Log de instalación de plugins
+0401=Plugin(s) instalado(s): %d
+0402=Error(es) ocurrido(s): %d
+0403=Atención: Ahora necesita reiniciar Total Commander.
+0404=Atención: Después de la confirmación Total Commander será reiniciado.
+0405=No necesita reiniciar Total Commander.
+0406=Copiar log al portapapeles
+
+;Log messages
+0420=No se puede instalar el plugin
+0421=El plugin ya está instalado
+0422=No se puede ejecutar el descompresor
+0423=No se puede descomprimir el archivo
+0424=Instalación cancelada
+0425=No se puede crear la carpeta temporal
+0426=No hay plugins en el archivo
+0427=No hay plugins en la carpeta
+0428=Formato de plugin desconocido
+0429=No se puede mover la carpeta
+0430=No se puede encontrar la carpeta
+0431=No se puede crear la carpeta
+0432=No se puede mover el archivo
+0433=No se puede remover el archivo
+0434=Instalación abortada
+0435=Plugin no encontrado (¿varios plugins en la misma carpeta del archivo?)
+0436=Parámetros en pluginst.inf inválidos
+
+;Shortcuts help
+0450=Ayuda para atajos:
+0451=Instalar plugin(s)
+0452=Instalar plugin(s) de archivo(s)
+0453=Instalar plugin(s) de una carpeta
+0454=Activar/desactivar plugin(s)
+0455=Cambiar pestaña activa
+0456=Abrir carpeta del plugin en TC
+0457=Cambiar nombre/asociación del plugin
+0458=Desinstalar plugin(s)
+0459=Configurar plugin
+0460=Seleccionar todos los plugins
+0461=Establecer filtro del panel
+0462=Cambiar orden de los plugins
+0463=Refrescar lista
+0464=Describir el plugin en el archivo Descript.ion
+0465=Esta ayuda
+0466=Mostrar propiedades del archivo del plugin
+0467=Presione Aceptar para cerrar la herramienta de configuración
+
+;UFormInstallProgress
+0490=Progreso de operación
+0491=Examinando carpeta:
+0492=Procesando plugin:

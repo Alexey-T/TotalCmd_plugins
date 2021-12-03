@@ -1,0 +1,74 @@
+Suggerimenti e FAQ
+------------------
+
+D1: Perché il programma è così lento? Devo aspettare 2 secondi tra ogni
+    aggiornamento della lista!
+
+R:  Il rallentamento è possibile sia dovuto all'antivirus, che controlla
+    il file .INI di TC. Prova ad escludere questo file dalla scansione.
+    Cerca anche di impostare le seguenti opzioni ai valori predefiniti,
+    nelle Opzioni di Plugman:
+
+    - "Generale / Mostra colonna Versione" = Off
+    - "Generale / Mostra colonna Descrizione" = Off
+    - "Avanzato / Ricarica lista dei plugin ogni N secondi" = Off
+
+----------------------------------------------------------------------------
+
+D2: La funzione "Installa dall'archivio" non funziona! Ottengo il messaggio
+    "Impossibile scompattare l'archivio".
+    
+R:  Questa funzione richiede un decompressore esterno - guarda le note nel
+    file Readme.Ita.txt
+
+----------------------------------------------------------------------------
+
+D3: Quali combinazioni da tastiera sono supportate?
+
+R:  Premi F1 nella finestra principale di Plugman, per visualizzarle tutte.
+
+----------------------------------------------------------------------------
+
+D4: Voglio sempre vedere lo stato di "Cancellato", anche per le estensioni
+    disabilitate.
+
+R:  In Plugman.ini, imposta l'opzione nascosta:
+    [Options]
+    ShowDeletedAlways=1
+
+----------------------------------------------------------------------------
+
+D5: 1. Ho cancellato un'estensione con TC PlugMan e ora sto tentando di
+       cancellare il file dell'estensione dal disco. Ma Windows dice che
+       il file è bloccato. Cosa devo fare?
+    2. Cambio spesso le impostazioni delle estensioni (stringhe univoche/
+       Nomi delle estensioni di FS/impostazioni nei file .ini) e sono stanco
+       di dover riavviare TC. E' possibile applicare immediatamente le
+       modifiche?
+
+R:  Prova questa opzione nascosta in Plugman.ini:
+    [Options]
+    UnloadPlugins=1
+
+----------------------------------------------------------------------------
+
+D6: Si può fare in modo che il decompressore esterno non venga sempre
+    eseguito in modalità "ridotto a icona"?
+
+R:  In Plugman.ini, imposta l'opzione nascosta:
+    [Options]
+    RunUnpackMinimized=0
+
+----------------------------------------------------------------------------
+
+Q7: Posso creare un file di log?
+
+R:  In Plugman.ini, imposta l'opzione nascosta:
+    [Options]
+    Log=1
+
+----------------------------------------------------------------------------
+
+
+Se hai ancora delle domande, visita il forum di supporto in inglese:
+http://www.ghisler.ch/board/viewtopic.php?t=4798

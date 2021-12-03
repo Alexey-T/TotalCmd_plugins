@@ -1,0 +1,10 @@
+[PluginInstall]
+Description="File Descriptions" content plugin
+DescriptionRus=Content-плагин "Файловые описания"
+DescriptionFra="File Descriptions": montre des informations des fichiers dans Total Commander
+DescriptionDeu=Content-Plugin "File Descriptions" zeigt Dateibeschreibungen an
+DescriptionHun="Fбjl adatok" tartalom-beйpьlх 
+DescriptionEsp=File Descriptions - Plugin de Contenido: Muestra informaciуn de ficheros
+Type=wdx
+File=FileDesc.wdx
+DefaultDir=FileDesc

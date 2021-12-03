@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+
+<head>
+	<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<title>DelphiDabbler Info Sheet: Menu Speed Button Components</title>
+	<base target="_blank">
+	<style>
+		<!--
+		body {
+			background-color: White;
+			font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+			font-size: 10pt;
+		}
+		h1 {font-size: 12pt;}
+		h2 {font-size: 10pt;}
+		h3 {font-size: 10pt; font-style: italic;}
+		h4 {font-size: 10pt; font-weight: normal; font-style: italic;}
+		-->
+	</style>
+</head>
+
+
+<body>
+
+
+<h1> Menu Speed Button Components</h1>
+
+<hr noshade />
+
+
+<h2>Contents</h2>
+
+<ul>
+  <li><a href="#Description" target="_self">Description</a></li>
+  <li><a href="#Compatibility" target="_self">Compatibility</a></li>
+  <li><a href="#Installation" target="_self">Installation</a></li>
+  <li><a href="#Issues" target="_self">Known Issues</a></li>
+  <li><a href="#Update" target="_self">Update History</a></li>
+  <li><a href="#License" target="_self">License and Disclaimer</a></li>
+  <li><a href="#Author" target="_self">About the Author</a></li>
+</ul>
+
+<hr noshade />
+
+
+<h2><a name="Description"></a>Description</h2>
+
+<p>This unit contains a set of three speed button derived components that either
+	display pop-up menus associated with the buttons or form connected button /
+	menu button pairs. The components are:</p>
+<ul>
+	<li><em>TPJMenuSpeedButton</em> -- which can display an associated pop-up
+		menu  when clicked.</li>
+	<li><em>TPJLinkedMenuSpeedButton</em> -- links to a master button and
+		displays an associated pop-up menu when clicked.</li>
+	<li><em>TPJLinkedSpeedButton</em> -- a speed button that can link to and
+		control a slave button that accesses a pop-up menu.</li>
+</ul>
+
+<hr noshade />
+
+
+<h2><a name="Compatibility"></a>Compatibility</h2>
+
+<p>The unit is compatible with Delphi 4. It may work correctly in Delphi 5 but
+	this has not been tested.</p>
+
+<hr noshade />
+
+
+<h2><a name="Installation"></a>Installation</h2>
+
+<ol class='inst'>
+	<li> Unzip the component's <code>.zip</code> into a folder of your choice,
+		preserving the directory structure. </li>
+	<li>Copy the files <code>PJMenuSpeedButtons.pas</code>,
+		<code>PJMenuSpeedButtons.dcr</code> and
+		<code>PJMenuSpeedButtons.res</code> to where you wish to install into
+		Delphi. This will probably be a sub-folder of the
+		<code>$(DELPHI)\lib</code> folder.</li>
+	<li>Install the unit's components and property editor into the palette by
+		chosing the <em>Component | Install Component</em> menu option to
+		display the <em>Install Component</em> dialog box. Then:
+		<ul>
+			<li>Select the <em>Into existing package</em> tab.</li>
+			<li>Click the <em>Browse</em> button next to the <em>Unit file
+				name</em> edit box to display the <em>Unit file name</em> dialog
+				box.</li>
+			<li>Select <code>PJMenuSpeedButtons.pas</code> from the file dialog
+				and click <em>OK</em> to return to the <em>Install
+				Component</em> dialog box.</li>
+			<li>Choose the package into you wish to install from the <em>Package
+				file name</em> drop down list.</li>
+			<li>Click <em>OK</em>.</li>
+			<li>A confirmation dialog box, querying whether it is OK to rebuild
+				and reinstall the package may displayed. Click <em>Yes</em> to
+				proceed.</li>
+			<li>The package will now be built and a dialog box stating that the
+				<em>TPJMenuSpeedButton</em>, <em>TPJLinkedSpeedButton</em> and
+				<em>TPJLinkedMenuSpeedButton</em> components have been installed
+				should be displayed. Click <em>OK</em> to dismiss the dialog
+				box.</li>
+		</ul>
+	</li>
+	<li>You can now delete <code>PJMenuSpeedButtons.pas</code> from the place
+		where you copied it if you wish (but ensure that the <code>.dcu</code>
+		files are not deleted). The component will appear on a palette called
+		<em>DelphiDabbler</em>. The other code in the unit can be made available
+		simply by <strong>use</strong>-ing the unit in your projects. You can
+		move the components to a different palette as required.</li>
+	<li>The simplest way to install the help file is to use my
+		<a href="http://www.delphidabbler.com/chi"><em>Component 
+		Help Installer Expert</em></a>. To install manually, proceed as follows: 
+		<ul>
+			<li>Copy <code>PJMenuSpeedButtons.hlp</code> to whichever folder you
+				wish to install it to.</li>
+			<li>In Delphi 3 to 6 (where X is the Delphi version 3..6):
+				<ul>
+					<li>Edit <code>DelphiX.ohl</code> (in
+						<code>$(DELPHI)\Help</code>), adding the line
+						<code>:Link PJMenuSpeedButtons.hlp</code> to the end of
+						the section labelled &quot;Third party help&quot;.</li>
+					<li>Edit <code>DelphiX.ohi</code> (in
+						<code>$(DELPHI)\Help</code>), adding the line
+						<code>:Index DelphiDabbler Menu Speed
+						Buttons=PJMenuSpeedButtons.hlp</code> towards the end of
+						the index section.</li>
+					<li>Edit <code>DelphiX.cnt</code> (in
+						<code>$(DELPHI)\Help</code>), ensuring that the lines
+						<code>:Include delphiX.ohi</code>and <code>:Include
+						delphiX.ohl</code> appear somewhere in the file.</li>
+				</ul>
+			</li>
+			<li>In Delphi 7:
+				<ul>
+					<li>Edit <code>D7.ohl</code> (in
+						<code>$(DELPHI)\Help</code>), adding the line
+						<code>:Link PJMenuSpeedButtons.hlp</code> to the end of
+						the section labelled &quot;Third party help&quot;.</li>
+					<li>Edit <code>D7.ohi</code> (in
+						<code>$(DELPHI)\Help</code>), adding the line
+						<code>:Index DelphiDabbler Menu Speed
+						Buttons=PJMenuSpeedButtons.hlp</code> towards the end of
+						the index section.</li>
+					<li>Edit <code>D7.cnt</code> (in
+						<code>$(DELPHI)\Help</code>), ensuring that the lines
+						<code>:Include d7.ohi</code> and
+						<code>:Include d7.ohl</code> appear somewhere in the
+						file.</li>
+				</ul>
+			</li>
+			<li>Using <em>RegEdit</em> open the key
+				<code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Help</code> 
+				and add a new string value named
+				<code>PJMenuSpeedButtons.hlp</code> whose value is the path
+				where you copied the help file (probably
+				<code>($DELPHI)\Help</code>).</li>
+		</ul>
+	</li>
+	<li>The supplied demo programs can be loaded into Delphi and compiled and
+		run as required.</li>
+</ol>
+
+<hr noshade />
+
+
+<h2><a name="Issues"></a>Known Issues</h2>
+
+<p>No bugs reported to date.</p>
+
+<hr noshade />
+
+
+<h2><a name="Update"></a>Update History</h2>
+
+<p><strong>Release 1.0.1 of 11 September 2003</strong><br />
+	<em>PJMenuSpeedButtons.pas  1.0.1 of 11 September 2003</em></p>
+<ul>
+	<li>Changed component palette from PJSoft to DelphiDabbler.</li>
+	<li>Updated help file window and copyright message</li>
+</ul>
+
+<p><strong>Release 1.0 of 23 June 2001</strong><br />
+	<em>PJMenuSpeedButtons.pas v1.0 of 23 June 2001</em></p>
+<ul>
+	<li>Components</li>
+	<li>Demo project</li>
+	<li>Help file</li>
+</ul>
+
+<hr noshade />
+
+
+<h2><a name="License"></a>License &amp; Disclaimer</h2>
+
+<p>This component is copyright &copy; P.D.Johnson, 2001-2003.</p>
+
+<p>The source code and help files can be freely distributed on a not-for-profit
+	basis providing that:</p>
+
+<ol>
+	<li>the source code is not altered.</li>
+	<li>this readme file is distributed with it unchanged.</li>
+</ol>
+
+<p>By not-for-profit I mean that you may recover out of pocket expenses
+	incurred in distributing the code, but should not make a profit from
+	this.</p>
+
+<p>If you discover any bugs in this implementation, or if you have any update 
+	suggestions, please contact me
+	<a href="http://www.delphidabbler.com/contact.php">via my website</a>.</p>
+
+<p>Please do modify the code for you own use. I'd like to see any changes you
+	make - I could incorporate them into future versions. Please notify me of
+	changes on at the above e-mail address.</p>
+
+<p>This software is provided as is - no warranty is given as to its suitability
+	for any purposes to which you may wish to put it.</p>
+
+<hr noshade />
+
+
+<h2><a name="Author"></a>About the Author</h2>
+
+<p>I'm Peter Johnson - a hobbyist programmer living in Ceredigion in West Wales,
+	UK. I write mainly in Delphi. My programs are available for download on my
+	web-site:
+	<a href="http://www.delphidabbler.com/">http://www.delphidabbler.com/</a>.
+	</p>
+
+<p>I can be contacted <a href="http://www.delphidabbler.com/contact.php">via the
+	website</a>.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+Versions history
+----------------
+
+1.9.0
+- tabs made not of buttons
+- Unicode fields/ test-name support
+- last plugin remembered
+
+1.8.4
+- "Show fulltext fields" option
+- when "Show fulltext" unchecked, dblclick shows field in memo
+- FullText.txt removed
+
+1.8.2:
+- Lister support removed
+- support for wdx_XML
+- support for Office2007
+- exit by Esc
+- ListView popup menu
+- ListView multiselect
+...

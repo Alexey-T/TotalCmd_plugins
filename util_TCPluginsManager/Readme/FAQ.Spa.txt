@@ -1,0 +1,58 @@
+Consejos y FAQ
+--------------
+
+Q: ¿Por qué el programa es tan lento? ¡Tengo que esperar 2 seg. en cada refresco de la lista!
+A: Hay 4 opciones en Plugman.ini que hacen más veloz al programa
+   (solo 3 de ellas pueden ser cambiadas en opciones), pruébelas: 
+
+   [Options] 
+   ShowNames=1 
+   ShowVersionsCol=0 
+   ShowDescriptions=0 
+   Refresh=0 
+
+
+Q: ¡La caractrística "Instalar desde archivo" no trabaja! Obtengo el mensaje
+   "No se puede edescomprimir el archivo".
+A: Esta característica solo trabaja con WinRAR instalado (http://rarlab.com), así que:
+   1. Compruebe que WinRAR está instalado;
+   2. Compruebe que ha especificado la ruta a WinRAR.exe en opciones;
+   3. Compruebe que el archivo contiene un plugin válido.
+
+
+Q: Por favor liste todos los atajos de teclado.
+A: ----------------------------------------------
+   Ins       Instalar plugin
+   Ctrl+Ins  Instalar plugin desde archivo
+   Enter     Desactivar/activar plugins
+   1 - 5     Cambiar tab activo
+   F4        Abrir carpeta del plugin en TC
+   F6        Cambiar asociación del plugin
+   F8, Del   Eliminar plugins
+   F9        Configurar plugin
+   Ctrl+A    Seleccionar todos los plugins
+   Ctrl+F    Establecer filtro de panel
+   Ctrl+O    Cambiar orden de plugins
+   Ctrl+R    Refrescar lista
+   Ctrl+Z    Describir plugin (usando Descript.ion)
+   ----------------------------------------------
+
+
+Q: Siempre quiero ver estado "Eliminado" de archivos, aún para plugins desactivados.
+A: Establecer opción en Plugman.ini:
+   [Options]
+   ShowDeletedAlways=1
+
+
+Q1: He borrado un plugin en TC Plugman, y ahora estoy tratando de borrar el archivo del
+    plugin del disco. Pero Windows dice que el archivo está bloqueado. ¿Qué hacer?
+Q2: Frecuentemente estoy cambiando las opciones de plugins (detectar-cadenas/nombre FS-plugins/
+    opciones archivos-ini), ya estoy cansado de reiniciar TC. ¿Los cambios pueden ser
+    aplicados intántaneamente?
+A:  Pruebe esta opción en Plugman.ini:
+    [Options]
+    UnloadPlugins=1
+
+
+Si aún tiene preguntas, por favor visite el foro de soporte en Inglés:
+http://www.ghisler.ch/board/viewtopic.php?t=4798

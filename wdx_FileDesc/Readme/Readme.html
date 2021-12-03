@@ -1,0 +1,229 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>"File Descriptions" plugin for Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Introduction</font></h2>
+
+<b>File Descriptions</b> is content plugin for <b>Total Commander</b>,
+which allows to display file descriptions:
+
+<ul>
+<li> descriptions from Descript.ion/Files.bbs
+<li> for text files: file contents
+<li> for executables/dlls: version information
+<li> for HTML files: contents of Title/Meta tags
+</ul>
+
+It also allows to use additional plugins, which show descriptions
+of the following file types:
+
+<ul>
+<li> AVI/QuickTime Movies (*.AVI,*.MOV)
+<li> MPEG Movies (*.MPG,*.MPEG,*.MPE,*.M1V,*.M2V,*.VOB)
+<li> Images (*.BMP,*.JPG,*.GIF,*.TGA,*.PNG,*.PSD,*.TIFF,*.PCX)
+<li> Streamed Music (*.MP3,*.MP2,*.MP1,*.OGG,*.WMA,*.WAV,*.VQF,*.AAC,*.APE,*.MPC,*.FLAC,*.CDA)
+<li> Tracked Music (*.MOD,*.XM,*.IT,*.S3M,*.MT2,*.STM,*.MTM,*.UMX)
+<li> MS Office Documents (*.DOC,*.DOT,*.XL?,*.PPT,*.PPS,*.POT,*.OBD,*.WPD,*.SDA,*.FPX,*.MIX)
+<li> OpenOffice.org Documents (*.OD?,*.OT?,*.SX?,*.ST?)
+<li> Linux RPM Files (*.RPM)
+<li> Drive Image Files (*.PQI)
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Important note</font></h2>
+
+For support of all listed file types 2nd-level plugins are required.
+Supported 2nd-level plugins types are:
+
+<ul>
+<li> <a href="http://www.whereisit-soft.com"><b>WhereIsIt</b></a> plugins (*.DLL)
+<li> <a href="http://www.diskexplorerpro.com"><b>Disk Explorer Pro</b></a> plugins (*.DFP)
+<li> <a href="http://www.ghisler.com"><b>Total Commander</b></a> content plugins (*.WDX)
+</ul>
+
+<p>Situation with <b>WhereIsIt</b></a> plugins.
+You may download these plugins from official site
+<a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>,
+but note that in the license of DescPlugin.dll, DescGraphics.dll and CDDAPlugin.dll
+it's written:
+
+<p><u><b>"Using or distributing these 
+librarires for any purpose other than running them as a part of WhereIsIt 
+is prohibited and in violation of copyright laws"</b></u>.
+
+<p>So, due to copyright reasons, <b>File Descriptions</b> plugin
+prohibites loading of these three DLL modules.
+Of course, now it's impossible to show descriptions for file types supported
+by these modules, but as the author of <b>File Descriptions</b> plugin,
+I don't want to violate copyrights of <b>WhereIsIt</b> author.
+
+<p>Situation with <b>Disk Explorer Pro</b> plugins is more good - author allowed
+to use his plugins freely, except <b>pictview.dfp</b> plugin, which uses some commercial
+library. So, useful <b>Disk Explorer Pro</b> plugins are included in this package.
+
+<p>Content plugins for <b>Total Commander</b> are distributed freely - you may
+download them from unofficial database <a href="http://www.totalcmd.net">http://totalcmd.net</a>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Installation</font></h2>
+
+<ol>
+<li> With TC 6.50+, just open archive and TC will install plugin automatically.
+   <br>After plugins list opens, put plugin to the top of the list (assign to it
+   high priority).
+
+<p><li> Go to <b>Configuration -> Options -> Custom columns</b>;
+   <br>create new view named "Descriptions" and add new column to it;
+   <br>press "+" and select field from FileDesc list.
+
+<p><li> Turn on custom view:
+   <br><b>Show -> Custom columns mode -> Descriptions</b>.
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>How to use WhereIsIt plugins</font></h2>
+
+<ol>
+<li> First, you need to download them. Go to <a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+     and download the following modules:
+<p>
+<ul>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/DescMovies11.zip">Movie Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/MusicModule12.zip">Music Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/RPMPlugin.zip">Linux RPM Description Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/DriveImage.zip">Drive Image Description Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GeosPlugin.zip">GEOS File Module</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GhostImagePlugin.zip">GHOST Image Description Module</a>
+</ul>
+
+<p><li> Unpack modules archives to <b>Plugins</b> subfolder of main plugin folder.
+
+<p><li> Open <b>FileDesc.ini</b> file and make sure the following lines are uncommented:
+  <pre>
+  [Plugins]
+  10=DescMovies.dll
+  11=MusicModule.dll
+  12=RPMPlugIn.dll
+  13=pqidesc.dll
+  14=GeosPlugin.dll
+  15=GhostImagePlugin.dll
+  </pre>
+</ol>
+
+<p> That's all - now you need to restart <b>Total Commander</b>.
+<br>To configure plugins, use <b>Config.exe</b> program.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>How to use TC content plugins</font></h2>
+
+<ol>
+<li> First, you need to download them. Go to site
+<a href="http://www.totalcmd.net/directory/content.html">http://www.totalcmd.net</a>,
+open "Content Plugins" page and download needed plugins.
+<br>Some of the useful plugins are:
+
+<p>
+<ul>
+<li> <a href="http://www.totalcmd.net/plugring/AudioInfo.html">AudioInfo</a> (included is this package)
+<li> <a href="http://www.totalcmd.net/plugring/wdx_anytag.html">AnyTag</a>
+<li> <a href="http://www.totalcmd.net/plugring/xPDFSearch.html">xPDFSearch</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_image_info.html">Image Info</a> (included is this package)
+<li> <a href="http://www.totalcmd.net/plugring/wdx_ImgSize.html">ImgSize</a>
+<li> <a href="http://www.totalcmd.net/plugring/exif2.html">Exif</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_media.html">Media</a>
+<li> <a href="http://www.totalcmd.net/plugring/shelldetails.html">ShellDetails</a>
+<li> <a href="http://www.totalcmd.net/plugring/OOInfo.html">OpenOffice.org Info</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_cdrinfo.html">CDR Info</a>
+<li> <a href="http://www.totalcmd.net/plugring/CDocProp.html">CDocProp</a>
+<li> <a href="http://users.telenet.be/liontech/">wlxFont</a> (also works as WDX plugin)
+</ul>
+
+<p><li> Unpack plugin archives to <b>Plugins</b> subfolder of main plugin folder.
+
+<p><li> Open <b>FileDesc.ini</b> file and for every plugin add lines:
+  <pre>
+  NN=Path\Plugin.wdx
+  NN_detect=*.EXT1,*.EXT2,*.EXT3
+  NN_format=["Prefix1"Field1"Suffix1"] ["Prefix2"Field2"Suffix2"]
+  </pre>
+
+Where NN is plugin ID (number from 40 to 100),
+"Path\Plugin.wdx" specifies path to plugin (absolute or relative to <b>Plugins</b> folder),
+NN_detect specifies supported extentsions list,
+NN_format specifies format string. Format string contains list of fileds with
+optional prefix and suffix, prefix+value+suffix are displayed only when feild is not empty.
+</ol>
+
+<p> Step 3 can be performed also by using <b>Config.exe</b> program:
+<br>1. Press <b>Install new</b> button and browse for plugin,
+<br>2. Select plugin at the bottom of the list, press <b>Configure</b> button and set plugin parameters.
+
+<p> To test how plugins are plugged, use <b>Config.exe</b>.
+If you configured <b>FileDesc.ini</b> file properly, program will show plugins in the list
+and will allow to configure them.
+
+<p> To apply new plugins configuration, you need to restart <b>Total Commander</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Versions history</font></h2>
+
+<ul>
+<li> 2.6.2 (16.11.07): 
+  <ul>
+  <li> added Spanish translation, updated Readme.
+  </ul>
+<li> 2.6.1 (16.12.05):
+  <ul>
+  <li> for WDX plugins it's allowed to define several columns;
+  <li> in format lines it's allowed to use characters between fields definitions;
+  <li> added description for URL files;
+  <li> Config.exe: window made resizable
+  </ul>
+<li> 2.6.0 (09.12.05):
+  <ul>
+  <li> added possibility to use Total Commander content plugins (two of them are included in this package);
+  <li> Config.exe: added possibility to install/uninstall plugins
+  </ul>
+<li> 2.5.0 (02.12.05):
+  <ul>
+  <li> added possibility to use Disk Explorer Pro plugins
+     (they are included in this package), so more file types are supported now;
+  <li> added Config.exe program that configures all used plugins
+  </ul>
+<li> 2.0.0 (19.11.05): 
+  <ul>
+  <li> internal name changed to FileDesc - you need to reconfigure columns;
+  <li> total redesign: plugin now uses 2nd-level description plugins,
+       which format is compatible with WhereIsIt program
+  </ul>
+<li> ...
+<li> 1.0.0 (25.10.04):
+  <ul>
+  <li> initial version
+  </ul>
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Copyrights</font></h2>
+
+<p>File Descriptions (FileDesc.wdx) &copy; Alexey Torgashin
+<br><a href="http://atorg.net.ru" target=_blank>http://atorg.net.ru</a>
+<br><a href="http://www.totalcmd.net/plugring/FileDiz.html" target=_blank>http://www.totalcmd.net/plugring/FileDiz.html</a>
+
+<p>Total Commander &copy; Christian Ghisler
+<br><a href="http://www.ghisler.com" target=_blank>http://www.ghisler.com</a>
+
+<p>WhereIsIt, DescPlugin.dll, DescGraphics.dll, CDDAPlugin.dll &copy; Robert Galle
+<br><a href="http://www.whereisit-soft.com" target=_blank>http://www.whereisit-soft.com</a>
+
+<p>Disk Explorer Professional, .DFP Filters &copy; Tomas Jelinek
+<br><a href="http://www.diskexplorerpro.com" target=_blank>http://www.diskexplorerpro.com</a>
+
+<p>Image Info (Images.wdx) &copy; WhiteWind
+<br><a href="http://www.totalcmd.net/plugring/wdx_image_info.html" target=_blank>http://www.totalcmd.net/plugring/wdx_image_info.html</a>
+
+</body></html>

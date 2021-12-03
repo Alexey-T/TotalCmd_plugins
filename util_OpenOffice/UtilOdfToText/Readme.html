@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>OdfToTxt: Converter of OpenOffice.org documents to plain text form</title>
+  <link href="../main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<table width="630" height="100%" align="center">
+  <tr>
+    <td class="text">
+
+<center>
+<font color=DarkBlue>
+<h1>OdfToTxt: Converter of OpenOffice.org <br> documents to plain text form</h1>
+</font>
+</center>
+
+<!---------------------------->
+<h1>Description</h1>
+
+<p>
+The <b>OdfToTxt</b> is a Win32 console program, 
+which allows to dump plain-text contents of OpenOffice.org documents.
+The following document extensions are supported:
+
+<p>
+ODT ODS ODP ODG ODF ODB ODM OTT OTH OTS OTG OTP
+SXW SXC SXG SXI SXD SXM STW STC STD STI
+
+<p>
+Note that only the text is extracted from documents, any document formatting is stripped.
+If you use it with tables, you'll get only the text contained in the tables cells.
+
+<p>
+It is open source, written in Borland Delphi.
+The license for code is
+<a href="http://www.mozilla.org/MPL/" target="_blank">Mozilla Public License</a> Version 1.1.
+
+
+<!---------------------------->
+<h1>Usage</h1>
+
+The command line syntax is the following:
+
+<pre>
+  OdfToTxt.exe FileName [ Options ]
+</pre>
+
+where options are:
+
+<p>
+<ul>
+<li>  /ANSI          -- Write resulting text in ANSI codepage (default is OEM)
+<li>  /NoHead        -- Skip document header: title and subject
+<li>  /Out=FileName  -- Specify resulting text filename (default is stdout)
+</ul>
+
+
+<!---------------------------->
+<h1>Usage in FAR manager</h1>
+
+<ol>
+<li> Copy OdfToTxt.exe and unzip32.dll to any folder listed in your %PATH%
+   environment variable.
+<li> Go to menu <b>Commands -- File associations</b>, then add association:
+  <p>
+  <ul>
+  <li> <b>File mask</b>:   <font face="Courier">  *.od?,*.ot?,*.sx?,*.st?  </font>
+  <li> <b>View command</b>:  <font face="Courier">  view:&lt;OdfToTxt.exe "!\!.!"  </font>
+  </ul>
+</ol>
+
+<p>
+That's all - now you may view OpenOffice.org documents by using F3 key.
+<br>
+Note: <b>FAR Commands</b> plugin must be installed for association to work properly.
+
+
+<!---------------------------->
+<h1>Versions history</h1>
+
+<ul>
+<li> 1.2.1 (16.08.2007): Added: Command line parameter /Out
+<li> 1.1.0 (22.06.2006): Added: Some command line options
+<li> 1.0.2 (23.04.2006): Added: Line-break char is correctly displayed
+<li> 1.0.1 (03.11.2005): Added: Extensions *.OT?, *.ST?
+<li> 1.0.0 (02.11.2005): Initial version
+</ul>
+
+<!---------------------------->
+<h1>Download</h1>
+
+<p>
+Download: <br>
+<a href="http://atorg.net.ru/files_tc/util_OdfToTxt.zip" target="_blank">util_OdfToTxt.zip</a>
+
+<p>
+The source code (including some other OOo related stuff): <br>
+<a href="http://atorg.net.ru/files_tc/util_OOProg_src.rar">util_OOProg_src.rar</a>
+
+
+<!---------------------------->
+<p>
+<hr>
+
+<center>
+Copyright &copy; 2005-2007 Alexey Torgashin
+</center>
+
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

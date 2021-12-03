@@ -1,0 +1,191 @@
+[Language]
+Language=Norsk
+Author=Arnt Ove Gravvold
+Version=1.8.6
+
+[Messages]
+0020=passiv
+0021=innlest
+0022=kjører
+0023=-deaktivert-
+0024=-slettet-
+0025=TC må omstartes
+
+;UFormMain
+0040="Lister:  "
+0041="Pakker:  "
+0042="Filsystem:  "
+0043="Innhold:  "
+0050=TC Plugins Manager %s
+0051=TC Plugman
+0052=V%s %s
+0053=Du må søke etter gyldig %s!
+0054=
+0055=Ingen plugins installert
+0056=Plugin er deaktivert. Du må aktivere den først
+0057=Avinstallere "%s"?\n(filen %s vill ikke bli slettet)
+0058=Deaktivere "%s"?
+0059=Installere "%s"?
+0060=Kan ikke installere: %s
+0061=Allerede installert: %s
+0062=Avinstallere %d plugins?
+0063=Installasjon ok: "%s".\n\nDu må restarte TC.
+0064=Kan ikke pakke ut arkivet: %s\n\neller - ingen plugin filer i arkivet.
+0065=
+0066=
+0067=
+0068=\n\nADVARSEL: Det er allerede installert!\nRegistrert for: %s
+0069=Plugin støtter ikke konfigurering
+0070=Plugin har ikke ini-fil
+0071=Pakker plugin:  <standard filtype>  f.eks.: cab\n\nLister/Innhold plugin:  <detektere streng>  f.eks.: EXT="DOC" | EXT="RTF"\n\nFilsystem plugin:  <root navn>  f.eks.: Network Browser
+0072=Antall plugins: %d. Ikke aktive: %d
+0073=%s:\nAvbrudd i %s!
+0074=Fil %s ikke funnet. Vennligst reinstallere TC Plugins Manager!
+0075=En plugin med det navnet er allerede installert i mappen:\n\n%s\n\nVil du overskrive den?\nVelg Nei for å installere.
+
+;UFormReport
+0080=TC Plugman %s rapport, generert %s %s
+0081=TC versjon: %s, bane: "%s", ini-fil: "%s"
+0082=OS: %s, versjon %s
+0083=Base plugin bane: "%s"
+0084=\n\rLister plugins (WLX):\n\r
+0085=\n\rPakker plugins (WCX):\n\r
+0086=\n\rFilsystem plugins (WFX):\n\r
+0087=\n\rInnhold plugins (WDX):\n\r
+0088=
+0089=Kan ikke lagre rapport til "%s"
+
+[Captions]
+;UFormMain
+0050=TC Plugins Manager
+0051="Bane til TC:  "
+0052="Versjon:  "
+0053="Status:  "
+0054="Ini-fil:  "
+0055=Velg Total Commander
+0056=TC kommando bane
+0057=TC ini-fil bane
+0058=Velg Wincmd.ini
+0059=Kjør Total Commander
+0060=&Kjør
+0061=Restarte Total Commander!
+0062=Re&start TC!
+0063=Installere ny plugin
+0064=&Installere ny
+0065=Innstillinger for Plugin Manager
+0066=I&nnstillinger
+0067=Om Plugin Manager
+0068=Om
+0069=Lukk program
+0070=Lukk
+0071=Deaktivere/Aktivere valgte plugins
+0072=
+0073=Avinstallere valgte plugins
+0074=A&vinstallere
+0075=Endre navn/assosiasjon for plugin
+0076=&Omdøpe
+0077=Plugin
+0078=Versjon
+0079=Status
+0080=Registrert for
+0081=&Konfigurere
+0082=Konfigurere plugin (vis ini-fil eller konfigurasjonsvindu)
+0083=Rekkeføl&ge
+0084=Endre rekkefølge for innlasting av plugins
+0085=&Deaktivere
+0086=&Aktivere
+0087=Oppdatere liste
+0088=Vis kun plugins av denne type
+0089=&Åpne mappe i TC
+0090=Bla igjennom plugin mappe
+0091=Installere fra arkiv...
+0092=Filnavn
+0093=&Tilpasse
+0094=Tilpasse parametere for Pakke plugins
+0095=Installere mappeinnhold...
+0096=Installere plugins fra mappe:
+0097=
+0098=
+0099=
+0110=Beskrive %s
+0111=Beskrivelse:
+0112=&Endre
+0113=Endre TC ini-fil
+0114=Rappor&t
+0115=Generere plugin rapport
+0116=Filter
+
+;UFormAbout
+0100=Plugins Manager for TotalCmd 5.5+
+0102=E-mail  :
+0103=Kommentarer?  :
+0104=Hjemmeside  :
+0105=OK
+
+;UFormAdd
+0150=Assosiere Plugin
+0151=Avbryt
+0152=Plugin:
+0153=Sett navn/assosiasjon:
+
+;UFormOptions
+0200=Registrere filtypene WCX/WLX/WFX/WDX
+0201=(tillate installasjon av plugin ved å trykke Enter)
+0202=Språk:
+0203=Oppdatere liste hver
+0204=sek.
+0205=Vis faner: */Lister/Pakker/...
+0206=Vis plugin typer
+0207=Vis statuslinje
+0208=Ved installasjon av plugins:
+0209=Bruk '%COMMANDER_PATH%' i baner
+0210=Restarte TC etter installering
+0211=Modifisere Pakker plugins
+0212=Plugin mapper:
+0214=Knapper på %s
+0215=TC omstart
+0216=Restarte siste åpnet kopi av TC
+0217=Lukk alle åpne kopier av TC og starte 1 kopi
+0218=Bruk ekstern omstarter:
+0219=Omstart tid (i msek):
+0220=Vis versjoner
+0221=Vis beskrivelser
+0222=Start TC i forgrunnen
+
+;UFormOrder
+0250=Plugin rekkefølge
+0251=Her kan du endre den rekkefølgen som %s plugins leses inn i (0 leses inn først):
+0252=Opp
+0253=Ned
+
+;UFormTweak
+;Finally! Internal TweakWCX utility! :-)
+0300=Plugin:
+0301=Filtype:
+0302=Flags:
+0303=Kan opprette nye arkiv
+0304=Kan endre eksisterende arkiver
+0305=Arkiv kan inneholde flere filer
+0306=Kan slette filer
+0307=Har vindu for konfigurasjon
+0308=Støtter pakking i minnet
+0309=Gjenkjenne arkivtype ut ifra innhold
+0310=Tillat søking etter tekst i arkiv
+0311=Ikke åpne med Enter, men med Ctrl+PgDn
+0312=
+0313=Fjern
+0314=Legg til ny
+0315=Standard
+0316=Endre
+
+;UFormReport
+0350=Rapport
+0351=Du kan lagre pluginliste til en tekstfil.
+0352=Filnavn:
+0353=Kolonner:
+0354=Navn
+0355=Beskrivelse
+0356=Versjon
+0357=Status
+0358=Registrert for
+0359=Filnavn

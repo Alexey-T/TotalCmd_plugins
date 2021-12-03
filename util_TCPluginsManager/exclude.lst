@@ -1,0 +1,10 @@
+*.exe
+*.zip
+*.ini
+
+*\c.bat
+*\update.bat
+
+*.~*
+*.dcu
+*.log

@@ -1,0 +1,280 @@
+;Envoyez vos traductions à l'Auteur: atorg@yandex.ru
+;Indiquez votre nom à la ligne “Author=…”
+; 1.8.5: Caption 0316
+; 1.8.6: Captions 0116,0222
+; 1.8.7: Captions 212,223-225,240-241
+; 1.8.7.4: Message 0100, Caption 0214
+; 1.8.8.0: Messages 0060-0067, Captions 0205-0206,0400-0440
+; 1.8.8.5: Captions 0095-0096,0117,0213,0406-0410,0427-0500
+; 1.8.9.0: Message -0025, Captions 0095-0096,0117,0213,0406-0410,0427-0500, [Language] section changed
+; 1.9.0.0: Captions -0077-0080,-0092,0354
+; 1.9.4.0: Captions -0207,0226
+; 1.9.5.0: Captions 0312
+;
+; 1.9.6.2: Messages 0060,0076-0077
+; 2.0.0.0: Captions 0077-0078,0114,0466
+; 2.0.1.0: Message 0078
+
+
+[Language]
+Language=French
+Version=2.1.2
+Author=Paul Vansumsen a.k.a Ouistiti && Claude Charries
+Homepage=http://pagesperso-orange.fr/charries/
+Email=charriesÀwanadoo.fr
+
+[Messages]
+0020=attente
+0021=chargé
+0022=en marche
+0023=-désactivé-
+0024=-supprimé-
+
+;UFormMain
+0040="“Lister”:  "
+0041="Compresseur:  "
+0042="Syst. Fich.:  "
+0043="Contenu: "
+0050=Gestionnaire de modules TC-PlugMan %s
+0051=TC PlugMan
+0052=Version %s %s
+0053=Vous devez indiquer le bon emplacement de %s!
+;0054=
+0055=Aucun module installé
+0056=Le module “%s” est actuellement désactivé, activez-le d'abord
+0057=Désinstaller le module "%s"?\n(Le fichier %s ne sera pas détruit)
+0058=Désactiver le module "%s"?
+0059=Installer le module "%s"?
+;0060=Paramètre incongru indiqué sur ligne de commande
+0061=
+0062=Désinstaller %d modules?
+;0063=
+;0064=
+;0065=
+;0066=
+;0067=
+0068=\n\nAttention : module déjà installé!\nEnregistré pour: “%s”
+0069=Le module “%s” n'assume pas d'agencement 
+0070=Le module “%s” n'a pas de fichier *.ini
+0071=Module compresseur:  default_extension  p.ex.: cab\n\nModule Lister:  detect_string  p.ex.: EXT="DOC" | EXT="RTF"\n\nModule Syst.Fich.: <Nom racine>  p.ex.: Navigateur Réseau
+0072=Total Modules: %d, désactivé(s): %d
+0073=Module “%s”:\nException dans la fonction %s!
+0074=Le fichier “%s” introuvable, ré-installez TC Plugman!
+0075=Un module de même nom est déjà installé dans le répertoire : \n\n%s\n\nFaut-il l'écraser ?\nChoisir “Non” pour installer à l'emplacement par défaut.
+0076=Module “%s” correctement installé.
+0077=Ne peut désinstaller le module “%s”, car il n'est pas installé
+0078=L'extension “%s” est déjà enregistrée pour : “%s”. Voulez-vous l'assigner quand-même ?
+;
+;UFormReport
+0080=TC Plugman %s - Rapport généré le %s à %s
+0081=TC version: %s, chemin: "%s", fichier ini: "%s"
+0082=S.E. : %s, version %s
+0083=Chemin de base du module: “%s”
+0084=\n\rModules “Lister” (WLX):\n\r
+0085=\n\rModules archives (WCX):\n\r
+0086=\n\rModules systèmes fichiers (WFX):\n\r
+0087=\n\rModules contenus (WDX):\n\r
+;0088=
+0089=Ne peut enregistrer le rapport vers “%s”
+
+;UFormOptions
+0100=Désirez-vous ajouter un bouton pour TC Plugins Manager dans la barre par défaut de Total Commander ?\n\nNota: Il n'apparaîtra qu'après redémarrage de Total Commander.
+
+[Captions]
+;UFormMain
+0050=Gestionnaire Modules TC
+0051="Chemin de TC: "
+0052="Version: "
+0053="État: "
+0054="Agencements: "
+0055=Rechercher l'emplacement de l'exécutable de TC                                                     
+0056=Chemin de commande de l'exécutable de TC                                                           
+0057=Chemin Fichier INI de TC                             
+0058=Recherche du fichier INI de TC                              
+0059=Lancer TC    
+0060=&Lancer       
+0061=Relancer TC !
+0062=&Relancer !
+0063=Installer un¦des nouveau¦x module¦s                                    
+0064=Installer &nouveau                                                
+0065=Modifier les agencements de PlugMan                             
+0066=&Options                                                        
+0067=Afficher le dialogue “À propos de…”                           
+0068=À &propos…                                                      
+0069=Fermer TC PlugMan                                                 
+0070=&Fermer                                                         
+0071=Désactiver¦Activer le¦s module¦s sélectionné¦s        
+;0072=                                                     
+0073=Désinstaller le¦s module¦s sélectionné¦s                             
+0074=&Désinstaller                                                   
+0075=Changer nom racine, Syst. Fich. Association Listeur ¦ F6 ¦                     
+0076=Ajuster                                                     
+0077=Propriétés du fichier…                                                      
+0078=Créer une archive de module¦s                                                   
+;0079=                                                 
+;0080=                                           
+0081=&Agencer
+0082=Agencer Module (afficher le fichier *.ini ou le dialogue d'agencement) ¦ F9 ¦
+0083=Ordr&e Modules
+0084=Changer l'ordre de chargement des modules
+0085=D&ésactiver
+0086=A&ctiver
+0087=Rafraîchir la liste
+0088=Afficher tous les modules ou uniquement les modules du type sélectionné
+0089=&Parcourir…
+0090=Parcourir le dossier des modules
+0091=Installer depuis une &archive
+0092=
+0093=Ajus&ter…
+0094=Paramètres d'ajustement du module Compresseur ¦ F6 ¦
+0095=Installer le contenu du dossier…
+0096=Installer des modules depuis le dossier+sous-dossiers :
+;0097=
+;0098=
+;0099=
+0110=Décrire “%s”
+0111=Description:
+0112=Édit&er
+0113=Éditer le fichier ini de TC
+0114=Créer un rappor&t
+0115=Générer un fichier de rapport sur les modules
+0116=Filtre
+0117=Ordre de chargement des modules (de) %s...
+
+;UFormAbout
+0100=Gestionnaire Modules pour TC 5.5 && >
+;0101=
+0102=Courriel “Retours”:
+;0103=
+0104=Site de l'Auteur:
+0105=C&onfirmer
+
+;UFormAdd
+0150=Association de module
+0151=Ann&uler
+0152=Module:
+0153=Établir nom¦association:
+
+;UFormOptions
+0200=&Enregistrer les extensions .wcx¦.wlx¦.wfx¦.wdx  
+0201=(pour installer des modules avec “Entrée”)
+0202=Langue:
+0203=&Rafraîchir liste chaque
+0204=sec.
+0205=Afficher onglets:*¦“Lister”Compresseurs¦Syst. Fich. ¦…                
+0206=Afficher types de modules                
+0207=
+0208=En installant les modules:
+0209=Utiliser “%COMMANDER_PATH%” &dans chemins
+0210=Relancer T&C après installation
+0211=Modules Compresseur: Ajust.
+0212=Dossier par défaut de tous les types de modules:
+0213=Agencer les modules compresseurs avant l'installation, si besoin
+0214=Boutons sur la barre de TC
+0215=Relancer TC
+0216=Relance la dernière instance
+0217=Ferme toutes les instance, et n'en lance qu'une
+0218=Employer Relanceur externe:
+0219=Temps pour relancer (en ms):
+0220=Afficher la colonne «Versions»
+0221=Afficher la colonne «Descriptions»
+0222=Lancer TC en tâche de fond
+0223=Dossier des modules
+0224=Agencements FTP de TC:
+0225=Exécutable de WinRAR:
+0226=Afficher les n° d'ordre des modules dans la liste
+0228=Utiliser un éditeur spécifique:
+0229=Chemins
+
+0240=Générales
+0241=Avancées
+
+;UFormOrder
+0250=Ordre des Modules
+0251=On peut changer ici l'ordre de chargement des modules %s (0 chargé 1°):
+0252=&Haut 
+0253=&Bas
+
+;UFormTweak
+
+0300=Module:
+0301=Extension:
+0302=Drapeaux:
+0303=Peut créer de nouvelles archives
+0304=Peut modifier des archives existantes
+0305=L'archive peut contenir plusieurs fichiers
+0306=Peut supprimer des fichiers
+0307=Possède un dialogue d'options
+0308=Assume la compression en mémoire
+0309=Détecte le type d'archive par contenu
+0310=Permet de chercher du texte dans des archives
+0311=N'ouvre pas par Entrée, mais par Ctrl+PgeSuiv. 
+0312=Cryptage accepté
+0313=Effacer
+0314=Ajouter nouveau
+0315=Par défaut
+0316=Changer
+
+;UFormReport
+0350=Rapport
+0351=Pour enregistrer une liste des modules dans un fichier texte
+0352=Destination:
+0353=Colonnes:
+0354=Module
+0355=Description
+0356=Version
+0357=État
+0358=Enregistré pour
+0359=Nom du fichier
+
+;UFormInstallLog
+0400=Journal d'instalation des modules
+0401=Module¦s installé¦s: %d
+0402=Erreur¦s survenue¦s: %d
+0403=Attention: on doit relancer Total Commander.
+0404=Attention: après confirmation, Total Commander sera relancé.
+0405=Inutile de relancer Total Commander.
+0406=Copier le journal dans le Presse-papier
+
+;Log messages
+0420=Ne peut installer le module
+0421=Module déjà installé
+0422=Ne peut exécuter le décompreseur
+0423=Ne peut décompresser l'archive
+0424=Installation annulée
+0425=Ne peut créer le répertoire temporaire
+0426=Pas de module dans l'archive
+0427=Pas de modules dans le répertoire
+0428=Format du module inconnu
+0429=Le répertoire ne peut être déplacé
+0430=Le répertoire est introuvable
+0431=Le répertoire ne peut être créé
+0432=Le fichier ne peut être déplacé
+0433=Le fichier ne peut être supprimé
+0434=Installation abandonnée
+0435=Module introuvable (plusieurs modules dans la même archive?)
+0436=Paramètre du fichier «Pluginst.INF» pas valable
+
+;Shortcuts help
+0450=Aide raccourcis:
+0451=Installer module¦s
+0452=Installer module¦s depuis archive¦s
+0453=Installer modules¦s depuis répertoire¦s
+0454=Désactiver¦activer module¦s
+0455=Activer un autre onglet
+0456=Ouvrir le répertoire modules dans TC
+0457=Changer le nom¦association du module
+0458=Désinstaller module¦s
+0459=Configurer le module
+0460=Sélectionner tous les modules
+0461=Filtrer l'affichage dans le panneau
+0462=Changer l'ordre des modules
+0463=Rafraîchir la liste
+0464=Décrire le module dans le fichier Descript.ion
+0465=Cette aide
+0466=Afficher propriétés du fichier module
+
+;UFormInstallProgress
+0490=Progression de l'opération
+0491=Scrute le répertoire :
+0492=Traitement du module:

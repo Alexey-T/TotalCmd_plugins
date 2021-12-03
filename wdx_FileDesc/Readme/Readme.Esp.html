@@ -1,0 +1,233 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Plugin "File Descriptions" para Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Introducci&oacuten</font></h2>
+
+<b>File Descriptions</b> es un plugin de contenido para <b>Total Commander</b>,
+que permite mostrar descripciones de ficheros:
+
+<ul>
+<li> Descripciones de Descript.ion/Files.bbs
+<li> Para ficheros de texto: Contenido del fichero
+<li> Para ejecutables/DLLs: Informaci&oacuten de versi&oacuten
+<li> Para ficheros HTML: Contenido de Meta tags y Title
+</ul>
+
+Tambi&eacuten permite utilizar plugins adicionales, para mostrar descripciones
+de los siguientes tipos de ficheros:
+
+<ul>
+<li> Videos AVI/QuickTime (*.AVI,*.MOV)
+<li> Videos MPEG (*.MPG,*.MPEG,*.MPE,*.M1V,*.M2V,*.VOB)
+<li> Im&aacutegenes (*.BMP,*.JPG,*.GIF,*.TGA,*.PNG,*.PSD,*.TIFF,*.PCX)
+<li> M&uacutesica de flujo (*.MP3,*.MP2,*.MP1,*.OGG,*.WMA,*.WAV,*.VQF,*.AAC,*.APE,*.MPC,*.FLAC,*.CDA)
+<li> M&uacutesica de pista (*.MOD,*.XM,*.IT,*.S3M,*.MT2,*.STM,*.MTM,*.UMX)
+<li> Documentos de MS Office (*.DOC,*.DOT,*.XL?,*.PPT,*.PPS,*.POT,*.OBD,*.WPD,*.SDA,*.FPX,*.MIX)
+<li> Documentos de OpenOffice.org (*.OD?,*.OT?,*.SX?,*.ST?)
+<li> Ficheros RPM de Linux (*.RPM)
+<li> Ficheros Im&aacutegenes de Disco (*.PQI)
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Importante</font></h2>
+
+Para soportar todos los ficheros indicados se requiere de plugins de 2do nivel.
+Los plugins de 2do nivel soportados son:
+
+<ul>
+<li> Plugins <a href="http://www.whereisit-soft.com"><b>WhereIsIt</b></a> (*.DLL)
+<li> Plugins <a href="http://www.diskexplorerpro.com"><b>Disk Explorer Pro</b></a> (*.DFP)
+<li> Plugins de contenido de <a href="http://www.ghisler.com"><b>Total Commander</b></a> (*.WDX)
+</ul>
+
+<p>Observaci&oacuten sobre Plugins <b>WhereIsIt</b>.
+Usted puede descargar estos plugins de la p&aacutegina oficial
+<a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>,
+pero observe que la licencia de DescPlugin.dll, DescGraphics.dll y CDDAPlugin.dll
+expresa:
+
+<p>"<u><b>Using or distributing these
+libraries for any purpose other than running them as a part of WhereIsIt
+is prohibited and in violation of copyright laws</b>"</u>.
+
+<p><b>["<u>El uso o distribuci&oacuten de estas librer&iacuteas para cualquier prop&oacutesito
+distinto al de ser ejecutadas como parte de WhereIsIt
+est&aacute prohibido y es una violaci&oacuten de las leyes de derechos reservados</u>"]</b>.
+
+<p>Por tanto, en respeto de los derechos reservados, el plugin <b>File Descriptions</b>
+prohibe la ejecuci&oacuten de estos tres m&oacutedulos.
+Por supuesto, es imposible mostrar descripciones de los tipos de ficheros soportados
+por estos m&oacutedulos, pero como autor del plugin <b>File Descriptions</b>,
+no deseo violar las leyes de derechos reservados del autor de <b>WhereIsIt</b>.
+
+<p>La situaci&oacuten con los plugins de <b>Disk Explorer Pro</b> es mejor, el autor permite
+el uso libre de sus plugins, excepto el plugin <b>pictview.dfp</b>, pues utiliza librer&iacuteas
+comerciales. Por tanto, se incluyen en este paquete los plugins m&aacutes &uacutetiles de <b>Disk Explorer Pro</b>.
+
+<p>Los plugins de contenido para <b>Total Commander</b> se distribuyen libremente, Ud. puede
+descargarlos desde la p&aacutegina no oficial <a href="http://www.totalcmd.net">http://totalcmd.net</a>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Instalaci&oacuten</font></h2>
+
+<ol>
+<li> Con TC 6.50+, solo abra el archivo y TC autom&aacuteticamente instalar&aacute el plugin.
+   <br>Luego que la lista de plugins abra, coloque al plugin al inicio de la lista
+   (le asigna la m&aacutes alta prioridad).
+
+<p><li> Vaya a <b>Configuraci&oacuten -> Opciones -> Vistas personalizadas</b>;
+   <br>cree una vista nueva llamada "Descripciones" y agr&eacuteguele una nueva columna;
+   <br>presione "+" y seleccione un campo de la lista de FileDesc.
+
+<p><li> Active la vista personalizada:
+   <br><b>Ver -> Vistas personalizadas -> Descripciones</b>.
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Como usar los plugins de WhereIsIt</font></h2>
+
+<ol>
+<li> Primero necesita descargarlos. Vaya a <a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+     y descargue los siguiente m&oacutedulos:
+<p>
+<ul>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/DescMovies11.zip">Movie Module</a> [M&oacutedulo de Videos]
+<li> <a href="http://www.whereisit-soft.com/plugins/ver20/MusicModule12.zip">Music Module</a> [M&oacutedulo de Audio]
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/RPMPlugin.zip">Linux RPM Description Module</a>
+     [M&oacutedulo de descripci&oacuten de RPM de Linux]
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/DriveImage.zip">Drive Image Description Module</a>
+     [M&oacutedulo de descripci&oacuten de Im&aacutegenes de Disco]
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GeosPlugin.zip">GEOS File Module</a> [M&oacutedulo de ficheros GEOS]
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/GhostImagePlugin.zip">GHOST Image Description Module</a>
+     [M&oacutedulo de descripci&oacuten de Im&aacutegenes Ghost]
+</ul>
+
+<p><li> Descomprima los archivos de m&oacutedulos a la subcarpeta <b>Plugins</b> de la carpeta principal del plugin.
+
+<p><li> Abra el fichero <b>FileDesc.ini</b> y elimine la marca de comentario a las siguiente l&iacuteneas:
+  <pre>
+  [Plugins]
+  10=DescMovies.dll
+  11=MusicModule.dll
+  12=RPMPlugIn.dll
+  13=pqidesc.dll
+  14=GeosPlugin.dll
+  15=GhostImagePlugin.dll
+  </pre>
+</ol>
+
+<p> Eso es todo, ahora debe reiniciar <b>Total Commander</b>.
+<br>Para configurar los plugins, utilice el programa <b>Config.exe</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Como utilizar los plugins de contenido de TC</font></h2>
+
+<ol>
+<li> Primero necesita descargarlos. Vaya a la p&aacutegina
+<a href="http://www.totalcmd.net/directory/content.html">http://www.totalcmd.net</a>,
+abra la p&aacutegina "Content Plugins" ("Plugins de Contenido") y descargue los plugins necesarios.
+<br><br>Algunos plugins &uacutetiles son:
+
+<p>
+<ul>
+<li> <a href="http://www.totalcmd.net/plugring/AudioInfo.html">AudioInfo</a> (inclu&iacutedo en este paquete)
+<li> <a href="http://www.totalcmd.net/plugring/wdx_anytag.html">AnyTag</a>
+<li> <a href="http://www.totalcmd.net/plugring/xPDFSearch.html">xPDFSearch</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_image_info.html">Image Info</a> (inclu&iacutedo en este paquete)
+<li> <a href="http://www.totalcmd.net/plugring/wdx_ImgSize.html">ImgSize</a>
+<li> <a href="http://www.totalcmd.net/plugring/exif2.html">Exif</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_media.html">Media</a>
+<li> <a href="http://www.totalcmd.net/plugring/shelldetails.html">ShellDetails</a>
+<li> <a href="http://www.totalcmd.net/plugring/OOInfo.html">OpenOffice.org Info</a>
+<li> <a href="http://www.totalcmd.net/plugring/wdx_cdrinfo.html">CDR Info</a>
+<li> <a href="http://www.totalcmd.net/plugring/CDocProp.html">CDocProp</a>
+<li> <a href="http://users.telenet.be/liontech/">wlxFont</a> (tambi&eacuten trabaja como plugin WDX)
+</ul>
+
+<p><li> Descomprima los archivos de plugin a la subcarpeta <b>Plugins</b> de la carpeta principal del plugin.
+
+<p><li> Abra el fichero <b>FileDesc.ini</b> y para cada plugin agregue estas l&iacuteneas:
+  <pre>
+  NN=Path\Plugin.wdx
+  NN_detect=*.EXT1,*.EXT2,*.EXT3
+  NN_format=["Prefix1"Field1"Suffix1"] ["Prefix2"Field2"Suffix2"]
+  </pre>
+
+Donde:
+<b>NN</b> es la ID del plugin (un n&uacutemero de 40 a 100),
+<b>"Path\Plugin.wdx"</b> especifica la ruta del plugin (absoluta o relativa a la carpeta <b>Plugins</b>),
+<b>NN_detect</b> especifica la lista de extensiones soportadas,
+<b>NN_format</b> especifica la cadena de formato. La cadena de formato contiene una lista de campos con
+<b>prefijos</b> y <b>sufijos</b>, <b>prefijo+valor+sufijo</b> y se muestra si el campo no est&aacute vac&iacuteo.
+</ol>
+
+<p> El paso 3 tambi&eacuten puede ejecutarse usando el programa <b>Config.exe</b>:
+<br>1. Presione el bot&oacuten <b>Install new</b> y busque el plugin,
+<br>2. Seleccione el plugin al final de la lista, presiones el bot&oacuten <b>Configure</b> y establezca los par&aacutemetros del plugin.
+
+<p> Para comprobar la ejcuci&oacuten de los plugins, utilice <b>Config.exe</b>.
+Si Ud. configur&oacute adecuadamente el fichero <b>FileDesc.ini</b>, el programa mostrar&aacute plugins en la lista
+y le permitir&aacute configurarlos.
+
+<p> Para aplicar una nueva configuraci&oacuten de plugins, Ud. necesita reiniciar <b>Total Commander</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Historial de Versiones</font></h2>
+
+<ul>
+<li> 16.12.05: Se permite definir varias columnas a los plugins WDX;
+     <br>En las l&iacuteneas de formato se permite usar caracteres entre las definiciones de campos;
+     <br>Agregada descripci&oacuten a ficheros URL;
+     <br>Config.exe: ventana ajustable
+<li> 09.12.05: Agregada posibilidad de usar plugins de contenido de Total Commander (se incluyen dos en este paquete);
+     <br>Config.exe: Agregada posibilidad de instalar/desintalar plugins
+<li> 02.12.05: Agregada posibilidad de usar plugins de Disk Explorer Pro
+     (inclu&iacutedos en este paquete), ahora se soportan m&aacutes tipos de ficheros;
+     <br>Agregado el programa Config.exe que configura los plugins utilizados
+<li> 24.11.05: Por razones de derechos reservados, se prohibe el uso de plugins
+     DescPlugin.dll, DescGraphics.dll y CDDAPlugin.dll
+<li> 22.11.05: Nota importante en Readme
+<li> 19.11.05: Nombre interno cambiado a FileDesc, se deben reconfigurar las columnas;
+     <br> Redise&ntildeo total: el plugin utiliza plugins de descripcion de 2do nivel,
+          cuyo formato es compatible con el programa WhereIsIt
+<li> 17.11.05: Puede especificar extensiones vac&iacuteas en el fichero INI;
+          eliminado campo "Descripciones cortas"
+<li> 15.11.05: Muestra direcciones .URL
+<li> 03.06.05: Arreglada la presentaci&oacuten de descripciones multi-l&iacutenea de Files.bbs
+<li> 15.05.05: Muestra Meta tags de ficheros HTML
+<li> 15.04.05: Puede especificar cadenas de reemplazo de texto en FileDiz.ini
+<li> 18.03.05: Arreglada la lectura de Descript.ion
+<li> 15.03.05: Agregado c&oacutedigo de fuente
+<li> 07.11.04: Agregados subcampos "Compilaci&oacuten privada", "Compilaci&oacuten Especial"
+<li> 06.11.04: Agregado campo "Info de Versi&oacuten" con todos los subcampos predeterminados
+<li> 05.11.04: Muestra Info de Versi&oacuten para ejecutables
+<li> 05.11.04: Muestra descripciones de HTML/Texto
+<li> 28.10.04: Muestra descripciones desde Files.bbs
+<li> 25.10.04: Versi&oacuten inicial
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Derechos Reservados</font></h2>
+
+<p>File Descriptions (FileDesc.wdx) &copy; 2005 Alexey Torgashin (<a href="mailto:atorg@yandex.ru">atorg@yandex.ru</a>)
+<br><a href="http://alextpp.narod.ru">http://alextpp.narod.ru</a>
+<br><a href="http://www.totalcmd.net/plugring/FileDiz.html">http://www.totalcmd.net/plugring/FileDiz.html</a>
+
+<p>Total Commander &copy; 1993-2005 Christian Ghisler
+<br><a href="http://www.ghisler.com">http://www.ghisler.com</a>
+
+<p>WhereIsIt, DescPlugin.dll, DescGraphics.dll, CDDAPlugin.dll &copy; 1997-2005 Robert Galle
+<br><a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+
+<p>Disk Explorer Professional, .DFP Filters &copy; 1999-2005 Tomas Jelinek
+<br><a href="http://www.diskexplorerpro.com">http://www.diskexplorerpro.com</a>
+
+<p>Image Info (Images.wdx) &copy; WhiteWind
+<br><a href="http://www.totalcmd.net/plugring/wdx_image_info.html">http://www.totalcmd.net/plugring/wdx_image_info.html</a>
+
+</body></html>

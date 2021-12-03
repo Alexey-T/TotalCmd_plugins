@@ -1,0 +1,64 @@
+Tipps und FAQ
+~~~~~~~~~~~~~
+
+Q1: Warum ist das Programm so langsam? Ich muss bei jeder Listenaktualisierung
+    2 Sekunden warten!
+
+A1: Ein Verzögerungsgrund könnte ein Virenscanner sein, der die TC ini-Datei
+    überwacht. Versuche <wincmd.ini> von der Virenüberprüfung auszuschließen.
+    Versuche auch, folgende Plugman-Optionen auf ihre vorgegebenen Werte im
+    Optionsdialog zurückzusetzen:
+
+    - "Allgemein - Versionsspalte anzeigen" = aus
+    - "Allgemein - Beschreibungsspalte anzeigen" = aus
+    - "Erweitert - Liste aktualisieren alle <n> Sek." = aus
+
+----------------------------------------------------------------------------
+Q2: Das Feature "Aus Archiv installieren ..." funktioniert nicht!
+    Ich bekomme die Meldung "Kann Archiv nicht entpacken".
+
+A2: Dieses Feature erfordert einen externen Entpacker - siehe Anmerkungen in
+    Readme.Ger.txt. Stelle sicher, dass das Archiv ein gültiges Plugin enthält.
+
+----------------------------------------------------------------------------
+Q3: Welche Tastaturkürzel werden unterstützt?
+
+A3: Drücke F1 im Plugman-Hauptdialog, um sie alle zu sehen.
+
+----------------------------------------------------------------------------
+Q4: Ich möchte immer den Status "gelöscht" bei Dateien sehen, auch bei
+    deaktivierten Plugins.
+
+A4: Setze diese versteckte Option in <plugman.ini>:
+    [Options]
+    ShowDeletedAlways=1
+
+----------------------------------------------------------------------------
+Q5: 1. Ich habe ein Plugin in TC Plugins Manager gelöscht, und jetzt versuche
+       ich es von der Festplatte zu löschen. Aber Windows sagt, die Datei ist
+       gesperrt. Was nun?
+    2. Ich ändere häufig Plugin-Einstellungen (Erkennungsfilter/Dateisystem-
+       Plugin Namen/ini-Datei Einstellungen), und bin es leid, TC neu
+       zu starten. Können die Änderungen nicht sofort übernommen werden?
+
+A5: Versuche diese Option in <plugman.ini>:
+    [Options]
+    UnloadPlugins=1
+
+----------------------------------------------------------------------------
+Q6: Kann ich verhindern, dass der externe Entpacker minimiert läuft?
+
+A6: Setze diese versteckte Option in <plugman.ini>:
+    [Options]
+    RunUnpackMinimized=0
+
+----------------------------------------------------------------------------
+Q7: Kann ich eine Log-Datei erzeugen?
+
+A7: Setze diese versteckte Option in <plugman.ini>:
+    [Options]
+    Log=1
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Falls Du immer noch Fragen hast, besuche bitte das englische Support-Forum:
+http://www.ghisler.ch/board/viewtopic.php?t=4798
