@@ -1,4 +1,5 @@
 {$WRITEABLECONST ON}
+{$R-}
 
 unit UFormMain;
 
@@ -32,6 +33,7 @@ type
     TotCmdWin: HWND;
     ParentWin: HWND;
     QuickView: boolean;
+    Ini: string;
     procedure AppException(Sender: TObject; E: Exception);
   protected
     procedure CreateParams(var Params: TCreateParams); override;
@@ -61,8 +63,8 @@ type
 implementation
 
 uses
-  SProc, FProc, IniFile, OOData, XmlProc, UFormOptions, UFormProgress,
-  PNGImage, BitmapProc, Unzip, UnzipDll, RichEdit;
+  SProc, FProc, OOData, XmlProc, UFormOptions, UFormProgress,
+  BitmapProc, UnzipDll, RichEdit;
 
 {$R *.DFM}
 
@@ -275,14 +277,15 @@ procedure TFormMain.FormCreate(Sender: TObject);
 var
   sFont: string;
 begin
-  fShowMeta:= boolean(GetIniKey('Options', 'ShowMeta', 1));
-  sFont:= GetIniKey('Options', 'TextFont', 'Tahoma,10,0,0');
+  Ini:= ExtractFilePath(GetModuleName(HInstance))+'OOView.ini';
+  fShowMeta:= boolean(StrToInt(GetIniKey('Options', 'ShowMeta', '1', Ini)));
+  sFont:= GetIniKey('Options', 'TextFont', 'Tahoma,10,0,0', Ini);
   fFontName:= SGet(sFont);
   fFontSize:= StrToIntDef(SGet(sFont), 10);
   fFontStyle2:= StrToIntDef(SGet(sFont), 0);
   fFontColor:= StrToIntDef(SGet(sFont), clBlack);
   fFontCharset:= StrToIntDef(SGet(sFont), integer(DEFAULT_CHARSET));
-  fBackColor:= GetIniKey('Options', 'BackColor', clWhite);
+  fBackColor:= StrToIntDef(GetIniKey('Options', 'BackColor', IntToStr(clWhite), Ini), clWhite);
   Panel1.Visible:= fShowMeta;
   Memo1.Font.Name:= fFontName;
   Memo1.Font.Size:= fFontSize;
@@ -320,9 +323,9 @@ begin
         Memo1.Font.Color:= fFontColor;
         Memo1.Font.Charset:= fFontCharset;
         Memo1.Color:= fBackColor;
-        SetIniKey('Options', 'ShowMeta', integer(fShowMeta));
-        SetIniKey('Options', 'TextFont', Format('%s,%d,%d,%d,%d', [fFontName, fFontSize, fFontStyle2, fFontColor, integer(fFontCharset)]));
-        SetIniKey('Options', 'BackColor', fBackColor);
+        SetIniKey('Options', 'ShowMeta', IntToStr(integer(fShowMeta)), Ini);
+        SetIniKey('Options', 'TextFont', Format('%s,%d,%d,%d,%d', [fFontName, fFontSize, fFontStyle2, fFontColor, integer(fFontCharset)]), Ini);
+        SetIniKey('Options', 'BackColor', IntToStr(fBackColor), Ini);
         end;
     finally
       Free;
@@ -367,8 +370,5 @@ procedure TFormMain.mnuCopyClick(Sender: TObject);
 begin
   Memo1.CopyToClipboard;
 end;
-
-initialization
-  IniFilename:= ChangeFileName(GetPluginFilename, 'OOView.ini');
 
 end.

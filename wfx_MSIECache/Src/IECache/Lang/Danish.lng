@@ -1,0 +1,30 @@
+[About]
+Version=1.4.4
+Author=petermad
+Homepage=http://madsenworld.dk
+Email=msiecache@madsenworld.dk
+
+[Lang]
+1=MSIE Cache Browser
+2=(Genindlæs cache)
+3=Ønsker du at åbne\n%s ?
+4=Læser cache indhold
+5=Læser element: %d / %d
+6=OK
+7=Annuller
+8=URL er kopieret til Udklipsholder
+
+30=MSIE Cache Browser for Total Commander
+31=Plugin version: %s
+32=MSIE version: %s
+33=Cache mappe: %s
+34=Sprog:
+35=Vis cookies
+36=Sæt MSIE i offline tilstand ved åbning af URL'er
+37=Sæt MSIE i offline tilstand når plugin startes
+38=Bekræft åbning af URL'er
+39=Spring over domæner på 2. niveau:
+40=Fjern parametre efter '?'
+41=Sæt MSIE i online tilstand ved afslutning
+42=Vis fulde URL'er (bemærk: virker ikke korrekt med lange URL'er)
+43=Fjern [numre] (bemærk: medfører ukorrekt kopiering af URL'er)

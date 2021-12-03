@@ -1,0 +1,30 @@
+[About]
+Version=1.4.4
+Author=Sepp Winkler
+Homepage=
+Email=sepp.winkler@gmail.com
+
+[Lang]
+1=Prehliadaè vyrovnávacej pamäte MSIE (Internet Explorer)
+2=(Znovu naèíta obsah)
+3=Naozaj chcete otvori\n%s ?
+4=Naèítanie obsahu vyrovnávacej pamäte
+5=Naèítanie poloky: %d / %d
+6=OK
+7=Storno
+8=Adresa URL bola skopírovaná do schránky
+
+30=Prohliadaè vyrovnávacej pamäte MSIE pre Total Commander
+31=Verzia rozšírenia: %s
+32=Verzia MSIE: %s
+33=Zloka doè. súborov: %s
+34=Jazyk:
+35=Zobrazi súbory cookie
+36=Pri otváraní adresy URL prepnú MSIE do reimu "offline"
+37=Pri naèítaní rozšírenia prepnú MSIE do reimu "offline"
+38=Potvrdenie pred otvorením adresy URL
+39=Preskakova domény 2. úrovne:
+40=Odstráni parametre za "?"
+41=Pri ukonèení prepnú MSIE do reimu "online"
+42=Zobrazi celú adresu URL (nepracuje s dlhımi URL adresami)
+43=Odstráni "[èísla]" (chyba pri kopírovaní na disk)

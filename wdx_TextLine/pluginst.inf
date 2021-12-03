@@ -1,0 +1,6 @@
+[PluginInstall]
+Description=Content plugin displays one line of text file.
+DescriptionRus=Content-плагин отображает одну строчку текстового файла. 
+Type=wdx
+File=TextLine.wdx
+DefaultDir=TextLine

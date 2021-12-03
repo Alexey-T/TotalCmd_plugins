@@ -1,0 +1,273 @@
+<html>
+<head>
+  <title>TextSearch plugin</title>
+</head>
+<body>
+
+<center>
+<font color="DarkBlue">
+<h1>TextSearch plugin</h1>
+</font>
+</center>
+
+<!----------------------------->
+<h1>Contents</h1>
+
+<ul>
+<li> <a href="#Intro">Introduction</a>
+<li> <a href="#Conv">Converters</a>
+<li> <a href="#Config">Configuration file</a>
+  <ul>
+  <li> <a href="#ConfigOpt">[Options] section</a>
+  <li> <a href="#ConfigConv">[Converters] section</a>
+  <li> <a href="#ConfigDirect">Direct codepage conversion</a>
+  <li> <a href="#ConfigMult">Multiple codepages search</a>
+  </ul>
+<li> <a href="#Copy">Copyrights</a>
+</ul>
+
+<!----------------------------->
+<a name="Intro"></a>
+<h1>Introduction</h1>
+
+<p>
+This <i>Total Commander</i> Content plugin allows to perform full-text search in any documents,
+which have command-line converters to the plain-text form.
+
+<p>
+To use this plugin, call <i>Total Commander</i>'s search dialog (Alt+F7)
+and activate plugin on Plugins tab, as shown on picture:
+<p>
+<center>
+<img src="Usage.gif" alt="">
+</center>
+
+<!----------------------------->
+<a name="Conv"></a>
+<h1>Converters</h1>
+
+<p>
+Included converters are:
+<ul>
+<li> RTF: Rtf2Txt converter (built-in)
+<li> OpenOffice.org: OdfToTxt converter
+<li> <a href="http://www31.ocn.ne.jp/~h_ishida/xdoc2txt.html" target=_blank>XDoc2txt</a>
+  for many file types
+</ul>
+
+Other useful converters are:
+<ul>
+<li> <a href="http://foolabs.com/xpdf/" target=_blank>Xpdf</a> (PDF) <br>
+<li> <a href="http://www.kryltech.com/freestf.htm#util" target=_blank>Kryloff GetText</a> (HTM HTML RTF PDF WPD HLP DOC XLS PPT XML)
+<li> <a href="http://files.rsdn.ru/51280/GetTextIFilter.rar" target=_blank>GetTextIFilter</a> (RTF DOC DOT PPT XLS XLT CS CPP H TXT HTM HTML)
+<li> <a href="http://www.grigsoft.com/wc3addin.htm" target=_blank>Grig Software converters</a> (DFM)
+<li> <a href="http://silvercoders.com/index.php?page=DocToText" target=_blank>SilverCoders DocToText</a> (DOC)
+<li> <a href="http://www.informatik.uni-frankfurt.de/~markus/antiword/" target=_blank>AntiWord</a> (DOC)
+<li> <a href="http://www.gribuser.ru/xml/fictionbook/" target=_blank>FB2Any</a> (FB2) <br>
+  TextSearch.ini settings: <br>
+  <font color="Gray">
+  <pre>  FB2=wscript.exe /B /NoLogo "C:\Program Files\FB2 to Any\fb2txt_commandline.vbs" "{In}" "{Out}" </pre>
+  </font>
+
+<li> <a href="http://djvu.sourceforge.net/" target=_blank>DjVuLibre + DjView</a> (DJVU DJV) <br>
+  Works only if document has the text layer. TextSearch.ini settings:
+  <font color="Gray">
+  <pre>
+  DJVU=Path\DjVuLibre\djvutxt.exe "{In}" "{Out}" {CP:UTF8}
+  DJV=DJVU </pre>
+  </font>
+</ul>
+
+<!----------------------------->
+<a name="Config"></a>
+<h1>Configuration file</h1>
+
+<p>
+Plugin configuration file is <i>TextSearch.ini</i>, located in the plugin folder.
+If it doesn't exist, <i>TextSearch.Sample.ini</i> is copied to <i>TextSearch.ini</i> on execution.
+
+<p>
+<a name="ConfigOpt"></a>
+<h2>[Options] section</h2>
+
+Plugin options are listed here:
+
+<p>
+<table border="1" align="center" width="80%">
+<tr>
+  <th width=150> Options
+  </th>
+  <th width=400> Meaning
+  </th>
+</tr>
+<tr>
+  <td> Log
+  </td>
+  <td> If set to 1, then <i>TextSearch.log</i> file will be created in the %TEMP% folder,
+  containing error messages about converters execution.
+  </td>
+</tr>
+<tr>
+  <td> ShowErrors
+  </td>
+  <td> If set to 0, no error messages will be displayed.
+    To see errors occured you still can use the Log option.
+  </td>
+</tr>
+<tr>
+  <td> DeleteOutFile
+  </td>
+  <td> If set to 0, resulting file (from {Out} macro) won't be deleted.
+  </td>
+</tr>
+</table>
+
+
+<p>
+<a name="ConfigConv"></a>
+<h2>[Converters] section</h2>
+
+Converters for different file extensions are listed here in the form
+<pre>
+EXTENSION=Path\Converter.exe Parameters
+</pre>
+
+or
+<pre>
+EXTENSION=ANOTHER_EXTENSION
+</pre>
+
+Converter path can be written without plugin folder path (plugin folder set as current on converter execution).<br>
+Parameters can contain the following macros/commands, at last "{In}" and "{Out}" macros should be specified:
+
+<p>
+<table border="1" align="center" width="80%">
+<tr>
+  <th width=150> Macros
+  </th>
+  <th width=400> Meaning
+  </th>
+</tr>
+<tr>
+  <td> {In}
+  </td>
+  <td> Expanded to full path of the source file. <br> Should be double-quoted.
+  </td>
+</tr>
+<tr>
+  <td> {Out}
+  </td>
+  <td> Expanded to full path of the resulting temporary text file. <br> Should be double-quoted.
+  </td>
+</tr>
+<tr>
+  <td> {InShort}
+  </td>
+  <td> Expanded to short (8.3) path of the source file.
+  </td>
+</tr>
+<tr>
+  <td> {OutShort}
+  </td>
+  <td> Expanded to short (8.3) path of the resulting file.
+  </td>
+</tr>
+<tr>
+  <th width=150> Commands
+  </th>
+  <th width=400> Meaning
+  </th>
+</tr>
+<tr>
+  <td> {CP:<i>Codepage</i>}
+  </td>
+  <td> Specifies that resulting file should be decoded from some "codepage" to the ANSI.
+    Allowed values of <i>Codepage</i> are (self-descriptioned):
+    <ul>
+    <li> <i>ANSI</i> (has meaning only when multiple codepages are specified)
+    <li> <i>UTF8</i>
+    <li> <i>UTF16</i> (BE or LE are detected automatically by first 2 bytes)
+    <li> <i>UTF16BE</i>
+    <li> <i>UTF16LE</i>
+    <li> <i>RTF</i> (Note: RTF assumed to be in ANSI codepage)
+    </ul>
+  </td>
+</tr>
+<tr>
+  <td> {Home:<i>Path</i>}
+  </td>
+  <td> Specifies the "home directory" of the converter process, <i>Path</i> value.
+    Can be set e.g. to the converter application path
+    if converter doesn't support running from non-application folder.
+  </td>
+</tr>
+</table>
+
+
+<p>
+<a name="ConfigDirect"></a>
+<h2>Direct codepage conversion</h2>
+
+It is possible to read the source file directly and to apply a "codepage conversion" to it,
+without running any external converters at all. To do so, specify only
+{CP:<i>Codepage</i>} command for a file extension, for example:
+
+<pre>
+[Converters]
+RTF={CP:RTF}
+LOG={CP:UTF8}
+</pre>
+
+
+<p>
+<a name="ConfigMult"></a>
+<h2>Multiple codepages search</h2>
+
+It is possible to perform Total Commander search applying several codepages to a file
+at the same time. This isn't possible in Total Commander without using TextSearch plugin (currently):
+TC doesn't allow to check several codepages flags on its 1st tab of search dialog.
+When multiple codepages search is performed with TextSearch plugin,
+plugin converts given file to multiple codepages and then concatenates the resulting strings
+to a single big string, giving this big string to Total Commander. So such search is more slow,
+approx-ly by 10-50%.
+
+<p>
+To perform multiple codepages search, write <b>several</b> {CP:<i>Codepage</i>} commands to the corresponding converter
+line, for example:
+
+<pre>
+[Converters]
+LOG={CP:ANSI} {CP:UTF16}
+</pre>
+
+
+To perform multiple codepages search in <b>all files</b> specify the "*" extension, for example:
+
+<pre>
+[Converters]
+*={CP:ANSI} {CP:UTF8} {CP:UTF16}
+</pre>
+
+Note that the "*" converter has the lower priority,
+so if for example both "*" and "PDF" converters are specified,
+all PDF files will be searched using "PDF" converter and other files will be searched using "*" converter.
+
+
+<!----------------------------->
+<a name="Copy"></a>
+<h1>Copyrights</h1>
+
+<p>
+<ul>
+<li>
+TextSearch plugin, OdfToTxt &copy; 2007-2017 Alexey Torgashin <br>
+<a href="http://uvviewsoft.com" target=_blank>UVviewsoft.com</a> <br>
+<a href="http://www.totalcmd.net/plugring/TextSearch.html" target=_blank>Totalcmd.net</a> <br>
+
+<p>
+<li>
+GetTextIFilter &copy; Stepan_Lameroff <br>
+</ul>
+
+</body>
+</html>

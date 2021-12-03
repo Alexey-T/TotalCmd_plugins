@@ -1,0 +1,30 @@
+[About]
+Version=1.4.2
+Author=nickw
+Homepage=
+Email=
+
+[Lang]
+1=MSIE Cache Browser
+2=(Relire le cache)
+3=Voulez-vous ouvrir\n%s ?
+4=Lecture contenu du cache
+5=Lecture élément: %d / %d
+6=OK
+7=Annuler
+8=URL copiée dans le Presse-papiers
+
+30=MSIE Cache Browser pour Total Commander
+31=Version du plugin: %s
+32=Version de MSIE: %s
+33=Dossier du cache: %s
+34=Langue:
+35=Afficher les cookies
+36=Passer MSIE en mode hors ligne à l'ouverture d'une URL
+37=Passer MSIE en mode hors ligne au démarrage du plugin
+38=Confirmation à l'ouverture d'une URL
+39=Sauter les domaines de second niveau:
+40=Enlever les paramètres après '?'
+41=Passer MSIE en mode en ligne quand terminé
+42=Afficher URLs complètes (note: incorrect avec les URLs longues)
+43=Enlever [nombres] (note: copie incorrecte d'URLs)

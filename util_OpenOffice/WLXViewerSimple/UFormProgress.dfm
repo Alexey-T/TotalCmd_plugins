@@ -13,6 +13,7 @@ object FormProgress: TFormProgress
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -27,8 +28,6 @@ object FormProgress: TFormProgress
     Top = 24
     Width = 253
     Height = 16
-    Min = 0
-    Max = 100
     TabOrder = 0
   end
 end

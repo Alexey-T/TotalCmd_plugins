@@ -1,9 +1,9 @@
 object FormMain: TFormMain
   Left = 199
   Top = 207
-  Width = 566
-  Height = 374
   Caption = 'Viewer'
+  ClientHeight = 340
+  ClientWidth = 558
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -70,7 +70,7 @@ object FormMain: TFormMain
     Width = 558
     Height = 292
     Align = alClient
-    Font.Charset = DEFAULT_CHARSET
+    Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
     Font.Name = 'Arial'

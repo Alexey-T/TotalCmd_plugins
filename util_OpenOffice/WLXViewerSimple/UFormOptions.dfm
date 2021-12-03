@@ -12,6 +12,7 @@ object FormOptions: TFormOptions
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poScreenCenter
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -83,13 +84,10 @@ object FormOptions: TFormOptions
     Font.Height = -11
     Font.Name = 'MS Sans Serif'
     Font.Style = []
-    MinFontSize = 0
-    MaxFontSize = 0
     Left = 256
     Top = 40
   end
   object ColorDialog1: TColorDialog
-    Ctl3D = True
     Left = 256
     Top = 72
   end

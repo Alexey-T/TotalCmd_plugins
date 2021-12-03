@@ -1,0 +1,11 @@
+[PluginInstall]
+Description="MSIE Cache Browser" file-system plugin
+DescriptionRus=Ολΰγθν οπξρμξςπΰ κύψΰ MSIE
+DescriptionNld="MSIE Cache-browser"-plug-in
+DescriptionGrk=Πρόσθετο συστήματος αρχείων Διαχειριστή Προσωρινών Αρχείων ΜSIE
+DescriptionSpa=MSIE Cachι Browser plugin de sistema de archivos
+Descriptioncz=Prohlνeθ mezipamμti MSIE (Internet Explorer) - doplnμk systιmu souborω
+Type=wfx
+File=IECache.wfx
+DefaultDir=IECache
+version=1.4.4.2

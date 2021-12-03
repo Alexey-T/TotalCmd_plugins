@@ -1,0 +1,30 @@
+[About]
+Version=1.4.4
+Author=jvh
+Homepage=
+Email=
+
+[Lang]
+1=Prohlížeè mezipamìti MSIE (Internet Explorer)
+2=(Znovu naèíst obsah)
+3=Opravdu chcete otevøít\n%s ?
+4=Naèítání obsahu mezipamìti
+5=Naèítání položky: %d / %d
+6=OK
+7=Storno
+8=Adresa URL byla zkopírována do schránky
+
+30=Prohlížeè mezipamìti MSIE pro Total Commander
+31=Verze doplòku: %s
+32=Verze MSIE: %s
+33=Složka doè. souborù: %s
+34=Jazyk:
+35=Zobrazit soubory cookie
+36=Pøi otevírání adresy URL pøepnout MSIE do režimu "Pracovat offline"
+37=Pøi naètení doplòku pøepnout MSIE do režimu "Pracovat offline"
+38=Potvrzení pøed otevøením adresy URL
+39=Pøeskakovat domény 2. øádu:
+40=Odstranit parametry za "?"
+41=Pøi ukonèení pøepnout MSIE do režimu "Pracovat online"
+42=Zobrazit kompletní adresu URL (nepracuje s dlouhými URL adresami)
+43=Odstranit "[èísla]" (chyba pøi kopírování na disk)

@@ -1,0 +1,6 @@
+[Rus]
+Unicode test=Тест юникодности
+Locked test=Тест чтения
+Write test=Тест записи
+ANSI|Unicode|Invalid=ANSI|Unicode|Ошибка
+Access|Locked|Not found=Доступен|Занят|Не найден

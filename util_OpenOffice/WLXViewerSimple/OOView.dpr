@@ -6,26 +6,34 @@ library OOView;
 
 uses
   SysUtils, Windows, StdCtrls,
-  SProc, WLXPlugin, OOThumbnail,
+  SProc, WLXPlugin,
+  OOThumbnail,
   UFormMain in 'UFormMain.pas' {FormMain},
   UFormOptions in 'UFormOptions.pas' {FormOptions},
   UFormProgress in 'UFormProgress.pas' {FormProgress};
 
 const
-  _DetectString: PChar =
+  _DetectString: PAnsiChar =
     'EXT="ODT" | EXT="ODS" | EXT="ODP" | EXT="ODG" | EXT="ODF" | EXT="ODB" | EXT="ODM" | '+
     'EXT="OTT" | EXT="OTH" | EXT="OTS" | EXT="OTG" | EXT="OTP" | '+
     'EXT="SXW" | EXT="SXC" | EXT="SXG" | EXT="SXI" | EXT="SXD" | EXT="SXM" | '+
     'EXT="STW" | EXT="STC" | EXT="STD" | EXT="STI"';
 
-procedure ListGetDetectString(DetectString: PChar; MaxLen: integer); stdcall;
+procedure ListGetDetectString(DetectString: PAnsiChar; MaxLen: integer); stdcall;
 begin
-  StrLCpy(DetectString, _DetectString, MaxLen);
+  StrLCpyA(DetectString, _DetectString, MaxLen);
 end;
 
-function ListLoad(ListerWin: HWND; FileToLoad: PChar; ShowFlags: integer): HWND; stdcall;
+function ListLoad(ListerWin: HWND;
+  FileToLoad: PAnsiChar; ShowFlags: integer): HWND; stdcall;
 begin
-  Result:= ShowDoc(ListerWin, FileToLoad, ShowFlags);
+  Result:= ShowDoc(ListerWin, string(AnsiString(FileToLoad)), ShowFlags);
+end;
+
+function ListLoadW(ListerWin: HWND;
+  FileToLoad: PWideChar; ShowFlags: integer): HWND; stdcall;
+begin
+  Result:= ShowDoc(ListerWin, WideString(FileToLoad), ShowFlags);
 end;
 
 procedure ListCloseWindow(PluginWin: HWND); stdcall;
@@ -33,16 +41,26 @@ begin
   HideDoc(PluginWin);
 end;
 
-function ListGetPreviewBitmap(FileToLoad: PChar; Width, Height: integer;
+function ListGetPreviewBitmap(
+  FileToLoad: PAnsiChar;
+  Width, Height: integer;
+  Buf: PChar; BufLen: integer): HBitmap; stdcall;
+begin
+  Result:= 0;
+end;
+
+function ListGetPreviewBitmapW(
+  FileToLoad: PWideChar;
+  Width, Height: integer;
   Buf: PChar; BufLen: integer): HBitmap; stdcall;
 begin
   Result:= 0;
   try
-    Result:= GetOOoThumbnail(FileToLoad, Width, Height);
+    Result:= GetOOoThumbnail(WideString(FileToLoad), Width, Height);
   except
     DeleteObject(Result);
     Result:= 0;
-    MessageBox(0, PChar(Format(ssExceptionThumbnailMsg, [string(FileToLoad)])),
+    MessageBox(0, PChar(Format(ssExceptionThumbnailMsg, [WideString(FileToLoad)])),
       ssCaption, MB_OK or MB_ICONERROR or MB_SETFOREGROUND);
   end;
 end;
@@ -84,7 +102,8 @@ exports
   ListGetDetectString,
   ListLoad,
   ListCloseWindow,
-  ListSendCommand,
-  ListGetPreviewBitmap;
+  ListGetPreviewBitmap,
+  ListGetPreviewBitmapW,
+  ListSendCommand;
 
 end.

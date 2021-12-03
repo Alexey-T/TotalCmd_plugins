@@ -1,0 +1,30 @@
+[About]
+Version=1.4.2
+Author=Patxi Múgica (patxiku)
+Homepage=
+Email=
+
+[Lang]
+1=MSIE Cache Browser
+2=(Releer caché)
+3=Desea abrir\n%s ?
+4=Leyendo contenidos de la caché
+5=Leyendo item: %d / %d
+6=OK
+7=Cancelar
+8=URL copiada al Portapapeles
+
+30=MSIE Cache Browser para Total Commander
+31=Version del Plugin : %s
+32=Version de MSIE: %s
+33=Carpeta de la Caché : %s
+34=Idioma:
+35=Mostrar Cookies
+36=Alternar MSIE a modo offline al abrir URL
+37=Alternar MSIE a modo offline al iniciar el plugin
+38=Confirmación al abrir URL
+39=Saltar dominios de 2º nivel:
+40=Quitar parametros tras '?'
+41=Alternar MSIE  a modo  online al salir
+42=Mostrar URL planas (nota: funcionamiento incorrecto con  URL largas)
+43=Quitar [números] (nota: incorrecto copiando de URLs)

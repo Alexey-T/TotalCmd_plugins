@@ -1,0 +1,6 @@
+[PluginInstall]
+Description=UnicodeTest/LockedTest content plugin
+DescriptionDeu=UnicodeTest/LockedTest Content-Plugin
+Type=wdx
+File=UnicodeTest.wdx
+DefaultDir=UnicodeTest

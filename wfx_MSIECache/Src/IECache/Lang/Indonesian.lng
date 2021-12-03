@@ -1,0 +1,30 @@
+[About]
+Version=1.4.2
+Author=elda taluta
+Homepage=Tidak punya tuh!
+Email=Ra-Ha-Si-A
+
+[Lang]
+1=MSIE Cache Browser
+2=(Membaca ulang tembolok)
+3=Apakah Anda hendak membuka\n%s ?
+4=Membaca isi tembolok
+5=Membaca butir: %d / %d
+6=Oke
+7=Batal
+8=URL disalin ke Papan Klip
+
+30=MSIE Cache Browser untuk Total Commander
+31=Versi plugin: %s
+32=Versi MSIE: %s
+33=Pelipat tembolok: %s
+34=Bahasa:
+35=Tampilkan Kuki
+36=Tukar MSIE ke moda terputus saat membuka URL
+37=Tukar MSIE ke moda terputus saat memulai plugin
+38=Penegasan saat membuka URL
+39=Acuhkan ranah 2nd-level:
+40=Lucuti param setelah '?'
+41=Tukar MSIE ke moda terputus saat keluar
+42=Tampilkan URL polos (catatan: tak bekerja dengan URL panjang)
+43=Lucuti [nomor] (catatan: URL disalin dengan keliru)

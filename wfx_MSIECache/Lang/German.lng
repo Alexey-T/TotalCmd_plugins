@@ -1,0 +1,30 @@
+[About]
+Version=1.4.4
+Author=Matthias030
+Homepage=ghisler.ch
+Email=
+
+[Lang]
+1=MSIE Cache Browser
+2=(Cache neu Einlesen)
+3=Soll diese Datei geöffnet werden\n%s ?
+4=Lese Cache
+5=Lese Eintrag: %d / %d
+6=OK
+7=Abbrechen
+8=URL wurde in Zwischenablage kopiert
+
+30=MSIE Cache Browser für Total Commander
+31=Plugin Version: %s
+32=MSIE Version: %s
+33=Cache Verzeichnis: %s
+34=Sprache:
+35=Zeige Cookies
+36=Schalte MSIE in den Offline-Modus nach Öffnen von URL
+37=Schalte MSIE in den Offline-Modus beim Starten des Plugins
+38=Öffnen mit Bestätigungsdialog
+39=Überspringe 2nd-level Domains:
+40=Entferne URL-Parameter nach '?'
+41=Schalte MSIE in den Online-Modus nach Beenden
+42=Zeige komplette URLs (Funktioniert nicht mit langen URLs)
+43=Entferne [Nummerierung] (URLs werden fehlerhaft kopiert)

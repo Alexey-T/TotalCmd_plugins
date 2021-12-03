@@ -1,0 +1,30 @@
+[About]
+Version=1.4.2
+Author=Alex
+Homepage=
+Email=
+
+[Lang]
+1=MSIE Cache Browser
+2=(Reread cache)
+3=Do you want to open\n%s ?
+4=Reading cache contents
+5=Reading item: %d / %d
+6=OK
+7=Cancel
+8=URL copied to Clipboard
+
+30=MSIE Cache Browser for Total Commander
+31=Plugin version: %s
+32=MSIE version: %s
+33=Cache folder: %s
+34=Language:
+35=Show Cookies
+36=Switch MSIE to offline mode on URL opening
+37=Switch MSIE to offline mode on plugin start
+38=Confirmation on URL opening
+39=Skip 2nd-level domains:
+40=Strip params after '?'
+41=Switch MSIE to online mode on exit
+42=Show plain URLs (note: incorrect work with long URLs)
+43=Strip [numbers] (note: incorrect copying of URLs)

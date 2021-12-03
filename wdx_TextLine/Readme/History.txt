@@ -1,0 +1,4 @@
+1.1.0
++ X64 ver.
++ Unicode support
+* made by: Alextp (wincmd.ru)

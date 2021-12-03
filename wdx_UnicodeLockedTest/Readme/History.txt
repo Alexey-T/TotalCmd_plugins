@@ -1,0 +1,12 @@
+Versions history
+
+jan 2013
+- added: 3rd field "Write test" works for writing-test, and "Locked test" is like in old version: read-open test.
+jan 2013:
+- fix: R/O files should not be "locked"
+- fix: run exe's are now shown as "Locked"
+sep 2011:
+- x64 port
+- Work with Unicode TC
+jan 2006:
+- initial version

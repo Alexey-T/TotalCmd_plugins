@@ -1,0 +1,129 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>"File Thumbnails" plugin for Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Introduction</font></h2>
+
+<p>
+<b>File Thumbnails</b> is <b>Total Commander</b> Lister plugin, that allows to display thumbnails for various files.
+<br>It is able to handle the following file types:
+
+<p>
+<font size=-1>
+<ul>
+<li> Video File (*.AVI,*.MPG,*.MPEG,*.DIVX,*.OGM,*.MKV,*.M2V,*.DAT,*.VOB,*.ASF,*.WMV)
+<li> AutoCAD Graphics (*.DWG)
+<li> CorelDRAW Graphics (*.CDR)
+<li> Adobe Acrobat PDF (*.PDF)
+<li> Digital Camera Raw Files (*.CAM,*.CCD,*.CR2,*.CRW,*.RAW)
+<li> TrueType Fonts (*.TTF)
+</ul>
+</font>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Important note</font></h2>
+
+For full support of all listed file types 2nd-level plugins are required,
+which format is compatible with <a href="http://www.whereisit-soft.com"><b>WhereIsIt</b></a>
+program plugins format.
+
+<p>You of course may download these <b>WhereIsIt</b> plugins from official site
+<a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>,
+but note that in the license of plugins DescPlugin.dll, DescGraphics.dll and CDDAPlugin.dll
+it's written:
+
+<p><u><b>"Using or distributing these 
+librarires for any purpose other than running them as a part of WhereIsIt 
+is prohibited and in violation of copyright laws"</b></u>.
+
+<p>So, due to copyright reasons, <b>File Descriptions</b> plugin
+prohibites loading of three DLL modules listed above.
+Of course, now it's impossible to show descriptions for file types supported
+by these modules, but as the author of <b>File Descriptions</b> plugin,
+I don't want to violate copyrights of <b>WhereIsIt</b> author.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Installation</font></h2>
+
+<ol>
+<li> Just open archive and TC will install plugin automatically.
+   <br>After plugins list opens, put plugin to the top of the list
+   (assign to it high priority).
+<p>
+<li> Go to <b>Configuration -> Options -> Thumbnails</b>
+   <br>and check option <b>Get from Lister plugins</b>, set its mask to <b>*.*</b>.
+<p>
+<li> Turn on thumbnails:
+   <b>Show -> Thumbnail view</b>
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>How to use WhereIsIt plugins</font></h2>
+
+<ol>
+<li> First you need to download them. Go to <a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+   and get the following modules:
+<p>
+<ul>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/VideoThumbPlugin.zip">Video Files Thumbnails</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/AcadPlugin.zip">AutoCAD Plugin</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/CorelPlugin.zip">CorelDraw Plugin</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/PDFThumbnailPlugin.zip">Adobe Acrobat PDF Thumbnails</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/DcrawPlugin.zip">Digital Camera Raw Files</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/TTFPlugin.zip">TTF Plugin</a>
+</ul>
+
+<p>
+<li> Unpack modules archives to <b>Plugins</b> subfolder of main plugin folder.
+
+<p>
+<li> Open <b>Thumbs.ini</b> and make sure the following lines are uncommented:
+<pre>
+    [Plugins]
+    1=VideoThumbPlugin.dll
+    2=AcadPlugin.dll
+    3=CorelPlugin.dll
+    4=PDFThumbnailPlugin.dll
+    5=DcrawPlugin.dll
+    6=TTFPlugIn.dll
+</pre>
+</ol>
+
+<p>
+That's all - now you need to restart Total Commander.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Notes</font></h2>
+
+<ol>
+<li>Configuring process for <b>WhereIsIt</b> plugins is not yet implemented, so plugins
+will use they default configuration.
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Versions history</font></h2>
+<ul>
+<li> 24.11.05: due to copyright reasons, usage of plugin DescGraphics.dll is prohibited
+<li> 22.11.05: important note in Readme
+<li> 20.11.05: initial version
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Copyrights</font></h2>
+
+<p>Copyright &copy; 2005 Alexey Torgashin (<a href="mailto:atorg@yandex.ru">atorg@yandex.ru</a>)
+<br><a href="http://alextpp.narod.ru">http://alextpp.narod.ru</a>
+<br><a href="http://totalcmd.net/plugring/FileThumbs.html">http://totalcmd.net/plugring/FileThumbs.html</a>
+
+<p>Total Commander &copy; 1993-2005 Christian Ghisler
+<br><a href="http://www.ghisler.com">http://www.ghisler.com</a>
+
+<p>WhereIsIt, DescPlugin.dll, DescGraphics.dll, CDDAPlugin.dll &copy; 1997-2005 Robert Galle
+<br><a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+
+
+</body></html>

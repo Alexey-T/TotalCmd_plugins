@@ -1,0 +1,6 @@
+[PluginInstall]
+Description="File Thumbnails" Lister plugin
+DescriptionRus=Lister-плагин "File Thumbnails"
+Type=wlx
+File=Thumbs.wlx
+DefaultDir=Thumbs

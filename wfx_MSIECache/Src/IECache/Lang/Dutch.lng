@@ -1,0 +1,30 @@
+[About]
+Version=1.4.2
+Author=Alex / Jan Verheijen
+Homepage=
+Email=
+
+[Lang]
+1=MSIE Cache-browser
+2=(Cache opnieuw inlezen)
+3=Wilt u dit bestand openen\n%s?
+4=Cache lezen
+5=Lezen van item: %d / %d
+6=OK
+7=Annuleren
+8=URL is gekopieerd naar klembord
+
+30=MSIE Cache-browser voor Total Commander
+31=Plugin-versie: %s
+32=MSIE-versie: %s
+33=Cache-map: %s
+34=Taal:
+35=Cookies weergeven
+36=Bij het openen van een URL MSIE in de offline-modus schakelen
+37=Bij het starten van de plug-in MSIE in de offline-modus schakelen
+38=Bevestiging vragen bij het openen van de URL
+39=Niveau-2 domeinen overslaan:
+40=Parameters na '?' verwijderen
+41=Bij het afsluiten MSIE in de online-modus schakelen
+42=Volledige URL's weergeven (opm: werkt niet met lange URL's)
+43=[Getallen] weghalen (opm: URL's worden onjuist gekopieerd)

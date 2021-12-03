@@ -1,0 +1,30 @@
+[About]
+Version=1.4.4
+Author=Hevesi János
+Homepage=www.exonmusic.hu
+Email=hevesi2010@gmail.com
+
+[Lang]
+1=MSIE Cache Browser
+2=(Cache újra olvasása)
+3=Meg akarja nyitni\n%s ?
+4=Cache tartalom olvasása
+5=Beolvasott elemek: %d / %d
+6=OK
+7=Mégsem
+8=URL másolása a vágólapra
+
+30=MSIE Cache böngészõ Total Commanderhez
+31=Plugin verzió: %s
+32=MSIE verzió: %s
+33=Cache mappa: %s
+34=Nyelv:
+35=Cookie-ek megmutatása
+36=MSIE offline módba váltása az URL megnyitásakor
+37=MSIE offline módba váltása a plugin indításakor
+38=URL megnyitás megerõsítése
+39=Másod-szintû domainek átugrása:
+40=Paraméter levágása '?' után
+41=MSIE online módba váltása kilépéskor
+42=Sima URL megjelenítés (megjegyzés: nem jól mûködik hosszú URL-nél)
+43=Levágás [számok] (megjegyzés: nem jól mûködik URL másoláskor)

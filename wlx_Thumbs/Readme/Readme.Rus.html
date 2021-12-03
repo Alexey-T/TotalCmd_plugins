@@ -1,0 +1,143 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Плагин "File Thumbnails" для Total Commander</title>
+</head>
+<body>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Введение</font></h2>
+
+<p>
+<b>File Thumbnails</b> - это Lister-плагин для <b>Total Commander</b>,
+который позволяет просматривать эскизы (миниатюры) различных файлов.
+Поддерживаются следующие типы файлов:
+
+<p>
+<ul>
+<li> Video File (*.AVI,*.MPG,*.MPEG,*.DIVX,*.OGM,*.MKV,*.M2V,*.DAT,*.VOB,*.ASF,*.WMV)
+<li> AutoCAD Graphics (*.DWG)
+<li> CorelDRAW Graphics (*.CDR)
+<li> Adobe Acrobat PDF (*.PDF)
+<li> Digital Camera Raw Files (*.CAM,*.CCD,*.CR2,*.CRW,*.RAW)
+<li> TrueType Fonts (*.TTF)
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Важное предупреждение</font></h2>
+
+Полноценная поддержка плагином всех перечисленных типов файлов
+возможна только при установке дополнительных модулей второго уровня,
+формат которых совместим с форматом плагинов программы <a href="http://www.whereisit-soft.com"><b>WhereIsIt</b></a>.
+Данные модули можно скачать с оффициального сайта
+<a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>.
+Однако учтите, что в лицензии на использование следующих плагинов:
+DescPlugin.dll, DescGraphics.dll и CDDAPlugin.dll
+сказано буквально следующее:
+
+<p><u><b>"Using or distributing these 
+librarires for any purpose other than running them as a part of WhereIsIt 
+is prohibited and in violation of copyright laws"</b></u>.
+
+<p>То есть, использовать эти модули можно только как часть самой программы <b>WhereIsIt</b>.
+<br>Поэтому, для соблюдения авторских прав автора <b>WhereIsIt</b>
+в плагине запрещена загрузка трех вышеуказанных DLL-модулей.
+Естественно, при этом становится невозможной поддержка многих типов файлов,
+реализуемая данными модулями, но таково требование автора <b>WhereIsIt</b>,
+которое я, как автор плагина <b>File Descriptions</b>, вынужден соблюдать.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Установка</font></h2>
+
+<ol>
+<li>
+   Просто откройте архив, и TC сам установит плагин.
+   После появления на экране списка Lister-плагинов переместите плагин
+   в списке на самый верх (присвойте ему высокий приоритет).
+<p>
+<li> Перейдите в меню <b>Конфигурация -> Настройка -> Эскизы </b>
+   и включите опцию <b>При помощи LS-плагинов</b>, установив маску как <b>*.*</b>.
+<p>
+<li> Включите просмотр эскизов:
+   <b>Вид -> Просмотр эскизов</b>
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Как подключить плагины WhereIsIt</font></h2>
+
+<ol>
+<li> Во-первых, Вы должны самостоятельно скачать эти плагины с оффициальной
+   страницы. Перейдите на <a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a> и скачайте следующие
+   модули:
+<p>
+<ul>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/VideoThumbPlugin.zip">Video Files Thumbnails</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/AcadPlugin.zip">AutoCAD Plugin</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/CorelPlugin.zip">CorelDraw Plugin</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/PDFThumbnailPlugin.zip">Adobe Acrobat PDF Thumbnails</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/DcrawPlugin.zip">Digital Camera Raw Files</a>
+<li> <a href="http://www.whereisit-soft.com/plugins/ver30/TTFPlugin.zip">TTF Plugin</a>
+</ul>
+
+<p>
+<li> Распакуйте архивы с модулями в подпапку <b>Plugins</b> главной папки плагина.
+
+<p>
+<li> Откройте файл <b>Thumbs.ini</b> и убедитесь, что следующие строки в нем
+   не закомментированы:
+<pre>
+    [Plugins]
+    1=VideoThumbPlugin.dll
+    2=AcadPlugin.dll
+    3=CorelPlugin.dll
+    4=PDFThumbnailPlugin.dll
+    5=DcrawPlugin.dll
+    6=TTFPlugIn.dll
+</pre>
+</ol>
+
+<p>
+Вот и все - плагины должны подключиться при следующем запуске <b>Total Commander</b>.
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Примечания</font></h2>
+
+<ol>
+<li>Процесс конфигурирования плагинов <b>WhereIsIt</b> пока не реализован, поэтому
+плагины будут использовать свои установки по умолчанию.
+
+<p><li>
+Модуль DcrawPlugin.dll, обеспечивающий показ миниатюр фотографий
+с цифровых фотоаппаратов, может не работать в связи с одной особенностью.
+Дело в том, что модуль использует вспомогательную библиотеку dcraw.dll,
+путь к которой при загрузке определяет исходя из значения ParamStr(0),
+т.е. пути к основному .exe-файлу. В связи с тем, что при запуске из-под <b>Total Commander</b>
+основной .exe-файл - это Totalcmd.exe, данный путь вычисляется некорректно.
+Поэтому, чтобы модуль загружался, сделайте следующее: скопируйте файл dcraw.dll
+в каталог <b>Папка_TC\Plugins</b>.
+</ol>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>История изменений</font></h2>
+<ul>
+<li> 24.11.05: для соблюдения авторских прав
+     подключение модуля DescGraphics.dll запрещено
+<li> 22.11.05: важное предупреждение в Readme
+<li> 20.11.05: первоначальная версия
+</ul>
+
+<!------------------------------------------------------------------>
+<h2><font color=darkblue>Авторские права</font></h2>
+
+<p>Copyright &copy; 2005 Alexey Torgashin (<a href="mailto:atorg@yandex.ru">atorg@yandex.ru</a>)
+<br><a href="http://alextpp.narod.ru">http://alextpp.narod.ru</a>
+<br><a href="http://wincmd.ru/plugring/FileThumbs.html">http://wincmd.ru/plugring/FileThumbs.html</a>
+
+<p>Total Commander &copy; 1993-2005 Christian Ghisler
+<br><a href="http://www.ghisler.com">http://www.ghisler.com</a>
+
+<p>WhereIsIt, DescPlugin.dll, DescGraphics.dll, CDDAPlugin.dll &copy; 1997-2005 Robert Galle
+<br><a href="http://www.whereisit-soft.com">http://www.whereisit-soft.com</a>
+
+
+</body></html>
