@@ -1,0 +1,25 @@
+You should carefully read the following terms and conditions before using this software.
+
+YOUR USE OF THIS SOFTWARE INDICATES YOUR ACCEPTANCE OF THIS LICENSE AGREEMENT AND WARRANTY.
+
+Evaluation and Registration
+
+Subject to the terms below, you are hereby licensed to use this software for evaluation purposes without charge. Provided that you verify that you are distributing the shareware version, you are hereby licensed to make as many copies of as you wish, give EXACT copies of the original version to anyone and distribute the software and its documentation in its unmodified form via electronic means.
+
+
+Warranty Disclaimer
+===============
+
+THE SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, WE FURTHER DISCLAIM ALL WARRANTIES, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. THE ENTIRE RISK ARISING OUT OF THE USE OR PERFORMANCE OF THE PRODUCT AND DOCUMENTATION REMAINS WITH RECIPIENT.
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE FOR ANY CONSEQUENTIAL, INCIDENTAL, DIRECT, INDIRECT, SPECIAL, PUNITIVE, OR OTHER DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION, OR OTHER PECUNIARY LOSS) ARISING OUT OF THIS AGREEMENT OR THE USE OF OR INABILITY TO USE THE PRODUCT, EVEN IF THE AUTHOR OF THE PRODUCT HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+
+Definition of shareware:
+==================
+
+MP4 Tag Library's shareware distribution method gives users the possibility to try out the software freely.
+
+Copyright laws apply to both shareware and commercial software, and the copyright holder retains all rights, with a few specific exceptions as stated below. Shareware authors are accomplished programmers, just like commercial authors, and the programs are of comparable quality. In both cases, there are good programs and bad ones!
+
+You are encouraged to pass a copy of MP4 Tag Library along to any of your friends. Please encourage them to register their copy if they find MP4 Tag Library usefull.

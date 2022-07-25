@@ -1,0 +1,130 @@
+; Send new or updated translation to: atorg@yandex.ru
+; Don't forget "Description" line in pluginst.inf
+
+[Rus]
+Channels=Каналы
+Duration=Время
+Duration (H/M/S)=Время (Ч/М/С)
+Duration Ext (H/M/S/MS)=Время (Ч/М/С/МС)
+Sample rate=Частота
+Bitrate=Битрейт
+Bitrate type=Тип битрейта
+Title=Название
+Artist=Исполнитель
+Album=Альбом
+Track=Трек
+Track (zero-filled)=Трек (ведущий ноль)
+Date=Дата
+Genre=Жанр
+Comment=Комментарий
+Composer=Композитор
+Copyright=Авторское право
+URL=Ссылка
+Encoder=Кодировщик
+Tags=Теги
+Codec=Кодек
+Full text=Весь текст
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=Неизвестно|Моно|Стерео|Joint Стерео|Dual Channel
+Hz|KHz=Гц|КГц
+CBR|VBR|Unknown=CBR|VBR|Неизвестно
+Comment 1|Comment 2|Comment 3|All=Комментарий 1|Комментарий 2|Комментарий 3|Все
+
+[Sk]
+Channels=Kanбly
+Duration=Dећka
+Duration (H/M/S)=Dећka (H/M/S)
+Duration Ext (H/M/S/MS)=Dећka (H/M/S/MS)
+Sample rate=Vzorkovacia frekvencia
+Bitrate=Dбtovэ tok
+Title=Nбzov
+Artist=Interpret
+Album=Album
+Track=Stopa
+Track (zero-filled)=Track (zero-filled)
+Date=Dбtum
+Genre=Ћбner
+Comment=Komentбr
+Composer=Skladateѕ
+Encoder=Vydavateѕ
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=?|Mono|Stereo|Joint Stereo|Dual Channel
+Hz|KHz=Hz|kHz
+
+[Fra] 
+Channels=Canaux 
+Duration=Duree 
+Duration (H/M/S)=Duree (H/M/S)
+Duration Ext (H/M/S/MS)=Duree (H/M/S/MS)
+Sample rate=Echantillonnage 
+Bitrate=Bitrate 
+Title=Titre 
+Artist=Artiste 
+Album=Album 
+Track=Piste 
+Track (zero-filled)=Track (zero-filled)
+Date=Date 
+Genre=Genre 
+Comment=Commentaire 
+Composer=Compositeur 
+Encoder=Vendeur 
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=Unknown|Mono|Stereo|Joint Stereo|Dual Channel
+Hz|KHz=Hz|kHz
+
+;Hevesi Jбnos <hevesi_j@freemail.hu>
+[Hun]
+Channels=Csatornбk
+Duration=Idхtartam
+Duration (H/M/S)=Idх (Уra/Perc/Mбsodperc)
+Sample rate=Mintavйtelezйsi frekvencia
+Bitrate=Bitrбta
+Title=Cнm
+Artist=Elхadу
+Album=Album
+Track=Sбv
+Track (zero-filled)=Track (zero-filled)
+Date=Йv
+Genre=Stнlus
+Comment=Megjegyzйs
+Composer=Szerzх
+Encoder=Gyбrtу
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=Ismeretlen|Monу|Sztereу|Joint sztereу|Dual csatorna
+Hz|KHz=Hz|kHz
+
+[Deu]
+Channels=Kanдle
+Duration=Dauer
+Duration (H/M/S)=Dauer (H/M/S)
+Duration Ext (H/M/S/MS)=Dauer (H/M/S/MS)
+Sample rate=Samplerate
+Bitrate=Bitrate
+Title=Titel
+Artist=Kьnstler
+Album=Album
+Track=Track
+Track (zero-filled)=Track (zero-filled)
+Date=Datum
+Genre=Genre
+Comment=Kommentar
+Composer=Komponist
+Encoder=Hдndler
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=Unbekannt|Mono|Stereo|Joint Stereo|Zweikanal
+Hz|KHz=Hz|kHz
+
+[Rom] 
+Channels=Canale
+Duration=Duratг
+Duration (H/M/S)=Duratг (H/M/S)
+Duration Ext (H/M/S/MS)=Duratг (H/M/S/MS)
+Sample rate=Frecvenюг
+Bitrate=Densitate
+Title=Titlu
+Artist=Artist
+Album=Album
+Track=Piesг
+Track (zero-filled)=Track (zero-filled)
+Date=Datг
+Genre=Gen
+Comment=Comentariu
+Composer=Compozitor
+Encoder=Vвnzгtor
+Unknown|Mono|Stereo|Joint Stereo|Dual Channel=Unknown|Mono|Stereo|Joint Stereo|Dual Channel
+Hz|KHz=Hz|kHz

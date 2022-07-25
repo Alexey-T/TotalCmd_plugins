@@ -1,0 +1,6 @@
+[PluginInstall]
+Description=AudioInfo content plugin
+DescriptionRus=AudioInfo - отображение информации об аудио-файлах
+Type=wdx
+File=AudioInfo.wdx
+DefaultDir=AudioInfo
